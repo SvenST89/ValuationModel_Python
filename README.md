@@ -1,4 +1,4 @@
-# Building a Corporate Valuation Model with Python Pt. I: Build the Database
+# Building a Corporate Valuation Model with Python
 
 This repository will build a corporate valuation model identical to the methods given in [Brigham & Houston ("Fundamentals of Financial Management", 6th ed., 2009, South Western Cengage Learning, pp. 288 and pp. 306)](https://www.valorebooks.com/textbooks/fundamentals-of-financial-management-concise-edition-with-thomson-one-business-school-edition-6th-edition/9780324664553). Additionally, one can check the [this source](https://corporatefinanceinstitute.com/resources/knowledge/modeling/dcf-model-training-free-guide/), too, for further insights on the topic of corporate valuation.
 
