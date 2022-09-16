@@ -1,2 +1,0 @@
-# ValuationModel_Python
-This repository builds a corporate valuation model in Python with the `yahoo finance API`. In particular, a database in **PostgreSQL** is set up in order to store fundamental financial data from the yahoo finance API so that we can build up a historical database in the future. Finally, we calculate the enterprise value with the **DCF Method** and compare it with the current market value of the company in order to assess under- or overvaluation.
