@@ -1,0 +1,12 @@
+# Building a Corporate Valuation Model with Python
+
+This repository will build a corporate valuation model identical to the methods given in [Brigham & Houston ("Fundamentals of Financial Management", 6th ed., 2009, South Western Cengage Learning, pp. 288 and pp. 306)](https://www.valorebooks.com/textbooks/fundamentals-of-financial-management-concise-edition-with-thomson-one-business-school-edition-6th-edition/9780324664553). Additionally, one can check the [this source](https://corporatefinanceinstitute.com/resources/knowledge/modeling/dcf-model-training-free-guide/), too, for further insights on the topic of corporate valuation.
+
+The corporate valuation model in Python will be based on the data obtained from the **yahoo finance API**. In particular, a database in **PostgreSQL** is set up in order to store fundamental financial data from the yahoo finance API so that we can build up a **historical database for fundamental data** in the future. Finally, we calculate the **enterprise value with the DCF Method** and compare it with the current market value of the company in order to assess under- or overvaluation.
+
+We will create several database tables in order to store the financial statement data from yahoo finance. With each run we can append the most recent data and so build up a historical database which is usually not available. Yahoo Finance usually just offers financial statement data for the last 4 financial years. If we establish a database we can store the data values and so - going forward - extend the data beyond just 4 financial years. As we will see this will require a workaround with several SQL statements and tables. 
+
+Specifically, we will build 'backup' temporary tables into which we simply insert the data with each new run and then store the new data - as identified with the id-column and the date-column - in the standard tables. So each statement table is identified by a **combined Primary Key (id, date)**. Note that after the comparison of the new data in the temporary tables with the given data in the standard tables we might have some duplicate values in the **id column** of each standard table, which would usually not be allowed in the case of single Primary Keys - however, in combination with each **date** each row will be uniquely identified. 
+
+Thus, the `insert_new_data()` function will check whether (id, date)-value pairs are already existent in the standard table and insert only those rows from the temporary table which are not yet existent, given the respective (id, date)-value pair.
+   

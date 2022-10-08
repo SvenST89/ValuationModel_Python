@@ -1,0 +1,82 @@
+,symbol,name
+0,^VXSLV,CBOE SILVER ETF VOLATILITY INDEX
+1,^IBEX,IBEX 35
+2,^SSMI,SMI PR
+3,^GVZ,CBOE Gold Volatitity Index
+4,^XAX,NYSE AMEX COMPOSITE INDEX
+5,^MID,S&P MID CAP 400 INDEX
+6,^NYA,NYSE COMPOSITE (DJ)
+7,XU100.IS,BIST 100
+8,^OVX,CBOE Crude Oil Volatility Index 
+9,DX-Y.NYB,US Dollar/USDX - Index - Cash 
+10,TX60.TS,S&P/TSX 60 Index
+11,^RUI,Russell 1000
+12,TXBA.TS,S&P/TSX Composite Index - Banks
+13,^NOMUC.SR,Parallel Market Capped Index 
+14,^TASI.SR,Tadawul All Shares Index
+15,^TRCCRBTR,Thomson Reuters/CoreCommodity C
+16,^DJU,Dow Jones Utility Average
+17,^OEX,S&P 100 INDEX
+18,^DJUSSC,Dow Jones U.S. Semiconductors Index
+19,^PSE,NYSE Arca Tech 100 Index
+20,^NMX0530,FTSE 350 Index - Oil & Gas Prod
+21,^FTMC,FTSE 250
+22,^RMZ,MSCIUSREIT INDEX
+23,^AMZ,ALERIAN MLP INDEX
+24,^SPGNRUP,S&P Global Natural Resources Index
+25,^W5000,Wilshire 5000 Total Market Index
+26,^DWCF,Dow Jones U.S. Total Stock Mark
+27,^RUITR,Russell 1000 Total Return
+28,^RUTTR,Russell 2000 Total Return
+29,^RUATR,Russell 3000 Total Return
+30,^SP500TR,S&P 500 (TR)
+31,^HSCE,HANG SENG CHINA ENTERPRISES INDEX
+32,^TYX,Treasury Yield 30 Years
+33,^FVX,Treasury Yield 5 Years
+34,^TNX,Treasury Yield 10 Years
+35,^SPGSCI,S&P GSCI Index
+36,^STI,STI Index
+37,^BVSP,IBOVESPA
+38,^MXX,IPC MEXICO
+39,^GSPTSE,S&P/TSX Composite index
+40,^VIX,CBOE Volatility Index
+41,^DJI,Dow Jones Industrial Average
+42,^FCHI,CAC 40
+43,^N100,EURONEXT 100
+44,IMOEX.ME,MOEX Russia Index
+45,^AXJO,S&P/ASX 200
+46,^NZ50,S&P/NZX 50 INDEX GROSS
+47,^N225,Nikkei 225
+48,^TWII,TSEC weighted index
+49,^BFX,BEL 20
+50,^TA125.TA,TA-125
+51,^KLSE,FTSE Bursa Malaysia KLCI
+52,^BSESN,S&P BSE SENSEX
+53,^STOXX50E,ESTX 50 PR.EUR
+54,^IXIC,NASDAQ Composite
+55,^KS11,KOSPI Composite Index
+56,^MERV,MERVAL
+57,^JN0U.JO,Top 40 USD Net TRI Index
+58,000001.SS,SSE Composite Index
+59,^CASE30,EGX 30 Price Return Index
+60,^GSPC,S&P 500
+61,^FTSE,FTSE 100
+62,^BUK100P,Cboe UK 100 Price Return
+63,^AORD,ALL ORDINARIES
+64,^RUT,Russell 2000
+65,^GDAXI,DAX PERFORMANCE-INDEX
+66,^JKSE,Jakarta Composite Index
+67,^HSI,HANG SENG INDEX
+68,^NSEI,NIFTY 50
+69,^NSEBANK,NIFTY BANK
+70,^DJITR,Dow Jones Industrial Average TR
+71,^XNDX,NASDAQ 100 Total Return Index
+72,^RMCCTR,Russell Midcap Total Return
+73,^AEX,AEX-INDEX
+74,^IRX,13 Week Treasury Bill
+75,^DJT,Dow Jones Transportation Average
+76,^NDX,NASDAQ 100
+77,^RUA,Russell 3000
+78,^RVX,Cboe Russell 2000 Volatility Index
+79,^VXN,CBOE NASDAQ 100 Volatility
+80,^VVIX,CBOE VIX VOLATILITY INDEX
