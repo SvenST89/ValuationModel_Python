@@ -13,6 +13,7 @@ from datetime import date
 import re
 import psycopg2.extras as extras
 from config.api import MY_API_KEY
+import logging
 
 #========================================================================================================================================#
 
@@ -25,6 +26,7 @@ def retrieve_data_from_api(ticker_list):
     bs_df_list=[]
     inc_df_list=[]
     cf_df_list=[]
+    logger=logging.getLogger()
 
     for ticker in ticker_list:
         for statement in statement_list:
@@ -54,12 +56,16 @@ def retrieve_data_from_api(ticker_list):
             final_table=table_rev.reset_index(drop=True)
             final_table['shortname']=yf.Ticker(ticker).info['shortName']
             ft_transformed=pd.melt(final_table, id_vars=["shortname", "item"], var_name="date", value_name="value")
+            logger.info(f"Successfully retrieved {statement} data for company {ticker}.")
             if statement == "balance-sheet-statement":
                 bs_df_list.append(ft_transformed)
+                logger.info("Successfully appended the balance sheet list.")
             elif statement == "income-statement":
                 inc_df_list.append(ft_transformed)
+                logger.info("Successfully appended the income statement list.")
             else:
                 cf_df_list.append(ft_transformed)
+                logger.info("Successfully appended the cashflow statement list.")
     return bs_df_list, inc_df_list, cf_df_list
 
 def get_index_table():

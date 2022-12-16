@@ -12,9 +12,11 @@ import datetime
 from datetime import date
 import re
 from sqlalchemy import create_engine
+import psycopg2
 import psycopg2.extras as extras
 from config.api import MY_API_KEY
 import config.pw
+from ValuationModel.fmp import get_beta
 
 #========================================================================================================================================#
 
@@ -112,7 +114,7 @@ def get_database_findata_year(company, year, month, day, engine):
     user='svenst89' # or default user 'postgres'
     password=config.pw.password # edit the password if you switch to the default user 'postgres'; I setup different passwords.
     host='localhost'
-    port='5433'
+    port='5432'
     database='fundamentalsdb'
     #================================
     engine=engine
@@ -185,15 +187,19 @@ def get_database_findata(company, engine):
     user='svenst89' # or default user 'postgres'
     password=config.pw.password # edit the password if you switch to the default user 'postgres'; I setup different passwords.
     host='localhost'
-    port='5433'
+    port='5432'
     database='fundamentalsdb'
-    #================================
     engine=engine
+    #dbschema='public'
+    #================================
     try:
         bs=pd.read_sql(f"SELECT * FROM balancesheet WHERE shortname = '{str(company)}'", engine)
         incs=pd.read_sql(f"SELECT * FROM incomestatement WHERE shortname = '{str(company)}'", engine)
         cs=pd.read_sql(f"SELECT * FROM cashflowstatement WHERE shortname = '{str(company)}'", engine)
         pd.set_option('display.expand_frame_repr', False)
+        bs.drop_duplicates(['date', 'item', 'value'], keep='last')
+        incs.drop_duplicates(['date', 'item', 'value'], keep='last')
+        cs.drop_duplicates(['date', 'item', 'value'], keep='last')
         print(f"You have successfully retrieved the financial statement data for company '{company}'!")
         return bs, incs, cs
     except Exception as ex:
@@ -207,7 +213,7 @@ def get_company_data(company, engine):
     user='svenst89' # or default user 'postgres'
     password=config.pw.password # edit the password if you switch to the default user 'postgres'; I setup different passwords.
     host='localhost'
-    port='5433'
+    port='5432'
     database='fundamentalsdb'
     #================================
     engine=engine
@@ -220,26 +226,25 @@ def get_company_data(company, engine):
         print(f"Sorry! Something went wrong! I guess, there is no data available for the '{company}'. Have you stored its data in the database?\n"+ ex)
 
 #--- FUNCTION TO CALCULATE THE WEIGHTED AVERAGE COST OF CAPITAL BASED ON OUR FINANCIAL STATEMENT DATA STORED IN POSTGRES DATABASE -------------------------------------------#
-def get_wacc(company, year, month, day, rfr, mrp, at_debt_cost, engine):
+def get_wacc(company, year, rfr, mrp, at_debt_cost, engine):
     """This function calculates the weighted average cost of capital (WACC) given the capital structure of the firm.
         The WACC serves as the discounting rate for the Free Cashflows within the corporate valuation model, the DCF method."""
+    year=year
     #================================================================
-    #engine=create_engine(f"postgresql://{user}:{password}@{host}:{port}/{database}")
-    bs_y, incs_y, cs_y=get_database_findata_year(company, year, month, day, engine)
-    bs_y=bs_y.sort_values(by=['date'], ascending=False)
-    # revise balance sheet
-    droprows = ['link', 'finalLink', 'calendarYear', 'period', 'symbol', 'reportedCurrency', 'cik', 'fillingDate', 'acceptedDate']
-    bs_y = bs_y[bs_y.item.isin(droprows) == False]
-    # switch value column to float; otherwise you cannot calculate
-    bs_y['value'] = bs_y['value'].astype(float)
+    # Get fiscal data for company of the last relevant Fiscal Year from its balance sheet
+    bs, incs, cs = get_database_findata(company, engine)
+    bs_y=clearDataframes_and_get_fy(company, bs, 'bs', year)
+    #----get company data
+    comp=get_company_data(company, engine)
+    ticker=comp['symbol'].values[0]
     #================================================================
     # get 'totalAssets', 'totalEquity', 'totalLiabilities' in order to calculate weights
-    mask_ta=bs_y['item'].values=='totalAssets'
-    mask_te=bs_y['item'].values=='totalEquity'
-    mask_tl=bs_y['item'].values=='totalLiabilities'
-    totalAssets=float(bs_y.loc[mask_ta, 'value'])
-    totalEquity=float(bs_y.loc[mask_te, 'value'])
-    totalLiabilities=float(bs_y.loc[mask_tl, 'value'])
+    #mask_ta=bs_y['item'].values=='totalAssets'
+    #mask_te=bs_y['item'].values=='totalEquity'
+    #mask_tl=bs_y['item'].values=='totalLiabilities'
+    totalAssets=bs_y.loc[bs_y['item'] == 'totalAssets', 'value'].iloc[0] #float(bs_y.loc[mask_ta, 'value'])
+    totalEquity=bs_y.loc[bs_y['item'] == 'totalEquity', 'value'].iloc[0] #float(bs_y.loc[mask_te, 'value'])
+    totalLiabilities=bs_y.loc[bs_y['item'] == 'totalLiabilities', 'value'].iloc[0] #float(bs_y.loc[mask_tl, 'value'])
     # calculate weights
     w_tl=totalLiabilities / totalAssets
     w_te=totalEquity / totalAssets
@@ -250,4 +255,53 @@ def get_wacc(company, year, month, day, rfr, mrp, at_debt_cost, engine):
     #====calculate WACC
     wacc=w_tl*at_debt_cost+w_te*required_return_equity
     return wacc
+
+#---FUNCTION TO CLEAR THE FINANCIAL DATA DATAFRAMES AND EXTRACT A CERTAIN YEAR ONLY-----------------------------------------#
+global values
+values = ['link', 'finalLink', 'calendarYear', 'period', 'symbol', 'reportedCurrency', 'cik', 'fillingDate', 'acceptedDate']
+def clearDataframes_and_get_fy(company, df, df_name, year):
+    """Function to clear financial statement data obtained from database from wrong string values in the 'value' column
+    and to extract a certain fiscal year from the total data.
+    """
+    #----------------------------------------------------------#
+    company=company
+    df_name=df_name
+    valid = {'bs', 'incs', 'cs'}
+    if df_name not in valid:
+        raise ValueError("""ValueError: The passed argument 'df_name' must be either 'bs' for 'Balance Sheet', 
+                         'incs' for 'Income Statement' or 'cs' for 'Cashflow Statement'. Please specify the argument accordingly!""")
+    year=year
+    current_year=datetime.date.today().year
+    if int(year) >= current_year:
+        raise ValueError("""You want to extract annual data of a year which is bigger or equal than the current year! Bigger does not make sense;
+        equal depends on the time of the year in which we are right now --> Has the company already published?!""")
+        
+    fy_dec=datetime.datetime(year, 12, 31).strftime("%Y-%m-%d")
+    fy_oct=datetime.datetime(year, 10, 31).strftime("%Y-%m-%d")
+    fy_sept=datetime.datetime(year, 9, 30).strftime("%Y-%m-%d")
+    fy_jun=datetime.datetime(year, 6, 30).strftime("%Y-%m-%d")
+    fy_may=datetime.datetime(year, 5, 31).strftime("%Y-%m-%d")
+    fy_mar=datetime.datetime(year, 3, 31).strftime("%Y-%m-%d")
+    fy_list=[fy_dec, fy_oct, fy_sept, fy_jun, fy_may, fy_mar]
+    #----------------------------------------------------------#
+    
+    for i in range(len(fy_list)-1):
+        df=df.sort_values(by=['date'], ascending=False)
+        df = df[df.item.isin(values) == False] # masking: exclude all rows that contain the values in list 'values' above.
+        df['value'] = df['value'].astype(float)
+        grouped = df.groupby(df['date'])
+        try:
+            df_year=grouped.get_group(fy_list[i])
+            df_year_clean = df_year[df_year.item.isin(values) == False]
+            df_year_clean_unique=df_year_clean.drop_duplicates(['date', 'item', 'value'], keep='last')
+            if df_name == 'bs':
+                print(f"==> I revised the Balance Sheet and extracted financial data for Fiscal Year (FY) {fy_list[i]}.\n")
+            elif df_name == 'incs':
+                print(f"==> I revised the Income Statement and extracted financial data for Fiscal Year (FY) {fy_list[i]}.\n")
+            else:
+                print(f"==> I revised the Cashflow Statement and extracted financial data for Fiscal Year (FY) {fy_list[i]}.\n")
+            return df_year_clean_unique
+        except KeyError:
+            print(f"For company {company} the date {fy_list[i]} seems to be the wrong fiscal year end. I continue trying FY date {fy_list[i+1]}...!\n")
+            continue
 
