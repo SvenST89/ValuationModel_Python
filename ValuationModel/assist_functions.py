@@ -16,7 +16,7 @@ import psycopg2
 import psycopg2.extras as extras
 from config.api import MY_API_KEY
 import config.pw
-from ValuationModel.fmp import get_beta
+from ValuationModel.fmp import get_profile_data
 
 #========================================================================================================================================#
 
@@ -248,8 +248,8 @@ def get_wacc(company, year, rfr, mrp, at_debt_cost, engine):
     # calculate weights
     w_tl=totalLiabilities / totalAssets
     w_te=totalEquity / totalAssets
-    # retrieve beta from FMP
-    beta=get_beta(ticker)
+    #==== Get Beta Coefficient
+    beta=get_profile_data(ticker, json_entry='beta', entry_point='profile') # other options: 'mktCap'=market cap, 'sector', 'fullTimeEmployees', 'industry'
     # calculate the required return on equity according to CAPM
     required_return_equity=rfr + mrp*beta
     #====calculate WACC
