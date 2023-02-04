@@ -1,6 +1,0 @@
-# Valuation Model: Open ToDos
-
-- Check the Data retrieval from yfinance: The numbers, e.g. for the Balancesheet, are wrong and identical across each company! And the data is not the same 
-as on the webpage --> the transformation of the list of dictionaries into a dataframe with pd.melt() might cause this problem. Initially, when you retrieve data from yfinance, you get float point data value for each item with e10, etc.; but the functions return a dataframe with integer numbers that are simply wrong...
-
-- Once you have corrected that mistake, rerun that script and re-establish the database.

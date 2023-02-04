@@ -1,91 +1,91 @@
 ,symbol,name
-0,^VVIX,CBOE VIX VOLATILITY INDEX
-1,XU100.IS,BIST 100
-2,^OVX,CBOE Crude Oil Volatility Index 
-3,^GVZ,CBOE Gold Volatitity Index
-4,^VXSLV,CBOE SILVER ETF VOLATILITY INDEX
-5,^IBEX,IBEX 35
-6,^SSMI,SMI PR
-7,DX-Y.NYB,US Dollar/USDX - Index - Cash 
-8,^XAX,NYSE AMEX COMPOSITE INDEX
-9,^MID,S&P MID CAP 400 INDEX
-10,^NYA,NYSE COMPOSITE (DJ)
-11,TX60.TS,S&P/TSX 60 Index
-12,IMOEX.ME,MOEX Russia Index
-13,^AXJO,S&P/ASX 200
-14,^STOXX,STXE 600 PR.EUR
-15,^RUI,Russell 1000
-16,TXBA.TS,S&P/TSX Composite Index - Banks
-17,^NOMUC.SR,Parallel Market Capped Index 
-18,^TASI.SR,Tadawul All Shares Index
-19,^TRCCRBTR,Thomson Reuters/CoreCommodity C
+0,^IBEX,IBEX 35
+1,^KLSE,FTSE Bursa Malaysia KLCI
+2,^W5000,Wilshire 5000 Total Market Index
+3,^RUITR,Russell 1000 Total Return
+4,^IRX,13 Week Treasury Bill
+5,^MID,S&P MID CAP 400 INDEX
+6,^RUT,Russell 2000
+7,^HSCE,HANG SENG CHINA ENTERPRISES INDEX
+8,XU100.IS,BIST 100
+9,^RUA,Russell 3000
+10,^KS11,KOSPI Composite Index
+11,^BSESN,S&P BSE SENSEX
+12,^TASI.SR,Tadawul All Shares Index
+13,^DJUSSC,Dow Jones U.S. Semiconductors Index
+14,^XAX,NYSE AMEX COMPOSITE INDEX
+15,^STOXX,STXE 600 PR.EUR
+16,^XNDX,NASDAQ 100 Total Return Index
+17,000001.SS,SSE Composite Index
+18,TX60.TS,S&P/TSX 60 Index
+19,^MDAXI,MDAX PERFORMANCE-INDEX
 20,^DJU,Dow Jones Utility Average
-21,^OEX,S&P 100 INDEX
-22,^DJUSSC,Dow Jones U.S. Semiconductors Index
-23,^PSE,NYSE Arca Tech 100 Index
-24,^NMX0530,FTSE 350 Index - Oil & Gas Prod
-25,^FTMC,FTSE 250
-26,^RMZ,MSCIUSREIT INDEX
-27,^AMZ,ALERIAN MLP INDEX
-28,^SPGNRUP,S&P Global Natural Resources Index
-29,^W5000,Wilshire 5000 Total Market Index
-30,^DWCF,Dow Jones U.S. Total Stock Mark
-31,^RUITR,Russell 1000 Total Return
-32,^RUTTR,Russell 2000 Total Return
-33,^RUATR,Russell 3000 Total Return
-34,^SP500TR,S&P 500 (TR)
-35,^HSCE,HANG SENG CHINA ENTERPRISES INDEX
-36,^TYX,Treasury Yield 30 Years
-37,^FVX,Treasury Yield 5 Years
-38,^TNX,Treasury Yield 10 Years
-39,^SPGSCI,S&P GSCI Index
-40,^STI,STI Index
-41,^BVSP,IBOVESPA
-42,^MXX,IPC MEXICO
-43,^GSPTSE,S&P/TSX Composite index
-44,^VIX,CBOE Volatility Index
-45,^DJI,Dow Jones Industrial Average
-46,^FCHI,CAC 40
-47,^N100,EURONEXT 100
-48,^NZ50,S&P/NZX 50 INDEX GROSS
-49,^N225,Nikkei 225
-50,^TWII,TSEC weighted index
-51,^BFX,BEL 20
-52,^TA125.TA,TA-125
-53,^KLSE,FTSE Bursa Malaysia KLCI
-54,^BSESN,S&P BSE SENSEX
-55,^STOXX50E,ESTX 50 PR.EUR
-56,^IXIC,NASDAQ Composite
-57,^KS11,KOSPI Composite Index
-58,^MERV,MERVAL
-59,^JN0U.JO,Top 40 USD Net TRI Index
-60,000001.SS,SSE Composite Index
-61,^CASE30,EGX 30 Price Return Index
-62,^GSPC,S&P 500
-63,^FTSE,FTSE 100
-64,^BUK100P,Cboe UK 100 Price Return
-65,^AORD,ALL ORDINARIES
-66,^RUT,Russell 2000
-67,^GDAXI,DAX PERFORMANCE-INDEX
+21,^AORD,ALL ORDINARIES
+22,^RUATR,Russell 3000 Total Return
+23,^DJT,Dow Jones Transportation Average
+24,^TRCCRBTR,Thomson Reuters/CoreCommodity C
+25,^VVIX,CBOE VIX VOLATILITY INDEX
+26,^PSE,NYSE Arca Tech 100 Index
+27,^CASE30,EGX 30 Price Return Index
+28,^VXN,CBOE NASDAQ 100 Volatility
+29,^N300,Nikkei 300
+30,^STI,STI Index
+31,^AEX,AEX-INDEX
+32,^NOMUC.SR,Parallel Market Capped Index 
+33,^FVX,Treasury Yield 5 Years
+34,^GSPC,S&P 500
+35,^FCHI,CAC 40
+36,^GDAXI,DAX PERFORMANCE-INDEX
+37,^JKSE,Jakarta Composite Index
+38,^DJI,Dow Jones Industrial Average
+39,^TNX,Treasury Yield 10 Years
+40,^SPGSCI,S&P GSCI Index
+41,^N225,Nikkei 225
+42,^NYA,NYSE COMPOSITE (DJ)
+43,^FTSE,FTSE 100
+44,^MERV,MERVAL
+45,^RUI,Russell 1000
+46,^N100,EURONEXT 100
+47,^DWCF,Dow Jones U.S. Total Stock Mark
+48,IMOEX.ME,MOEX Russia Index
+49,^SDAXI,SDAX PERFORMANCEINDEX
+50,^SPGNRUP,S&P Global Natural Resources Index
+51,^TYX,Treasury Yield 30 Years
+52,DX-Y.NYB,US Dollar/USDX - Index - Cash 
+53,^IXIC,NASDAQ Composite
+54,^TA125.TA,TA-125
+55,^GSPTSE,S&P/TSX Composite index
+56,^DJITR,Dow Jones Industrial Average TR
+57,^BUK100P,Cboe UK 100 Price Return
+58,^SP500TR,S&P 500 (TR)
+59,^TWII,TSEC weighted index
+60,^RMZ,MSCIUSREIT INDEX
+61,^SSMI,SMI PR
+62,^BFX,BEL 20
+63,^VIX,CBOE Volatility Index
+64,^NYITR,NYSE International 100 Index
+65,TXBA.TS,S&P/TSX Composite Index - Banks
+66,^AMZ,ALERIAN MLP INDEX
+67,^FTMC,FTSE 250
 68,^HSI,HANG SENG INDEX
-69,^NSEI,NIFTY 50
-70,^NSEBANK,NIFTY BANK
-71,^DJITR,Dow Jones Industrial Average TR
-72,^XNDX,NASDAQ 100 Total Return Index
-73,^RMCCTR,Russell Midcap Total Return
-74,^AEX,AEX-INDEX
-75,^IRX,13 Week Treasury Bill
-76,^DJT,Dow Jones Transportation Average
-77,^NDX,NASDAQ 100
-78,^RUA,Russell 3000
-79,^RVX,Cboe Russell 2000 Volatility Index
-80,^VXN,CBOE NASDAQ 100 Volatility
-81,^JKSE,Jakarta Composite Index
-82,^N300,Nikkei 300
-83,^NYITR,NYSE International 100 Index
-84,^ATX,Austrian Traded Index in EUR
-85,^OMXS30,XCSE:OMX Stockholm 30 Index
-86,^TECDAX,TECDAX TR
-87,^MDAXI,MDAX PERFORMANCE-INDEX
-88,^SDAXI,SDAX PERFORMANCEINDEX
-89,^FTLC,FTSE 350
+69,^NSEBANK,NIFTY BANK
+70,^NMX0530,FTSE 350 Index - Oil & Gas Prod
+71,^OMXS30,XCSE:OMX Stockholm 30 Index
+72,^RMCCTR,Russell Midcap Total Return
+73,^GVZ,CBOE Gold Volatitity Index
+74,^NZ50,S&P/NZX 50 INDEX GROSS
+75,^FTLC,FTSE 350
+76,^JN0U.JO,Top 40 USD Net TRI Index
+77,^TECDAX,TECDAX TR
+78,^OVX,CBOE Crude Oil Volatility Index 
+79,^BVSP,IBOVESPA
+80,^NSEI,NIFTY 50
+81,^RUTTR,Russell 2000 Total Return
+82,^VXSLV,CBOE SILVER ETF VOLATILITY INDEX
+83,^STOXX50E,ESTX 50 PR.EUR
+84,^RVX,Cboe Russell 2000 Volatility Index
+85,^MXX,IPC MEXICO
+86,^ATX,Austrian Traded Index in EUR
+87,^OEX,S&P 100 INDEX
+88,^NDX,NASDAQ 100
+89,^AXJO,S&P/ASX 200
