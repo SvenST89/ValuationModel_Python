@@ -1,0 +1,2406 @@
+,shortname,item,date,value,id
+0,GitLab Inc.,calendarYear,2022-01-31,2022,0
+1,GitLab Inc.,period,2022-01-31,FY,1
+2,GitLab Inc.,symbol,2022-01-31,GTLB,2
+3,GitLab Inc.,reportedCurrency,2022-01-31,USD,3
+4,GitLab Inc.,cik,2022-01-31,0001653482,4
+5,GitLab Inc.,fillingDate,2022-01-31,2022-04-08,5
+6,GitLab Inc.,acceptedDate,2022-01-31,2022-04-08 16:49:23,6
+7,GitLab Inc.,revenue,2022-01-31,252653000,7
+8,GitLab Inc.,costOfRevenue,2022-01-31,29985000,8
+9,GitLab Inc.,grossProfit,2022-01-31,222668000,9
+10,GitLab Inc.,grossProfitRatio,2022-01-31,0.8813194381226425,10
+11,GitLab Inc.,researchAndDevelopmentExpenses,2022-01-31,97217000,11
+12,GitLab Inc.,generalAndAdministrativeExpenses,2022-01-31,63654000,12
+13,GitLab Inc.,sellingAndMarketingExpenses,2022-01-31,190754000,13
+14,GitLab Inc.,sellingGeneralAndAdministrativeExpenses,2022-01-31,254408000,14
+15,GitLab Inc.,otherExpenses,2022-01-31,0,15
+16,GitLab Inc.,operatingExpenses,2022-01-31,351625000,16
+17,GitLab Inc.,costAndExpenses,2022-01-31,381610000,17
+18,GitLab Inc.,interestIncome,2022-01-31,736000,18
+19,GitLab Inc.,interestExpense,2022-01-31,736000,19
+20,GitLab Inc.,depreciationAndAmortization,2022-01-31,1208000,20
+21,GitLab Inc.,ebitda,2022-01-31,-154705000,21
+22,GitLab Inc.,ebitdaratio,2022-01-31,-0.6123220385271498,22
+23,GitLab Inc.,operatingIncome,2022-01-31,-128957000,23
+24,GitLab Inc.,operatingIncomeRatio,2022-01-31,-0.5104115130237915,24
+25,GitLab Inc.,totalOtherIncomeExpensesNet,2022-01-31,-30114000,25
+26,GitLab Inc.,incomeBeforeTax,2022-01-31,-159071000,26
+27,GitLab Inc.,incomeBeforeTaxRatio,2022-01-31,-0.6296026566080751,27
+28,GitLab Inc.,incomeTaxExpense,2022-01-31,-1511000,28
+29,GitLab Inc.,netIncome,2022-01-31,-155138000,29
+30,GitLab Inc.,netIncomeRatio,2022-01-31,-0.6140358515434212,30
+31,GitLab Inc.,eps,2022-01-31,-1.2129890526121299,31
+32,GitLab Inc.,epsdiluted,2022-01-31,-1.2129890526121299,32
+33,GitLab Inc.,weightedAverageShsOut,2022-01-31,129894000,33
+34,GitLab Inc.,weightedAverageShsOutDil,2022-01-31,129894000,34
+35,GitLab Inc.,link,2022-01-31,https://www.sec.gov/Archives/edgar/data/1653482/000162828022008836/0001628280-22-008836-index.htm,35
+36,GitLab Inc.,finalLink,2022-01-31,https://www.sec.gov/Archives/edgar/data/1653482/000162828022008836/gtlb-20220131.htm,36
+37,GitLab Inc.,calendarYear,2021-01-31,2021,37
+38,GitLab Inc.,period,2021-01-31,FY,38
+39,GitLab Inc.,symbol,2021-01-31,GTLB,39
+40,GitLab Inc.,reportedCurrency,2021-01-31,USD,40
+41,GitLab Inc.,cik,2021-01-31,0001653482,41
+42,GitLab Inc.,fillingDate,2021-01-31,2021-01-31,42
+43,GitLab Inc.,acceptedDate,2021-01-31,2021-01-30 19:00:00,43
+44,GitLab Inc.,revenue,2021-01-31,152176000,44
+45,GitLab Inc.,costOfRevenue,2021-01-31,18463000,45
+46,GitLab Inc.,grossProfit,2021-01-31,133713000,46
+47,GitLab Inc.,grossProfitRatio,2021-01-31,0.8786733781936705,47
+48,GitLab Inc.,researchAndDevelopmentExpenses,2021-01-31,106643000,48
+49,GitLab Inc.,generalAndAdministrativeExpenses,2021-01-31,86868000,49
+50,GitLab Inc.,sellingAndMarketingExpenses,2021-01-31,154086000,50
+51,GitLab Inc.,sellingGeneralAndAdministrativeExpenses,2021-01-31,240954000,51
+52,GitLab Inc.,otherExpenses,2021-01-31,0,52
+53,GitLab Inc.,operatingExpenses,2021-01-31,347597000,53
+54,GitLab Inc.,costAndExpenses,2021-01-31,366060000,54
+55,GitLab Inc.,interestIncome,2021-01-31,1070000,55
+56,GitLab Inc.,interestExpense,2021-01-31,0,56
+57,GitLab Inc.,depreciationAndAmortization,2021-01-31,222000,57
+58,GitLab Inc.,ebitda,2021-01-31,-189140000,58
+59,GitLab Inc.,ebitdaratio,2021-01-31,-1.2429029544737673,59
+60,GitLab Inc.,operatingIncome,2021-01-31,-213884000,60
+61,GitLab Inc.,operatingIncomeRatio,2021-01-31,-1.4055041530859005,61
+62,GitLab Inc.,totalOtherIncomeExpensesNet,2021-01-31,24522000,62
+63,GitLab Inc.,incomeBeforeTax,2021-01-31,-189362000,63
+64,GitLab Inc.,incomeBeforeTaxRatio,2021-01-31,-1.2443617916097152,64
+65,GitLab Inc.,incomeTaxExpense,2021-01-31,2832000,65
+66,GitLab Inc.,netIncome,2021-01-31,-192194000,66
+67,GitLab Inc.,netIncomeRatio,2021-01-31,-1.2629718221007256,67
+68,GitLab Inc.,eps,2021-01-31,-1.48,68
+69,GitLab Inc.,epsdiluted,2021-01-31,-1.48,69
+70,GitLab Inc.,weightedAverageShsOut,2021-01-31,129894000,70
+71,GitLab Inc.,weightedAverageShsOutDil,2021-01-31,129894000,71
+72,GitLab Inc.,link,2021-01-31,,72
+73,GitLab Inc.,finalLink,2021-01-31,,73
+74,GitLab Inc.,calendarYear,2020-01-31,2020,74
+75,GitLab Inc.,period,2020-01-31,FY,75
+76,GitLab Inc.,symbol,2020-01-31,GTLB,76
+77,GitLab Inc.,reportedCurrency,2020-01-31,USD,77
+78,GitLab Inc.,cik,2020-01-31,0001653482,78
+79,GitLab Inc.,fillingDate,2020-01-31,2020-01-31,79
+80,GitLab Inc.,acceptedDate,2020-01-31,2020-01-30 19:00:00,80
+81,GitLab Inc.,revenue,2020-01-31,81227000,81
+82,GitLab Inc.,costOfRevenue,2020-01-31,9376000,82
+83,GitLab Inc.,grossProfit,2020-01-31,71851000,83
+84,GitLab Inc.,grossProfitRatio,2020-01-31,0.8845704014674923,84
+85,GitLab Inc.,researchAndDevelopmentExpenses,2020-01-31,59364000,85
+86,GitLab Inc.,generalAndAdministrativeExpenses,2020-01-31,41629000,86
+87,GitLab Inc.,sellingAndMarketingExpenses,2020-01-31,99225000,87
+88,GitLab Inc.,sellingGeneralAndAdministrativeExpenses,2020-01-31,140854000,88
+89,GitLab Inc.,otherExpenses,2020-01-31,0,89
+90,GitLab Inc.,operatingExpenses,2020-01-31,200218000,90
+91,GitLab Inc.,costAndExpenses,2020-01-31,209594000,91
+92,GitLab Inc.,interestIncome,2020-01-31,3626000,92
+93,GitLab Inc.,interestExpense,2020-01-31,0,93
+94,GitLab Inc.,depreciationAndAmortization,2020-01-31,0,94
+95,GitLab Inc.,ebitda,2020-01-31,-129541000,95
+96,GitLab Inc.,ebitdaratio,2020-01-31,-1.5948022209363881,96
+97,GitLab Inc.,operatingIncome,2020-01-31,-128367000,97
+98,GitLab Inc.,operatingIncomeRatio,2020-01-31,-1.580348898765189,98
+99,GitLab Inc.,totalOtherIncomeExpensesNet,2020-01-31,-1174000,99
+100,GitLab Inc.,incomeBeforeTax,2020-01-31,-129541000,100
+101,GitLab Inc.,incomeBeforeTaxRatio,2020-01-31,-1.5948022209363881,101
+102,GitLab Inc.,incomeTaxExpense,2020-01-31,1200000,102
+103,GitLab Inc.,netIncome,2020-01-31,-130741000,103
+104,GitLab Inc.,netIncomeRatio,2020-01-31,-1.6095756337178524,104
+105,GitLab Inc.,eps,2020-01-31,-1.006521,105
+106,GitLab Inc.,epsdiluted,2020-01-31,-1.006521,106
+107,GitLab Inc.,weightedAverageShsOut,2020-01-31,129894000,107
+108,GitLab Inc.,weightedAverageShsOutDil,2020-01-31,129894000,108
+109,GitLab Inc.,link,2020-01-31,,109
+110,GitLab Inc.,finalLink,2020-01-31,,110
+0,Palantir Technologies Inc.,calendarYear,2021-12-31,2021,111
+1,Palantir Technologies Inc.,period,2021-12-31,FY,112
+2,Palantir Technologies Inc.,symbol,2021-12-31,PLTR,113
+3,Palantir Technologies Inc.,reportedCurrency,2021-12-31,USD,114
+4,Palantir Technologies Inc.,cik,2021-12-31,0001321655,115
+5,Palantir Technologies Inc.,fillingDate,2021-12-31,2022-02-24,116
+6,Palantir Technologies Inc.,acceptedDate,2021-12-31,2022-02-24 06:20:34,117
+7,Palantir Technologies Inc.,revenue,2021-12-31,1541889000,118
+8,Palantir Technologies Inc.,costOfRevenue,2021-12-31,339404000,119
+9,Palantir Technologies Inc.,grossProfit,2021-12-31,1202485000,120
+10,Palantir Technologies Inc.,grossProfitRatio,2021-12-31,0.7798777992449522,121
+11,Palantir Technologies Inc.,researchAndDevelopmentExpenses,2021-12-31,387487000,122
+12,Palantir Technologies Inc.,generalAndAdministrativeExpenses,2021-12-31,611532000,123
+13,Palantir Technologies Inc.,sellingAndMarketingExpenses,2021-12-31,614512000,124
+14,Palantir Technologies Inc.,sellingGeneralAndAdministrativeExpenses,2021-12-31,1226044000,125
+15,Palantir Technologies Inc.,otherExpenses,2021-12-31,0,126
+16,Palantir Technologies Inc.,operatingExpenses,2021-12-31,1613531000,127
+17,Palantir Technologies Inc.,costAndExpenses,2021-12-31,1952935000,128
+18,Palantir Technologies Inc.,interestIncome,2021-12-31,1607000,129
+19,Palantir Technologies Inc.,interestExpense,2021-12-31,3640000,130
+20,Palantir Technologies Inc.,depreciationAndAmortization,2021-12-31,14897000,131
+21,Palantir Technologies Inc.,ebitda,2021-12-31,-469957000,132
+22,Palantir Technologies Inc.,ebitdaratio,2021-12-31,-0.3047930168773498,133
+23,Palantir Technologies Inc.,operatingIncome,2021-12-31,-411046000,134
+24,Palantir Technologies Inc.,operatingIncomeRatio,2021-12-31,-0.2665859864101761,135
+25,Palantir Technologies Inc.,totalOtherIncomeExpensesNet,2021-12-31,-77448000,136
+26,Palantir Technologies Inc.,incomeBeforeTax,2021-12-31,-488494000,137
+27,Palantir Technologies Inc.,incomeBeforeTaxRatio,2021-12-31,-0.3168152830716089,138
+28,Palantir Technologies Inc.,incomeTaxExpense,2021-12-31,31885000,139
+29,Palantir Technologies Inc.,netIncome,2021-12-31,-520379000,140
+30,Palantir Technologies Inc.,netIncomeRatio,2021-12-31,-0.337494462960693,141
+31,Palantir Technologies Inc.,eps,2021-12-31,-0.2649054798042145,142
+32,Palantir Technologies Inc.,epsdiluted,2021-12-31,-0.2649054798042145,143
+33,Palantir Technologies Inc.,weightedAverageShsOut,2021-12-31,1964395000,144
+34,Palantir Technologies Inc.,weightedAverageShsOutDil,2021-12-31,1964395000,145
+35,Palantir Technologies Inc.,link,2021-12-31,https://www.sec.gov/Archives/edgar/data/1321655/000119312522050913/0001193125-22-050913-index.htm,146
+36,Palantir Technologies Inc.,finalLink,2021-12-31,https://www.sec.gov/Archives/edgar/data/1321655/000119312522050913/d273589d10k.htm,147
+37,Palantir Technologies Inc.,calendarYear,2020-12-31,2020,148
+38,Palantir Technologies Inc.,period,2020-12-31,FY,149
+39,Palantir Technologies Inc.,symbol,2020-12-31,PLTR,150
+40,Palantir Technologies Inc.,reportedCurrency,2020-12-31,USD,151
+41,Palantir Technologies Inc.,cik,2020-12-31,0001321655,152
+42,Palantir Technologies Inc.,fillingDate,2020-12-31,2021-02-26,153
+43,Palantir Technologies Inc.,acceptedDate,2020-12-31,2021-02-26 16:39:45,154
+44,Palantir Technologies Inc.,revenue,2020-12-31,1092673000,155
+45,Palantir Technologies Inc.,costOfRevenue,2020-12-31,352547000,156
+46,Palantir Technologies Inc.,grossProfit,2020-12-31,740126000,157
+47,Palantir Technologies Inc.,grossProfitRatio,2020-12-31,0.6773536089937245,158
+48,Palantir Technologies Inc.,researchAndDevelopmentExpenses,2020-12-31,560660000,159
+49,Palantir Technologies Inc.,generalAndAdministrativeExpenses,2020-12-31,669444000,160
+50,Palantir Technologies Inc.,sellingAndMarketingExpenses,2020-12-31,683701000,161
+51,Palantir Technologies Inc.,sellingGeneralAndAdministrativeExpenses,2020-12-31,1353145000,162
+52,Palantir Technologies Inc.,otherExpenses,2020-12-31,0,163
+53,Palantir Technologies Inc.,operatingExpenses,2020-12-31,1913805000,164
+54,Palantir Technologies Inc.,costAndExpenses,2020-12-31,2266352000,165
+55,Palantir Technologies Inc.,interestIncome,2020-12-31,4680000,166
+56,Palantir Technologies Inc.,interestExpense,2020-12-31,14139000,167
+57,Palantir Technologies Inc.,depreciationAndAmortization,2020-12-31,13871000,168
+58,Palantir Technologies Inc.,ebitda,2020-12-31,-1151017000,169
+59,Palantir Technologies Inc.,ebitdaratio,2020-12-31,-1.053395663661498,170
+60,Palantir Technologies Inc.,operatingIncome,2020-12-31,-1173679000,171
+61,Palantir Technologies Inc.,operatingIncomeRatio,2020-12-31,-1.0741356288660926,172
+62,Palantir Technologies Inc.,totalOtherIncomeExpensesNet,2020-12-31,-5348000,173
+63,Palantir Technologies Inc.,incomeBeforeTax,2020-12-31,-1179027000,174
+64,Palantir Technologies Inc.,incomeBeforeTaxRatio,2020-12-31,-1.0790300483310193,175
+65,Palantir Technologies Inc.,incomeTaxExpense,2020-12-31,-12636000,176
+66,Palantir Technologies Inc.,netIncome,2020-12-31,-1166391000,177
+67,Palantir Technologies Inc.,netIncomeRatio,2020-12-31,-1.0674657468428341,178
+68,Palantir Technologies Inc.,eps,2020-12-31,-1.19,179
+69,Palantir Technologies Inc.,epsdiluted,2020-12-31,-1.2,180
+70,Palantir Technologies Inc.,weightedAverageShsOut,2020-12-31,977721736,181
+71,Palantir Technologies Inc.,weightedAverageShsOutDil,2020-12-31,979330067,182
+72,Palantir Technologies Inc.,link,2020-12-31,https://www.sec.gov/Archives/edgar/data/1321655/000119312521060650/0001193125-21-060650-index.htm,183
+73,Palantir Technologies Inc.,finalLink,2020-12-31,https://www.sec.gov/Archives/edgar/data/1321655/000119312521060650/d65934d10k.htm,184
+74,Palantir Technologies Inc.,calendarYear,2019-12-31,2019,185
+75,Palantir Technologies Inc.,period,2019-12-31,FY,186
+76,Palantir Technologies Inc.,symbol,2019-12-31,PLTR,187
+77,Palantir Technologies Inc.,reportedCurrency,2019-12-31,USD,188
+78,Palantir Technologies Inc.,cik,2019-12-31,0001321655,189
+79,Palantir Technologies Inc.,fillingDate,2019-12-31,2019-12-31,190
+80,Palantir Technologies Inc.,acceptedDate,2019-12-31,2019-12-30 19:00:00,191
+81,Palantir Technologies Inc.,revenue,2019-12-31,742555000,192
+82,Palantir Technologies Inc.,costOfRevenue,2019-12-31,242373000,193
+83,Palantir Technologies Inc.,grossProfit,2019-12-31,500182000,194
+84,Palantir Technologies Inc.,grossProfitRatio,2019-12-31,0.6735958952535502,195
+85,Palantir Technologies Inc.,researchAndDevelopmentExpenses,2019-12-31,305563000,196
+86,Palantir Technologies Inc.,generalAndAdministrativeExpenses,2019-12-31,320943000,197
+87,Palantir Technologies Inc.,sellingAndMarketingExpenses,2019-12-31,450120000,198
+88,Palantir Technologies Inc.,sellingGeneralAndAdministrativeExpenses,2019-12-31,771063000,199
+89,Palantir Technologies Inc.,otherExpenses,2019-12-31,0,200
+90,Palantir Technologies Inc.,operatingExpenses,2019-12-31,1076626000,201
+91,Palantir Technologies Inc.,costAndExpenses,2019-12-31,1318999000,202
+92,Palantir Technologies Inc.,interestIncome,2019-12-31,15090000,203
+93,Palantir Technologies Inc.,interestExpense,2019-12-31,3061000,204
+94,Palantir Technologies Inc.,depreciationAndAmortization,2019-12-31,12255000,205
+95,Palantir Technologies Inc.,ebitda,2019-12-31,-551955000,206
+96,Palantir Technologies Inc.,ebitdaratio,2019-12-31,-0.7433186767310166,207
+97,Palantir Technologies Inc.,operatingIncome,2019-12-31,-576444000,208
+98,Palantir Technologies Inc.,operatingIncomeRatio,2019-12-31,-0.7762980519961484,209
+99,Palantir Technologies Inc.,totalOtherIncomeExpensesNet,2019-12-31,9173000,210
+100,Palantir Technologies Inc.,incomeBeforeTax,2019-12-31,-567271000,211
+101,Palantir Technologies Inc.,incomeBeforeTaxRatio,2019-12-31,-0.7639447583007319,212
+102,Palantir Technologies Inc.,incomeTaxExpense,2019-12-31,12375000,213
+103,Palantir Technologies Inc.,netIncome,2019-12-31,-579646000,214
+104,Palantir Technologies Inc.,netIncomeRatio,2019-12-31,-0.78061019049094,215
+105,Palantir Technologies Inc.,eps,2019-12-31,-0.42,216
+106,Palantir Technologies Inc.,epsdiluted,2019-12-31,-0.42,217
+107,Palantir Technologies Inc.,weightedAverageShsOut,2019-12-31,1389929814,218
+108,Palantir Technologies Inc.,weightedAverageShsOutDil,2019-12-31,1389929814,219
+109,Palantir Technologies Inc.,link,2019-12-31,,220
+110,Palantir Technologies Inc.,finalLink,2019-12-31,,221
+111,Palantir Technologies Inc.,calendarYear,2018-12-31,2018,222
+112,Palantir Technologies Inc.,period,2018-12-31,FY,223
+113,Palantir Technologies Inc.,symbol,2018-12-31,PLTR,224
+114,Palantir Technologies Inc.,reportedCurrency,2018-12-31,USD,225
+115,Palantir Technologies Inc.,cik,2018-12-31,0001321655,226
+116,Palantir Technologies Inc.,fillingDate,2018-12-31,2018-12-31,227
+117,Palantir Technologies Inc.,acceptedDate,2018-12-31,2018-12-30 19:00:00,228
+118,Palantir Technologies Inc.,revenue,2018-12-31,595409000,229
+119,Palantir Technologies Inc.,costOfRevenue,2018-12-31,165401000,230
+120,Palantir Technologies Inc.,grossProfit,2018-12-31,430008000,231
+121,Palantir Technologies Inc.,grossProfitRatio,2018-12-31,0.7222060801902558,232
+122,Palantir Technologies Inc.,researchAndDevelopmentExpenses,2018-12-31,285451000,233
+123,Palantir Technologies Inc.,generalAndAdministrativeExpenses,2018-12-31,306235000,234
+124,Palantir Technologies Inc.,sellingAndMarketingExpenses,2018-12-31,461762000,235
+125,Palantir Technologies Inc.,sellingGeneralAndAdministrativeExpenses,2018-12-31,767997000,236
+126,Palantir Technologies Inc.,otherExpenses,2018-12-31,0,237
+127,Palantir Technologies Inc.,operatingExpenses,2018-12-31,1053448000,238
+128,Palantir Technologies Inc.,costAndExpenses,2018-12-31,1218849000,239
+129,Palantir Technologies Inc.,interestIncome,2018-12-31,10500000,240
+130,Palantir Technologies Inc.,interestExpense,2018-12-31,3440000,241
+131,Palantir Technologies Inc.,depreciationAndAmortization,2018-12-31,13910000,242
+132,Palantir Technologies Inc.,ebitda,2018-12-31,-553575000,243
+133,Palantir Technologies Inc.,ebitdaratio,2018-12-31,-0.9297390533230099,244
+134,Palantir Technologies Inc.,operatingIncome,2018-12-31,-623440000,245
+135,Palantir Technologies Inc.,operatingIncomeRatio,2018-12-31,-1.047078562803048,246
+136,Palantir Technologies Inc.,totalOtherIncomeExpensesNet,2018-12-31,52515000,247
+137,Palantir Technologies Inc.,incomeBeforeTax,2018-12-31,-570925000,248
+138,Palantir Technologies Inc.,incomeBeforeTaxRatio,2018-12-31,-0.9588786867514599,249
+139,Palantir Technologies Inc.,incomeTaxExpense,2018-12-31,9102000,250
+140,Palantir Technologies Inc.,netIncome,2018-12-31,-580027000,251
+141,Palantir Technologies Inc.,netIncomeRatio,2018-12-31,-0.9741656575564024,252
+142,Palantir Technologies Inc.,eps,2018-12-31,-0.837852,253
+143,Palantir Technologies Inc.,epsdiluted,2018-12-31,-0.88974,254
+144,Palantir Technologies Inc.,weightedAverageShsOut,2018-12-31,713879000,255
+145,Palantir Technologies Inc.,weightedAverageShsOutDil,2018-12-31,716027000,256
+146,Palantir Technologies Inc.,link,2018-12-31,,257
+147,Palantir Technologies Inc.,finalLink,2018-12-31,,258
+0,Infineon Technologies AG,calendarYear,2022-09-30,2022,259
+1,Infineon Technologies AG,period,2022-09-30,FY,260
+2,Infineon Technologies AG,symbol,2022-09-30,IFX.DE,261
+3,Infineon Technologies AG,reportedCurrency,2022-09-30,EUR,262
+4,Infineon Technologies AG,cik,2022-09-30,,263
+5,Infineon Technologies AG,fillingDate,2022-09-30,2022-09-30,264
+6,Infineon Technologies AG,acceptedDate,2022-09-30,2022-09-29 20:00:00,265
+7,Infineon Technologies AG,revenue,2022-09-30,14218000000.0,266
+8,Infineon Technologies AG,costOfRevenue,2022-09-30,8087000000.0,267
+9,Infineon Technologies AG,grossProfit,2022-09-30,6131000000.0,268
+10,Infineon Technologies AG,grossProfitRatio,2022-09-30,0.4312139541426361,269
+11,Infineon Technologies AG,researchAndDevelopmentExpenses,2022-09-30,1798000000.0,270
+12,Infineon Technologies AG,generalAndAdministrativeExpenses,2022-09-30,1565000000.0,271
+13,Infineon Technologies AG,sellingAndMarketingExpenses,2022-09-30,0,272
+14,Infineon Technologies AG,sellingGeneralAndAdministrativeExpenses,2022-09-30,1565000000.0,273
+15,Infineon Technologies AG,otherExpenses,2022-09-30,-77000000.0,274
+16,Infineon Technologies AG,operatingExpenses,2022-09-30,3286000000.0,275
+17,Infineon Technologies AG,costAndExpenses,2022-09-30,11373000000.0,276
+18,Infineon Technologies AG,interestIncome,2022-09-30,11000000,277
+19,Infineon Technologies AG,interestExpense,2022-09-30,142000000,278
+20,Infineon Technologies AG,depreciationAndAmortization,2022-09-30,1664000000.0,279
+21,Infineon Technologies AG,ebitda,2022-09-30,4522000000.0,280
+22,Infineon Technologies AG,ebitdaratio,2022-09-30,0.31804754536503027,281
+23,Infineon Technologies AG,operatingIncome,2022-09-30,2845000000.0,282
+24,Infineon Technologies AG,operatingIncomeRatio,2022-09-30,0.20009846673231116,283
+25,Infineon Technologies AG,totalOtherIncomeExpensesNet,2022-09-30,-122000000.0,284
+26,Infineon Technologies AG,incomeBeforeTax,2022-09-30,2723000000.0,285
+27,Infineon Technologies AG,incomeBeforeTaxRatio,2022-09-30,0.19151779434519622,286
+28,Infineon Technologies AG,incomeTaxExpense,2022-09-30,537000000.0,287
+29,Infineon Technologies AG,netIncome,2022-09-30,2179000000.0,288
+30,Infineon Technologies AG,netIncomeRatio,2022-09-30,0.15325643550429033,289
+31,Infineon Technologies AG,eps,2022-09-30,1.65,290
+32,Infineon Technologies AG,epsdiluted,2022-09-30,1.65,291
+33,Infineon Technologies AG,weightedAverageShsOut,2022-09-30,1301800000,292
+34,Infineon Technologies AG,weightedAverageShsOutDil,2022-09-30,1303600000,293
+35,Infineon Technologies AG,link,2022-09-30,https://www.bundesanzeiger.de/pub/de/suche;wwwsid=627BFD7A56A5CB624C47FDDEAB2FC509.web07-pub?0,294
+36,Infineon Technologies AG,finalLink,2022-09-30,https://www.bundesanzeiger.de/pub/de/suche;wwwsid=627BFD7A56A5CB624C47FDDEAB2FC509.web07-pub?0,295
+37,Infineon Technologies AG,calendarYear,2021-09-30,2021,296
+38,Infineon Technologies AG,period,2021-09-30,FY,297
+39,Infineon Technologies AG,symbol,2021-09-30,IFX.DE,298
+40,Infineon Technologies AG,reportedCurrency,2021-09-30,EUR,299
+41,Infineon Technologies AG,cik,2021-09-30,,300
+42,Infineon Technologies AG,fillingDate,2021-09-30,2021-09-30,301
+43,Infineon Technologies AG,acceptedDate,2021-09-30,2021-09-29 20:00:00,302
+44,Infineon Technologies AG,revenue,2021-09-30,11060000000.0,303
+45,Infineon Technologies AG,costOfRevenue,2021-09-30,6800000000.0,304
+46,Infineon Technologies AG,grossProfit,2021-09-30,4260000000.0,305
+47,Infineon Technologies AG,grossProfitRatio,2021-09-30,0.38517179023508136,306
+48,Infineon Technologies AG,researchAndDevelopmentExpenses,2021-09-30,1448000000.0,307
+49,Infineon Technologies AG,generalAndAdministrativeExpenses,2021-09-30,1354000000.0,308
+50,Infineon Technologies AG,sellingAndMarketingExpenses,2021-09-30,0,309
+51,Infineon Technologies AG,sellingGeneralAndAdministrativeExpenses,2021-09-30,1354000000.0,310
+52,Infineon Technologies AG,otherExpenses,2021-09-30,-12000000.0,311
+53,Infineon Technologies AG,operatingExpenses,2021-09-30,2790000000.0,312
+54,Infineon Technologies AG,costAndExpenses,2021-09-30,9590000000.0,313
+55,Infineon Technologies AG,interestIncome,2021-09-30,5000000,314
+56,Infineon Technologies AG,interestExpense,2021-09-30,155000000,315
+57,Infineon Technologies AG,depreciationAndAmortization,2021-09-30,1513000000.0,316
+58,Infineon Technologies AG,ebitda,2021-09-30,2981000000.0,317
+59,Infineon Technologies AG,ebitdaratio,2021-09-30,0.26952983725135626,318
+60,Infineon Technologies AG,operatingIncome,2021-09-30,1470000000.0,319
+61,Infineon Technologies AG,operatingIncomeRatio,2021-09-30,0.13291139240506328,320
+62,Infineon Technologies AG,totalOtherIncomeExpensesNet,2021-09-30,-151000000.0,321
+63,Infineon Technologies AG,incomeBeforeTax,2021-09-30,1319000000.0,322
+64,Infineon Technologies AG,incomeBeforeTaxRatio,2021-09-30,0.11925858951175407,323
+65,Infineon Technologies AG,incomeTaxExpense,2021-09-30,144000000.0,324
+66,Infineon Technologies AG,netIncome,2021-09-30,1169000000.0,325
+67,Infineon Technologies AG,netIncomeRatio,2021-09-30,0.10569620253164556,326
+68,Infineon Technologies AG,eps,2021-09-30,0.9244760775009885,327
+69,Infineon Technologies AG,epsdiluted,2021-09-30,0.9244760775009885,328
+70,Infineon Technologies AG,weightedAverageShsOut,2021-09-30,1264500000,329
+71,Infineon Technologies AG,weightedAverageShsOutDil,2021-09-30,1264500000,330
+72,Infineon Technologies AG,link,2021-09-30,https://www.bundesanzeiger.de/pub/de/suche;wwwsid=627BFD7A56A5CB624C47FDDEAB2FC509.web07-pub?0,331
+73,Infineon Technologies AG,finalLink,2021-09-30,https://www.bundesanzeiger.de/pub/de/suche;wwwsid=627BFD7A56A5CB624C47FDDEAB2FC509.web07-pub?0,332
+74,Infineon Technologies AG,calendarYear,2020-09-30,2020,333
+75,Infineon Technologies AG,period,2020-09-30,FY,334
+76,Infineon Technologies AG,symbol,2020-09-30,IFX.DE,335
+77,Infineon Technologies AG,reportedCurrency,2020-09-30,EUR,336
+78,Infineon Technologies AG,cik,2020-09-30,,337
+79,Infineon Technologies AG,fillingDate,2020-09-30,2020-09-30,338
+80,Infineon Technologies AG,acceptedDate,2020-09-30,2020-09-29 20:00:00,339
+81,Infineon Technologies AG,revenue,2020-09-30,8567000000.0,340
+82,Infineon Technologies AG,costOfRevenue,2020-09-30,5791000000.0,341
+83,Infineon Technologies AG,grossProfit,2020-09-30,2776000000.0,342
+84,Infineon Technologies AG,grossProfitRatio,2020-09-30,0.3240340842768764,343
+85,Infineon Technologies AG,researchAndDevelopmentExpenses,2020-09-30,1113000000.0,344
+86,Infineon Technologies AG,generalAndAdministrativeExpenses,2020-09-30,1042000000.0,345
+87,Infineon Technologies AG,sellingAndMarketingExpenses,2020-09-30,0,346
+88,Infineon Technologies AG,sellingGeneralAndAdministrativeExpenses,2020-09-30,1042000000.0,347
+89,Infineon Technologies AG,otherExpenses,2020-09-30,40000000.0,348
+90,Infineon Technologies AG,operatingExpenses,2020-09-30,2195000000.0,349
+91,Infineon Technologies AG,costAndExpenses,2020-09-30,7986000000.0,350
+92,Infineon Technologies AG,interestIncome,2020-09-30,29000000,351
+93,Infineon Technologies AG,interestExpense,2020-09-30,130000000,352
+94,Infineon Technologies AG,depreciationAndAmortization,2020-09-30,1260000000.0,353
+95,Infineon Technologies AG,ebitda,2020-09-30,1810000000.0,354
+96,Infineon Technologies AG,ebitdaratio,2020-09-30,0.2112758258433524,355
+97,Infineon Technologies AG,operatingIncome,2020-09-30,581000000.0,356
+98,Infineon Technologies AG,operatingIncomeRatio,2020-09-30,0.06781837282596008,357
+99,Infineon Technologies AG,totalOtherIncomeExpensesNet,2020-09-30,-157000000.0,358
+100,Infineon Technologies AG,incomeBeforeTax,2020-09-30,424000000.0,359
+101,Infineon Technologies AG,incomeBeforeTaxRatio,2020-09-30,0.04949223765612233,360
+102,Infineon Technologies AG,incomeTaxExpense,2020-09-30,52000000.0,361
+103,Infineon Technologies AG,netIncome,2020-09-30,368000000.0,362
+104,Infineon Technologies AG,netIncomeRatio,2020-09-30,0.042955527022294854,363
+105,Infineon Technologies AG,eps,2020-09-30,0.26,364
+106,Infineon Technologies AG,epsdiluted,2020-09-30,0.26,365
+107,Infineon Technologies AG,weightedAverageShsOut,2020-09-30,1264500000,366
+108,Infineon Technologies AG,weightedAverageShsOutDil,2020-09-30,1265500000,367
+109,Infineon Technologies AG,link,2020-09-30,https://www.bundesanzeiger.de/pub/de/suche;wwwsid=627BFD7A56A5CB624C47FDDEAB2FC509.web07-pub?0,368
+110,Infineon Technologies AG,finalLink,2020-09-30,https://www.bundesanzeiger.de/pub/de/suche;wwwsid=627BFD7A56A5CB624C47FDDEAB2FC509.web07-pub?0,369
+111,Infineon Technologies AG,calendarYear,2019-09-30,2019,370
+112,Infineon Technologies AG,period,2019-09-30,FY,371
+113,Infineon Technologies AG,symbol,2019-09-30,IFX.DE,372
+114,Infineon Technologies AG,reportedCurrency,2019-09-30,EUR,373
+115,Infineon Technologies AG,cik,2019-09-30,,374
+116,Infineon Technologies AG,fillingDate,2019-09-30,2019-09-30,375
+117,Infineon Technologies AG,acceptedDate,2019-09-30,2019-09-29 20:00:00,376
+118,Infineon Technologies AG,revenue,2019-09-30,8029000000.0,377
+119,Infineon Technologies AG,costOfRevenue,2019-09-30,5035000000.0,378
+120,Infineon Technologies AG,grossProfit,2019-09-30,2994000000.0,379
+121,Infineon Technologies AG,grossProfitRatio,2019-09-30,0.3728982438659858,380
+122,Infineon Technologies AG,researchAndDevelopmentExpenses,2019-09-30,945000000.0,381
+123,Infineon Technologies AG,generalAndAdministrativeExpenses,2019-09-30,865000000.0,382
+124,Infineon Technologies AG,sellingAndMarketingExpenses,2019-09-30,0,383
+125,Infineon Technologies AG,sellingGeneralAndAdministrativeExpenses,2019-09-30,865000000.0,384
+126,Infineon Technologies AG,otherExpenses,2019-09-30,23000000.0,385
+127,Infineon Technologies AG,operatingExpenses,2019-09-30,1833000000.0,386
+128,Infineon Technologies AG,costAndExpenses,2019-09-30,6868000000.0,387
+129,Infineon Technologies AG,interestIncome,2019-09-30,26000000,388
+130,Infineon Technologies AG,interestExpense,2019-09-30,62000000,389
+131,Infineon Technologies AG,depreciationAndAmortization,2019-09-30,945000000.0,390
+132,Infineon Technologies AG,ebitda,2019-09-30,2071000000.0,391
+133,Infineon Technologies AG,ebitdaratio,2019-09-30,0.25793996761738697,392
+134,Infineon Technologies AG,operatingIncome,2019-09-30,1161000000.0,393
+135,Infineon Technologies AG,operatingIncomeRatio,2019-09-30,0.14460082202017685,394
+136,Infineon Technologies AG,totalOtherIncomeExpensesNet,2019-09-30,-78000000.0,395
+137,Infineon Technologies AG,incomeBeforeTax,2019-09-30,1083000000.0,396
+138,Infineon Technologies AG,incomeBeforeTaxRatio,2019-09-30,0.13488603811184458,397
+139,Infineon Technologies AG,incomeTaxExpense,2019-09-30,194000000.0,398
+140,Infineon Technologies AG,netIncome,2019-09-30,870000000.0,399
+141,Infineon Technologies AG,netIncomeRatio,2019-09-30,0.10835720513139868,400
+142,Infineon Technologies AG,eps,2019-09-30,0.75,401
+143,Infineon Technologies AG,epsdiluted,2019-09-30,0.75,402
+144,Infineon Technologies AG,weightedAverageShsOut,2019-09-30,1163400000,403
+145,Infineon Technologies AG,weightedAverageShsOutDil,2019-09-30,1164800000,404
+146,Infineon Technologies AG,link,2019-09-30,https://www.bundesanzeiger.de/pub/de/suche;wwwsid=627BFD7A56A5CB624C47FDDEAB2FC509.web07-pub?0,405
+147,Infineon Technologies AG,finalLink,2019-09-30,https://www.bundesanzeiger.de/pub/de/suche;wwwsid=627BFD7A56A5CB624C47FDDEAB2FC509.web07-pub?0,406
+148,Infineon Technologies AG,calendarYear,2018-09-30,2018,407
+149,Infineon Technologies AG,period,2018-09-30,FY,408
+150,Infineon Technologies AG,symbol,2018-09-30,IFX.DE,409
+151,Infineon Technologies AG,reportedCurrency,2018-09-30,EUR,410
+152,Infineon Technologies AG,cik,2018-09-30,,411
+153,Infineon Technologies AG,fillingDate,2018-09-30,2018-09-30,412
+154,Infineon Technologies AG,acceptedDate,2018-09-30,2018-09-29 20:00:00,413
+155,Infineon Technologies AG,revenue,2018-09-30,7599000000.0,414
+156,Infineon Technologies AG,costOfRevenue,2018-09-30,4714000000.0,415
+157,Infineon Technologies AG,grossProfit,2018-09-30,2885000000.0,416
+158,Infineon Technologies AG,grossProfitRatio,2018-09-30,0.3796552177918147,417
+159,Infineon Technologies AG,researchAndDevelopmentExpenses,2018-09-30,836000000.0,418
+160,Infineon Technologies AG,generalAndAdministrativeExpenses,2018-09-30,0.0,419
+161,Infineon Technologies AG,sellingAndMarketingExpenses,2018-09-30,850000000,420
+162,Infineon Technologies AG,sellingGeneralAndAdministrativeExpenses,2018-09-30,850000000.0,421
+163,Infineon Technologies AG,otherExpenses,2018-09-30,-270000000.0,422
+164,Infineon Technologies AG,operatingExpenses,2018-09-30,1416000000.0,423
+165,Infineon Technologies AG,costAndExpenses,2018-09-30,6130000000.0,424
+166,Infineon Technologies AG,interestIncome,2018-09-30,15000000,425
+167,Infineon Technologies AG,interestExpense,2018-09-30,68000000,426
+168,Infineon Technologies AG,depreciationAndAmortization,2018-09-30,861000000.0,427
+169,Infineon Technologies AG,ebitda,2018-09-30,2197000000.0,428
+170,Infineon Technologies AG,ebitdaratio,2018-09-30,0.2891169890775102,429
+171,Infineon Technologies AG,operatingIncome,2018-09-30,1469000000.0,430
+172,Infineon Technologies AG,operatingIncomeRatio,2018-09-30,0.19331490985656008,431
+173,Infineon Technologies AG,totalOtherIncomeExpensesNet,2018-09-30,-58000000.0,432
+174,Infineon Technologies AG,incomeBeforeTax,2018-09-30,1411000000.0,433
+175,Infineon Technologies AG,incomeBeforeTaxRatio,2018-09-30,0.18568232662192394,434
+176,Infineon Technologies AG,incomeTaxExpense,2018-09-30,193000000.0,435
+177,Infineon Technologies AG,netIncome,2018-09-30,1075000000.0,436
+178,Infineon Technologies AG,netIncomeRatio,2018-09-30,0.1414659823661008,437
+179,Infineon Technologies AG,eps,2018-09-30,0.95,438
+180,Infineon Technologies AG,epsdiluted,2018-09-30,0.95,439
+181,Infineon Technologies AG,weightedAverageShsOut,2018-09-30,1130500000,440
+182,Infineon Technologies AG,weightedAverageShsOutDil,2018-09-30,1134100000,441
+183,Infineon Technologies AG,link,2018-09-30,https://www.bundesanzeiger.de/pub/de/suche;wwwsid=627BFD7A56A5CB624C47FDDEAB2FC509.web07-pub?0,442
+184,Infineon Technologies AG,finalLink,2018-09-30,https://www.bundesanzeiger.de/pub/de/suche;wwwsid=627BFD7A56A5CB624C47FDDEAB2FC509.web07-pub?0,443
+185,Infineon Technologies AG,calendarYear,2017-09-30,2017,444
+186,Infineon Technologies AG,period,2017-09-30,FY,445
+187,Infineon Technologies AG,symbol,2017-09-30,IFX.DE,446
+188,Infineon Technologies AG,reportedCurrency,2017-09-30,EUR,447
+189,Infineon Technologies AG,cik,2017-09-30,,448
+190,Infineon Technologies AG,fillingDate,2017-09-30,2017-09-30,449
+191,Infineon Technologies AG,acceptedDate,2017-09-30,2017-09-29 20:00:00,450
+192,Infineon Technologies AG,revenue,2017-09-30,7063000000.0,451
+193,Infineon Technologies AG,costOfRevenue,2017-09-30,4442000000.0,452
+194,Infineon Technologies AG,grossProfit,2017-09-30,2621000000.0,453
+195,Infineon Technologies AG,grossProfitRatio,2017-09-30,0.37108877247628486,454
+196,Infineon Technologies AG,researchAndDevelopmentExpenses,2017-09-30,776000000.0,455
+197,Infineon Technologies AG,generalAndAdministrativeExpenses,2017-09-30,0.0,456
+198,Infineon Technologies AG,sellingAndMarketingExpenses,2017-09-30,819000000,457
+199,Infineon Technologies AG,sellingGeneralAndAdministrativeExpenses,2017-09-30,819000000.0,458
+200,Infineon Technologies AG,otherExpenses,2017-09-30,43000000.0,459
+201,Infineon Technologies AG,operatingExpenses,2017-09-30,1638000000.0,460
+202,Infineon Technologies AG,costAndExpenses,2017-09-30,6080000000.0,461
+203,Infineon Technologies AG,interestIncome,2017-09-30,10000000,462
+204,Infineon Technologies AG,interestExpense,2017-09-30,63000000,463
+205,Infineon Technologies AG,depreciationAndAmortization,2017-09-30,812000000.0,464
+206,Infineon Technologies AG,ebitda,2017-09-30,1807000000.0,465
+207,Infineon Technologies AG,ebitdaratio,2017-09-30,0.2558402944924253,466
+208,Infineon Technologies AG,operatingIncome,2017-09-30,983000000.0,467
+209,Infineon Technologies AG,operatingIncomeRatio,2017-09-30,0.1391759875407051,468
+210,Infineon Technologies AG,totalOtherIncomeExpensesNet,2017-09-30,-50000000.0,469
+211,Infineon Technologies AG,incomeBeforeTax,2017-09-30,933000000.0,470
+212,Infineon Technologies AG,incomeBeforeTaxRatio,2017-09-30,0.13209684270140168,471
+213,Infineon Technologies AG,incomeTaxExpense,2017-09-30,142000000.0,472
+214,Infineon Technologies AG,netIncome,2017-09-30,790000000.0,473
+215,Infineon Technologies AG,netIncomeRatio,2017-09-30,0.11185048846099391,474
+216,Infineon Technologies AG,eps,2017-09-30,0.7,475
+217,Infineon Technologies AG,epsdiluted,2017-09-30,0.7,476
+218,Infineon Technologies AG,weightedAverageShsOut,2017-09-30,1128600000,477
+219,Infineon Technologies AG,weightedAverageShsOutDil,2017-09-30,1133900000,478
+220,Infineon Technologies AG,link,2017-09-30,https://www.bundesanzeiger.de/pub/de/suche;wwwsid=627BFD7A56A5CB624C47FDDEAB2FC509.web07-pub?0,479
+221,Infineon Technologies AG,finalLink,2017-09-30,https://www.bundesanzeiger.de/pub/de/suche;wwwsid=627BFD7A56A5CB624C47FDDEAB2FC509.web07-pub?0,480
+222,Infineon Technologies AG,calendarYear,2016-09-30,2016,481
+223,Infineon Technologies AG,period,2016-09-30,FY,482
+224,Infineon Technologies AG,symbol,2016-09-30,IFX.DE,483
+225,Infineon Technologies AG,reportedCurrency,2016-09-30,EUR,484
+226,Infineon Technologies AG,cik,2016-09-30,,485
+227,Infineon Technologies AG,fillingDate,2016-09-30,2016-09-30,486
+228,Infineon Technologies AG,acceptedDate,2016-09-30,2016-09-29 20:00:00,487
+229,Infineon Technologies AG,revenue,2016-09-30,6473000000.0,488
+230,Infineon Technologies AG,costOfRevenue,2016-09-30,4143000000.0,489
+231,Infineon Technologies AG,grossProfit,2016-09-30,2330000000.0,490
+232,Infineon Technologies AG,grossProfitRatio,2016-09-30,0.35995674339564343,491
+233,Infineon Technologies AG,researchAndDevelopmentExpenses,2016-09-30,770000000.0,492
+234,Infineon Technologies AG,generalAndAdministrativeExpenses,2016-09-30,0.0,493
+235,Infineon Technologies AG,sellingAndMarketingExpenses,2016-09-30,791000000,494
+236,Infineon Technologies AG,sellingGeneralAndAdministrativeExpenses,2016-09-30,791000000.0,495
+237,Infineon Technologies AG,otherExpenses,2016-09-30,6000000.0,496
+238,Infineon Technologies AG,operatingExpenses,2016-09-30,1567000000.0,497
+239,Infineon Technologies AG,costAndExpenses,2016-09-30,5710000000.0,498
+240,Infineon Technologies AG,interestIncome,2016-09-30,6000000,499
+241,Infineon Technologies AG,interestExpense,2016-09-30,67000000,500
+242,Infineon Technologies AG,depreciationAndAmortization,2016-09-30,833000000.0,501
+243,Infineon Technologies AG,ebitda,2016-09-30,1608000000.0,502
+244,Infineon Technologies AG,ebitdaratio,2016-09-30,0.24841649930480458,503
+245,Infineon Technologies AG,operatingIncome,2016-09-30,763000000.0,504
+246,Infineon Technologies AG,operatingIncomeRatio,2016-09-30,0.11787424687162058,505
+247,Infineon Technologies AG,totalOtherIncomeExpensesNet,2016-09-30,-58000000.0,506
+248,Infineon Technologies AG,incomeBeforeTax,2016-09-30,705000000.0,507
+249,Infineon Technologies AG,incomeBeforeTaxRatio,2016-09-30,0.108913950254905,508
+250,Infineon Technologies AG,incomeTaxExpense,2016-09-30,-36000000.0,509
+251,Infineon Technologies AG,netIncome,2016-09-30,744000000.0,510
+252,Infineon Technologies AG,netIncomeRatio,2016-09-30,0.11493897729028271,511
+253,Infineon Technologies AG,eps,2016-09-30,0.66,512
+254,Infineon Technologies AG,epsdiluted,2016-09-30,0.66,513
+255,Infineon Technologies AG,weightedAverageShsOut,2016-09-30,1125200000,514
+256,Infineon Technologies AG,weightedAverageShsOutDil,2016-09-30,1129300000,515
+257,Infineon Technologies AG,link,2016-09-30,https://www.bundesanzeiger.de/pub/de/suche;wwwsid=627BFD7A56A5CB624C47FDDEAB2FC509.web07-pub?0,516
+258,Infineon Technologies AG,finalLink,2016-09-30,https://www.bundesanzeiger.de/pub/de/suche;wwwsid=627BFD7A56A5CB624C47FDDEAB2FC509.web07-pub?0,517
+259,Infineon Technologies AG,calendarYear,2015-09-30,2015,518
+260,Infineon Technologies AG,period,2015-09-30,FY,519
+261,Infineon Technologies AG,symbol,2015-09-30,IFX.DE,520
+262,Infineon Technologies AG,reportedCurrency,2015-09-30,EUR,521
+263,Infineon Technologies AG,cik,2015-09-30,,522
+264,Infineon Technologies AG,fillingDate,2015-09-30,2015-09-30,523
+265,Infineon Technologies AG,acceptedDate,2015-09-30,2015-09-29 20:00:00,524
+266,Infineon Technologies AG,revenue,2015-09-30,5795000000.0,525
+267,Infineon Technologies AG,costOfRevenue,2015-09-30,3715000000.0,526
+268,Infineon Technologies AG,grossProfit,2015-09-30,2080000000.0,527
+269,Infineon Technologies AG,grossProfitRatio,2015-09-30,0.35893011216566006,528
+270,Infineon Technologies AG,researchAndDevelopmentExpenses,2015-09-30,717000000.0,529
+271,Infineon Technologies AG,generalAndAdministrativeExpenses,2015-09-30,0.0,530
+272,Infineon Technologies AG,sellingAndMarketingExpenses,2015-09-30,778000000,531
+273,Infineon Technologies AG,sellingGeneralAndAdministrativeExpenses,2015-09-30,778000000.0,532
+274,Infineon Technologies AG,otherExpenses,2015-09-30,3000000.0,533
+275,Infineon Technologies AG,operatingExpenses,2015-09-30,1498000000.0,534
+276,Infineon Technologies AG,costAndExpenses,2015-09-30,5213000000.0,535
+277,Infineon Technologies AG,interestIncome,2015-09-30,6000000,536
+278,Infineon Technologies AG,interestExpense,2015-09-30,48000000,537
+279,Infineon Technologies AG,depreciationAndAmortization,2015-09-30,760000000.0,538
+280,Infineon Technologies AG,ebitda,2015-09-30,1338000000.0,539
+281,Infineon Technologies AG,ebitdaratio,2015-09-30,0.23088869715271787,540
+282,Infineon Technologies AG,operatingIncome,2015-09-30,582000000.0,541
+283,Infineon Technologies AG,operatingIncomeRatio,2015-09-30,0.1004314063848145,542
+284,Infineon Technologies AG,totalOtherIncomeExpensesNet,2015-09-30,-62000000.0,543
+285,Infineon Technologies AG,incomeBeforeTax,2015-09-30,520000000.0,544
+286,Infineon Technologies AG,incomeBeforeTaxRatio,2015-09-30,0.08973252804141502,545
+287,Infineon Technologies AG,incomeTaxExpense,2015-09-30,-102000000.0,546
+288,Infineon Technologies AG,netIncome,2015-09-30,632000000.0,547
+289,Infineon Technologies AG,netIncomeRatio,2015-09-30,0.1090595340811044,548
+290,Infineon Technologies AG,eps,2015-09-30,0.56,549
+291,Infineon Technologies AG,epsdiluted,2015-09-30,0.56,550
+292,Infineon Technologies AG,weightedAverageShsOut,2015-09-30,1122600000,551
+293,Infineon Technologies AG,weightedAverageShsOutDil,2015-09-30,1125300000,552
+294,Infineon Technologies AG,link,2015-09-30,https://www.bundesanzeiger.de/pub/de/suche;wwwsid=627BFD7A56A5CB624C47FDDEAB2FC509.web07-pub?0,553
+295,Infineon Technologies AG,finalLink,2015-09-30,https://www.bundesanzeiger.de/pub/de/suche;wwwsid=627BFD7A56A5CB624C47FDDEAB2FC509.web07-pub?0,554
+296,Infineon Technologies AG,calendarYear,2014-09-30,2014,555
+297,Infineon Technologies AG,period,2014-09-30,FY,556
+298,Infineon Technologies AG,symbol,2014-09-30,IFX.DE,557
+299,Infineon Technologies AG,reportedCurrency,2014-09-30,EUR,558
+300,Infineon Technologies AG,cik,2014-09-30,,559
+301,Infineon Technologies AG,fillingDate,2014-09-30,2014-09-30,560
+302,Infineon Technologies AG,acceptedDate,2014-09-30,2014-09-29 20:00:00,561
+303,Infineon Technologies AG,revenue,2014-09-30,4320000000.0,562
+304,Infineon Technologies AG,costOfRevenue,2014-09-30,2673000000.0,563
+305,Infineon Technologies AG,grossProfit,2014-09-30,1647000000.0,564
+306,Infineon Technologies AG,grossProfitRatio,2014-09-30,0.38125,565
+307,Infineon Technologies AG,researchAndDevelopmentExpenses,2014-09-30,550000000.0,566
+308,Infineon Technologies AG,generalAndAdministrativeExpenses,2014-09-30,0.0,567
+309,Infineon Technologies AG,sellingAndMarketingExpenses,2014-09-30,496000000,568
+310,Infineon Technologies AG,sellingGeneralAndAdministrativeExpenses,2014-09-30,496000000.0,569
+311,Infineon Technologies AG,otherExpenses,2014-09-30,17000000.0,570
+312,Infineon Technologies AG,operatingExpenses,2014-09-30,1063000000.0,571
+313,Infineon Technologies AG,costAndExpenses,2014-09-30,3736000000.0,572
+314,Infineon Technologies AG,interestIncome,2014-09-30,10000000,573
+315,Infineon Technologies AG,interestExpense,2014-09-30,19000000,574
+316,Infineon Technologies AG,depreciationAndAmortization,2014-09-30,514000000.0,575
+317,Infineon Technologies AG,ebitda,2014-09-30,1099000000.0,576
+318,Infineon Technologies AG,ebitdaratio,2014-09-30,0.25439814814814815,577
+319,Infineon Technologies AG,operatingIncome,2014-09-30,584000000.0,578
+320,Infineon Technologies AG,operatingIncomeRatio,2014-09-30,0.13518518518518519,579
+321,Infineon Technologies AG,totalOtherIncomeExpensesNet,2014-09-30,-65000000.0,580
+322,Infineon Technologies AG,incomeBeforeTax,2014-09-30,519000000.0,581
+323,Infineon Technologies AG,incomeBeforeTaxRatio,2014-09-30,0.12013888888888889,582
+324,Infineon Technologies AG,incomeTaxExpense,2014-09-30,31000000.0,583
+325,Infineon Technologies AG,netIncome,2014-09-30,535000000.0,584
+326,Infineon Technologies AG,netIncomeRatio,2014-09-30,0.12384259259259259,585
+327,Infineon Technologies AG,eps,2014-09-30,0.48,586
+328,Infineon Technologies AG,epsdiluted,2014-09-30,0.48,587
+329,Infineon Technologies AG,weightedAverageShsOut,2014-09-30,1110700000,588
+330,Infineon Technologies AG,weightedAverageShsOutDil,2014-09-30,1123000000,589
+331,Infineon Technologies AG,link,2014-09-30,https://www.bundesanzeiger.de/pub/de/suche;wwwsid=627BFD7A56A5CB624C47FDDEAB2FC509.web07-pub?0,590
+332,Infineon Technologies AG,finalLink,2014-09-30,https://www.bundesanzeiger.de/pub/de/suche;wwwsid=627BFD7A56A5CB624C47FDDEAB2FC509.web07-pub?0,591
+333,Infineon Technologies AG,calendarYear,2013-09-30,2013,592
+334,Infineon Technologies AG,period,2013-09-30,FY,593
+335,Infineon Technologies AG,symbol,2013-09-30,IFX.DE,594
+336,Infineon Technologies AG,reportedCurrency,2013-09-30,EUR,595
+337,Infineon Technologies AG,cik,2013-09-30,,596
+338,Infineon Technologies AG,fillingDate,2013-09-30,2013-09-30,597
+339,Infineon Technologies AG,acceptedDate,2013-09-30,2013-09-29 20:00:00,598
+340,Infineon Technologies AG,revenue,2013-09-30,3843000000.0,599
+341,Infineon Technologies AG,costOfRevenue,2013-09-30,2520000000.0,600
+342,Infineon Technologies AG,grossProfit,2013-09-30,1323000000.0,601
+343,Infineon Technologies AG,grossProfitRatio,2013-09-30,0.3442622950819672,602
+344,Infineon Technologies AG,researchAndDevelopmentExpenses,2013-09-30,525000000.0,603
+345,Infineon Technologies AG,generalAndAdministrativeExpenses,2013-09-30,0.0,604
+346,Infineon Technologies AG,sellingAndMarketingExpenses,2013-09-30,440000000,605
+347,Infineon Technologies AG,sellingGeneralAndAdministrativeExpenses,2013-09-30,440000000.0,606
+348,Infineon Technologies AG,otherExpenses,2013-09-30,5000000.0,607
+349,Infineon Technologies AG,operatingExpenses,2013-09-30,970000000.0,608
+350,Infineon Technologies AG,costAndExpenses,2013-09-30,3490000000.0,609
+351,Infineon Technologies AG,interestIncome,2013-09-30,30000000,610
+352,Infineon Technologies AG,interestExpense,2013-09-30,51000000,611
+353,Infineon Technologies AG,depreciationAndAmortization,2013-09-30,466000000.0,612
+354,Infineon Technologies AG,ebitda,2013-09-30,812000000.0,613
+355,Infineon Technologies AG,ebitdaratio,2013-09-30,0.21129326047358835,614
+356,Infineon Technologies AG,operatingIncome,2013-09-30,353000000.0,615
+357,Infineon Technologies AG,operatingIncomeRatio,2013-09-30,0.09185532136351808,616
+358,Infineon Technologies AG,totalOtherIncomeExpensesNet,2013-09-30,-47000000.0,617
+359,Infineon Technologies AG,incomeBeforeTax,2013-09-30,306000000.0,618
+360,Infineon Technologies AG,incomeBeforeTaxRatio,2013-09-30,0.07962529274004684,619
+361,Infineon Technologies AG,incomeTaxExpense,2013-09-30,23000000.0,620
+362,Infineon Technologies AG,netIncome,2013-09-30,272000000.0,621
+363,Infineon Technologies AG,netIncomeRatio,2013-09-30,0.07077803799115275,622
+364,Infineon Technologies AG,eps,2013-09-30,0.25,623
+365,Infineon Technologies AG,epsdiluted,2013-09-30,0.25,624
+366,Infineon Technologies AG,weightedAverageShsOut,2013-09-30,1075300000,625
+367,Infineon Technologies AG,weightedAverageShsOutDil,2013-09-30,1076000000,626
+368,Infineon Technologies AG,link,2013-09-30,https://www.bundesanzeiger.de/pub/de/suche;wwwsid=627BFD7A56A5CB624C47FDDEAB2FC509.web07-pub?0,627
+369,Infineon Technologies AG,finalLink,2013-09-30,https://www.bundesanzeiger.de/pub/de/suche;wwwsid=627BFD7A56A5CB624C47FDDEAB2FC509.web07-pub?0,628
+370,Infineon Technologies AG,calendarYear,2012-09-30,2012,629
+371,Infineon Technologies AG,period,2012-09-30,FY,630
+372,Infineon Technologies AG,symbol,2012-09-30,IFX.DE,631
+373,Infineon Technologies AG,reportedCurrency,2012-09-30,EUR,632
+374,Infineon Technologies AG,cik,2012-09-30,,633
+375,Infineon Technologies AG,fillingDate,2012-09-30,2012-09-30,634
+376,Infineon Technologies AG,acceptedDate,2012-09-30,2012-09-29 20:00:00,635
+377,Infineon Technologies AG,revenue,2012-09-30,3904000000.0,636
+378,Infineon Technologies AG,costOfRevenue,2012-09-30,2477000000.0,637
+379,Infineon Technologies AG,grossProfit,2012-09-30,1427000000.0,638
+380,Infineon Technologies AG,grossProfitRatio,2012-09-30,0.36552254098360654,639
+381,Infineon Technologies AG,researchAndDevelopmentExpenses,2012-09-30,455000000.0,640
+382,Infineon Technologies AG,generalAndAdministrativeExpenses,2012-09-30,0.0,641
+383,Infineon Technologies AG,sellingAndMarketingExpenses,2012-09-30,475000000,642
+384,Infineon Technologies AG,sellingGeneralAndAdministrativeExpenses,2012-09-30,475000000.0,643
+385,Infineon Technologies AG,otherExpenses,2012-09-30,0.0,644
+386,Infineon Technologies AG,operatingExpenses,2012-09-30,930000000.0,645
+387,Infineon Technologies AG,costAndExpenses,2012-09-30,3407000000.0,646
+388,Infineon Technologies AG,interestIncome,2012-09-30,38000000,647
+389,Infineon Technologies AG,interestExpense,2012-09-30,60000000,648
+390,Infineon Technologies AG,depreciationAndAmortization,2012-09-30,428000000.0,649
+391,Infineon Technologies AG,ebitda,2012-09-30,914000000.0,650
+392,Infineon Technologies AG,ebitdaratio,2012-09-30,0.2341188524590164,651
+393,Infineon Technologies AG,operatingIncome,2012-09-30,497000000.0,652
+394,Infineon Technologies AG,operatingIncomeRatio,2012-09-30,0.12730532786885246,653
+395,Infineon Technologies AG,totalOtherIncomeExpensesNet,2012-09-30,-66000000.0,654
+396,Infineon Technologies AG,incomeBeforeTax,2012-09-30,431000000.0,655
+397,Infineon Technologies AG,incomeBeforeTaxRatio,2012-09-30,0.11039959016393443,656
+398,Infineon Technologies AG,incomeTaxExpense,2012-09-30,-1000000.0,657
+399,Infineon Technologies AG,netIncome,2012-09-30,427000000.0,658
+400,Infineon Technologies AG,netIncomeRatio,2012-09-30,0.109375,659
+401,Infineon Technologies AG,eps,2012-09-30,0.4,660
+402,Infineon Technologies AG,epsdiluted,2012-09-30,0.39,661
+403,Infineon Technologies AG,weightedAverageShsOut,2012-09-30,1083300000,662
+404,Infineon Technologies AG,weightedAverageShsOutDil,2012-09-30,1134300000,663
+405,Infineon Technologies AG,link,2012-09-30,https://www.bundesanzeiger.de/pub/de/suche;wwwsid=627BFD7A56A5CB624C47FDDEAB2FC509.web07-pub?0,664
+406,Infineon Technologies AG,finalLink,2012-09-30,https://www.bundesanzeiger.de/pub/de/suche;wwwsid=627BFD7A56A5CB624C47FDDEAB2FC509.web07-pub?0,665
+407,Infineon Technologies AG,calendarYear,2011-09-30,2011,666
+408,Infineon Technologies AG,period,2011-09-30,FY,667
+409,Infineon Technologies AG,symbol,2011-09-30,IFX.DE,668
+410,Infineon Technologies AG,reportedCurrency,2011-09-30,EUR,669
+411,Infineon Technologies AG,cik,2011-09-30,,670
+412,Infineon Technologies AG,fillingDate,2011-09-30,2011-09-30,671
+413,Infineon Technologies AG,acceptedDate,2011-09-30,2011-09-29 20:00:00,672
+414,Infineon Technologies AG,revenue,2011-09-30,3997000000.0,673
+415,Infineon Technologies AG,costOfRevenue,2011-09-30,2343000000.0,674
+416,Infineon Technologies AG,grossProfit,2011-09-30,1654000000.0,675
+417,Infineon Technologies AG,grossProfitRatio,2011-09-30,0.41381035776832625,676
+418,Infineon Technologies AG,researchAndDevelopmentExpenses,2011-09-30,439000000.0,677
+419,Infineon Technologies AG,generalAndAdministrativeExpenses,2011-09-30,449000000.0,678
+420,Infineon Technologies AG,sellingAndMarketingExpenses,2011-09-30,0,679
+421,Infineon Technologies AG,sellingGeneralAndAdministrativeExpenses,2011-09-30,449000000.0,680
+422,Infineon Technologies AG,otherExpenses,2011-09-30,30000000.0,681
+423,Infineon Technologies AG,operatingExpenses,2011-09-30,918000000.0,682
+424,Infineon Technologies AG,costAndExpenses,2011-09-30,3261000000.0,683
+425,Infineon Technologies AG,interestIncome,2011-09-30,37000000,684
+426,Infineon Technologies AG,interestExpense,2011-09-30,63000000,685
+427,Infineon Technologies AG,depreciationAndAmortization,2011-09-30,364000000.0,686
+428,Infineon Technologies AG,ebitda,2011-09-30,1516000000.0,687
+429,Infineon Technologies AG,ebitdaratio,2011-09-30,0.37928446334751065,688
+430,Infineon Technologies AG,operatingIncome,2011-09-30,736000000.0,689
+431,Infineon Technologies AG,operatingIncomeRatio,2011-09-30,0.18413810357768326,690
+432,Infineon Technologies AG,totalOtherIncomeExpensesNet,2011-09-30,-22000000.0,691
+433,Infineon Technologies AG,incomeBeforeTax,2011-09-30,714000000.0,692
+434,Infineon Technologies AG,incomeBeforeTaxRatio,2011-09-30,0.1786339754816112,693
+435,Infineon Technologies AG,incomeTaxExpense,2011-09-30,-30000000.0,694
+436,Infineon Technologies AG,netIncome,2011-09-30,1119000000.0,695
+437,Infineon Technologies AG,netIncomeRatio,2011-09-30,0.2799599699774831,696
+438,Infineon Technologies AG,eps,2011-09-30,1.03,697
+439,Infineon Technologies AG,epsdiluted,2011-09-30,0.98,698
+440,Infineon Technologies AG,weightedAverageShsOut,2011-09-30,1086400000,699
+441,Infineon Technologies AG,weightedAverageShsOutDil,2011-09-30,1158800000,700
+442,Infineon Technologies AG,link,2011-09-30,https://www.bundesanzeiger.de/pub/de/suche;wwwsid=627BFD7A56A5CB624C47FDDEAB2FC509.web07-pub?0,701
+443,Infineon Technologies AG,finalLink,2011-09-30,https://www.bundesanzeiger.de/pub/de/suche;wwwsid=627BFD7A56A5CB624C47FDDEAB2FC509.web07-pub?0,702
+444,Infineon Technologies AG,calendarYear,2010-09-30,2010,703
+445,Infineon Technologies AG,period,2010-09-30,FY,704
+446,Infineon Technologies AG,symbol,2010-09-30,IFX.DE,705
+447,Infineon Technologies AG,reportedCurrency,2010-09-30,EUR,706
+448,Infineon Technologies AG,cik,2010-09-30,,707
+449,Infineon Technologies AG,fillingDate,2010-09-30,2010-09-30,708
+450,Infineon Technologies AG,acceptedDate,2010-09-30,2010-09-29 20:00:00,709
+451,Infineon Technologies AG,revenue,2010-09-30,3295000000.0,710
+452,Infineon Technologies AG,costOfRevenue,2010-09-30,2058000000.0,711
+453,Infineon Technologies AG,grossProfit,2010-09-30,1237000000.0,712
+454,Infineon Technologies AG,grossProfitRatio,2010-09-30,0.3754172989377845,713
+455,Infineon Technologies AG,researchAndDevelopmentExpenses,2010-09-30,399000000.0,714
+456,Infineon Technologies AG,generalAndAdministrativeExpenses,2010-09-30,386000000.0,715
+457,Infineon Technologies AG,sellingAndMarketingExpenses,2010-09-30,0,716
+458,Infineon Technologies AG,sellingGeneralAndAdministrativeExpenses,2010-09-30,386000000.0,717
+459,Infineon Technologies AG,otherExpenses,2010-09-30,92000000.0,718
+460,Infineon Technologies AG,operatingExpenses,2010-09-30,877000000.0,719
+461,Infineon Technologies AG,costAndExpenses,2010-09-30,2935000000.0,720
+462,Infineon Technologies AG,interestIncome,2010-09-30,29000000,721
+463,Infineon Technologies AG,interestExpense,2010-09-30,95000000,722
+464,Infineon Technologies AG,depreciationAndAmortization,2010-09-30,336000000.0,723
+465,Infineon Technologies AG,ebitda,2010-09-30,1068000000.0,724
+466,Infineon Technologies AG,ebitdaratio,2010-09-30,0.32412746585735963,725
+467,Infineon Technologies AG,operatingIncome,2010-09-30,360000000.0,726
+468,Infineon Technologies AG,operatingIncomeRatio,2010-09-30,0.10925644916540213,727
+469,Infineon Technologies AG,totalOtherIncomeExpensesNet,2010-09-30,-70000000.0,728
+470,Infineon Technologies AG,incomeBeforeTax,2010-09-30,290000000.0,729
+471,Infineon Technologies AG,incomeBeforeTaxRatio,2010-09-30,0.08801213960546282,730
+472,Infineon Technologies AG,incomeTaxExpense,2010-09-30,-22000000.0,731
+473,Infineon Technologies AG,netIncome,2010-09-30,659000000.0,732
+474,Infineon Technologies AG,netIncomeRatio,2010-09-30,0.2,733
+475,Infineon Technologies AG,eps,2010-09-30,0.61,734
+476,Infineon Technologies AG,epsdiluted,2010-09-30,0.61,735
+477,Infineon Technologies AG,weightedAverageShsOut,2010-09-30,1086700000,736
+478,Infineon Technologies AG,weightedAverageShsOutDil,2010-09-30,1171300000,737
+479,Infineon Technologies AG,link,2010-09-30,https://www.bundesanzeiger.de/pub/de/suche;wwwsid=627BFD7A56A5CB624C47FDDEAB2FC509.web07-pub?0,738
+480,Infineon Technologies AG,finalLink,2010-09-30,https://www.bundesanzeiger.de/pub/de/suche;wwwsid=627BFD7A56A5CB624C47FDDEAB2FC509.web07-pub?0,739
+481,Infineon Technologies AG,calendarYear,2009-09-30,2009,740
+482,Infineon Technologies AG,period,2009-09-30,FY,741
+483,Infineon Technologies AG,symbol,2009-09-30,IFX.DE,742
+484,Infineon Technologies AG,reportedCurrency,2009-09-30,EUR,743
+485,Infineon Technologies AG,cik,2009-09-30,,744
+486,Infineon Technologies AG,fillingDate,2009-09-30,2009-09-30,745
+487,Infineon Technologies AG,acceptedDate,2009-09-30,2009-09-29 20:00:00,746
+488,Infineon Technologies AG,revenue,2009-09-30,3027000000.0,747
+489,Infineon Technologies AG,costOfRevenue,2009-09-30,2368000000.0,748
+490,Infineon Technologies AG,grossProfit,2009-09-30,659000000.0,749
+491,Infineon Technologies AG,grossProfitRatio,2009-09-30,0.21770730095804428,750
+492,Infineon Technologies AG,researchAndDevelopmentExpenses,2009-09-30,468000000.0,751
+493,Infineon Technologies AG,generalAndAdministrativeExpenses,2009-09-30,392000000.0,752
+494,Infineon Technologies AG,sellingAndMarketingExpenses,2009-09-30,0,753
+495,Infineon Technologies AG,sellingGeneralAndAdministrativeExpenses,2009-09-30,392000000.0,754
+496,Infineon Technologies AG,otherExpenses,2009-09-30,-54000000.0,755
+497,Infineon Technologies AG,operatingExpenses,2009-09-30,806000000.0,756
+498,Infineon Technologies AG,costAndExpenses,2009-09-30,3174000000.0,757
+499,Infineon Technologies AG,interestIncome,2009-09-30,101000000,758
+500,Infineon Technologies AG,interestExpense,2009-09-30,156000000,759
+501,Infineon Technologies AG,depreciationAndAmortization,2009-09-30,513000000.0,760
+502,Infineon Technologies AG,ebitda,2009-09-30,3000000.0,761
+503,Infineon Technologies AG,ebitdaratio,2009-09-30,0.0009910802775024777,762
+504,Infineon Technologies AG,operatingIncome,2009-09-30,-147000000.0,763
+505,Infineon Technologies AG,operatingIncomeRatio,2009-09-30,-0.048562933597621406,764
+506,Infineon Technologies AG,totalOtherIncomeExpensesNet,2009-09-30,-121000000.0,765
+507,Infineon Technologies AG,incomeBeforeTax,2009-09-30,-268000000.0,766
+508,Infineon Technologies AG,incomeBeforeTaxRatio,2009-09-30,-0.08853650479022133,767
+509,Infineon Technologies AG,incomeTaxExpense,2009-09-30,5000000.0,768
+510,Infineon Technologies AG,netIncome,2009-09-30,-671000000.0,769
+511,Infineon Technologies AG,netIncomeRatio,2009-09-30,-0.22167162206805419,770
+512,Infineon Technologies AG,eps,2009-09-30,-0.73,771
+513,Infineon Technologies AG,epsdiluted,2009-09-30,-0.73,772
+514,Infineon Technologies AG,weightedAverageShsOut,2009-09-30,855000000,773
+515,Infineon Technologies AG,weightedAverageShsOutDil,2009-09-30,855000000,774
+516,Infineon Technologies AG,link,2009-09-30,https://www.bundesanzeiger.de/pub/de/suche;wwwsid=627BFD7A56A5CB624C47FDDEAB2FC509.web07-pub?0,775
+517,Infineon Technologies AG,finalLink,2009-09-30,https://www.bundesanzeiger.de/pub/de/suche;wwwsid=627BFD7A56A5CB624C47FDDEAB2FC509.web07-pub?0,776
+518,Infineon Technologies AG,calendarYear,2008-09-30,2008,777
+519,Infineon Technologies AG,period,2008-09-30,FY,778
+520,Infineon Technologies AG,symbol,2008-09-30,IFX.DE,779
+521,Infineon Technologies AG,reportedCurrency,2008-09-30,EUR,780
+522,Infineon Technologies AG,cik,2008-09-30,,781
+523,Infineon Technologies AG,fillingDate,2008-09-30,2008-09-30,782
+524,Infineon Technologies AG,acceptedDate,2008-09-30,2008-09-29 20:00:00,783
+525,Infineon Technologies AG,revenue,2008-09-30,4315198680.0,784
+526,Infineon Technologies AG,costOfRevenue,2008-09-30,2839207810.0,785
+527,Infineon Technologies AG,grossProfit,2008-09-30,1475990870.0,786
+528,Infineon Technologies AG,grossProfitRatio,2008-09-30,0.3420447074293228,787
+529,Infineon Technologies AG,researchAndDevelopmentExpenses,2008-09-30,692956790.0,788
+530,Infineon Technologies AG,generalAndAdministrativeExpenses,2008-09-30,564578920.0,789
+531,Infineon Technologies AG,sellingAndMarketingExpenses,2008-09-30,0,790
+532,Infineon Technologies AG,sellingGeneralAndAdministrativeExpenses,2008-09-30,564578920.0,791
+533,Infineon Technologies AG,otherExpenses,2008-09-30,245407420.0,792
+534,Infineon Technologies AG,operatingExpenses,2008-09-30,1502943130.0,793
+535,Infineon Technologies AG,costAndExpenses,2008-09-30,4342150940.0,794
+536,Infineon Technologies AG,interestIncome,2008-09-30,0,795
+537,Infineon Technologies AG,interestExpense,2008-09-30,0,796
+538,Infineon Technologies AG,depreciationAndAmortization,2008-09-30,570253080.0,797
+539,Infineon Technologies AG,ebitda,2008-09-30,-2320022170.0,798
+540,Infineon Technologies AG,ebitdaratio,2008-09-30,-0.5376397107166337,799
+541,Infineon Technologies AG,operatingIncome,2008-09-30,-26952260.0,800
+542,Infineon Technologies AG,operatingIncomeRatio,2008-09-30,-0.006245890861275477,801
+543,Infineon Technologies AG,totalOtherIncomeExpensesNet,2008-09-30,-119866630.0,802
+544,Infineon Technologies AG,incomeBeforeTax,2008-09-30,-146818890.0,803
+545,Infineon Technologies AG,incomeBeforeTaxRatio,2008-09-30,-0.034023668639053255,804
+546,Infineon Technologies AG,incomeTaxExpense,2008-09-30,41137660.0,805
+547,Infineon Technologies AG,netIncome,2008-09-30,-2931412910.0,806
+548,Infineon Technologies AG,netIncomeRatio,2008-09-30,-0.6793228139381986,807
+549,Infineon Technologies AG,eps,2008-09-30,-3.477985,808
+550,Infineon Technologies AG,epsdiluted,2008-09-30,-3.477985,809
+551,Infineon Technologies AG,weightedAverageShsOut,2008-09-30,842847950,810
+552,Infineon Technologies AG,weightedAverageShsOutDil,2008-09-30,842847950,811
+553,Infineon Technologies AG,link,2008-09-30,https://www.bundesanzeiger.de/pub/de/suche;wwwsid=627BFD7A56A5CB624C47FDDEAB2FC509.web07-pub?0,812
+554,Infineon Technologies AG,finalLink,2008-09-30,https://www.bundesanzeiger.de/pub/de/suche;wwwsid=627BFD7A56A5CB624C47FDDEAB2FC509.web07-pub?0,813
+555,Infineon Technologies AG,calendarYear,2007-09-30,2007,814
+556,Infineon Technologies AG,period,2007-09-30,FY,815
+557,Infineon Technologies AG,symbol,2007-09-30,IFX.DE,816
+558,Infineon Technologies AG,reportedCurrency,2007-09-30,EUR,817
+559,Infineon Technologies AG,cik,2007-09-30,,818
+560,Infineon Technologies AG,fillingDate,2007-09-30,2007-09-30,819
+561,Infineon Technologies AG,acceptedDate,2007-09-30,2007-09-29 20:00:00,820
+562,Infineon Technologies AG,revenue,2007-09-30,7654510710.0,821
+563,Infineon Technologies AG,costOfRevenue,2007-09-30,6070069740.0,822
+564,Infineon Technologies AG,grossProfit,2007-09-30,1584440970.0,823
+565,Infineon Technologies AG,grossProfitRatio,2007-09-30,0.20699441545362995,824
+566,Infineon Technologies AG,researchAndDevelopmentExpenses,2007-09-30,1164679740.0,825
+567,Infineon Technologies AG,generalAndAdministrativeExpenses,2007-09-30,743516970.0,826
+568,Infineon Technologies AG,sellingAndMarketingExpenses,2007-09-30,0,827
+569,Infineon Technologies AG,sellingGeneralAndAdministrativeExpenses,2007-09-30,743516970.0,828
+570,Infineon Technologies AG,otherExpenses,2007-09-30,0.0,829
+571,Infineon Technologies AG,operatingExpenses,2007-09-30,1908196710.0,830
+572,Infineon Technologies AG,costAndExpenses,2007-09-30,7978266450.0,831
+573,Infineon Technologies AG,interestIncome,2007-09-30,0,832
+574,Infineon Technologies AG,interestExpense,2007-09-30,0,833
+575,Infineon Technologies AG,depreciationAndAmortization,2007-09-30,1271196780.0,834
+576,Infineon Technologies AG,ebitda,2007-09-30,981778770.0,835
+577,Infineon Technologies AG,ebitdaratio,2007-09-30,0.1282614666300467,836
+578,Infineon Technologies AG,operatingIncome,2007-09-30,-323755740.0,837
+579,Infineon Technologies AG,operatingIncomeRatio,2007-09-30,-0.04229607250755287,838
+580,Infineon Technologies AG,totalOtherIncomeExpensesNet,2007-09-30,70777770.0,839
+581,Infineon Technologies AG,incomeBeforeTax,2007-09-30,-252977970.0,840
+582,Infineon Technologies AG,incomeBeforeTaxRatio,2007-09-30,-0.033049528517806466,841
+583,Infineon Technologies AG,incomeTaxExpense,2007-09-30,78486240.0,842
+584,Infineon Technologies AG,netIncome,2007-09-30,-367904250.0,843
+585,Infineon Technologies AG,netIncomeRatio,2007-09-30,-0.048063718758582806,844
+586,Infineon Technologies AG,eps,2007-09-30,-0.437348,845
+587,Infineon Technologies AG,epsdiluted,2007-09-30,-0.437348,846
+588,Infineon Technologies AG,weightedAverageShsOut,2007-09-30,841216500,847
+589,Infineon Technologies AG,weightedAverageShsOutDil,2007-09-30,841216500,848
+590,Infineon Technologies AG,link,2007-09-30,https://www.bundesanzeiger.de/pub/de/suche;wwwsid=627BFD7A56A5CB624C47FDDEAB2FC509.web07-pub?0,849
+591,Infineon Technologies AG,finalLink,2007-09-30,https://www.bundesanzeiger.de/pub/de/suche;wwwsid=627BFD7A56A5CB624C47FDDEAB2FC509.web07-pub?0,850
+592,Infineon Technologies AG,calendarYear,2006-09-30,2006,851
+593,Infineon Technologies AG,period,2006-09-30,FY,852
+594,Infineon Technologies AG,symbol,2006-09-30,IFX.DE,853
+595,Infineon Technologies AG,reportedCurrency,2006-09-30,EUR,854
+596,Infineon Technologies AG,cik,2006-09-30,,855
+597,Infineon Technologies AG,fillingDate,2006-09-30,2006-09-30,856
+598,Infineon Technologies AG,acceptedDate,2006-09-30,2006-09-29 20:00:00,857
+599,Infineon Technologies AG,revenue,2006-09-30,7926877600.0,858
+600,Infineon Technologies AG,costOfRevenue,2006-09-30,5852178920.0,859
+601,Infineon Technologies AG,grossProfit,2006-09-30,2074698680.0,860
+602,Infineon Technologies AG,grossProfitRatio,2006-09-30,0.2617296222664016,861
+603,Infineon Technologies AG,researchAndDevelopmentExpenses,2006-09-30,1248916600.0,862
+604,Infineon Technologies AG,generalAndAdministrativeExpenses,2006-09-30,750925880.0,863
+605,Infineon Technologies AG,sellingAndMarketingExpenses,2006-09-30,0,864
+606,Infineon Technologies AG,sellingGeneralAndAdministrativeExpenses,2006-09-30,750925880.0,865
+607,Infineon Technologies AG,otherExpenses,2006-09-30,107950520.0,866
+608,Infineon Technologies AG,operatingExpenses,2006-09-30,2107793000.0,867
+609,Infineon Technologies AG,costAndExpenses,2006-09-30,7959971920.0,868
+610,Infineon Technologies AG,interestIncome,2006-09-30,0,869
+611,Infineon Technologies AG,interestExpense,2006-09-30,0,870
+612,Infineon Technologies AG,depreciationAndAmortization,2006-09-30,1404932680.0,871
+613,Infineon Technologies AG,ebitda,2006-09-30,1297770120.0,872
+614,Infineon Technologies AG,ebitdaratio,2006-09-30,0.16371769383697812,873
+615,Infineon Technologies AG,operatingIncome,2006-09-30,-33094320.0,874
+616,Infineon Technologies AG,operatingIncomeRatio,2006-09-30,-0.004174950298210736,875
+617,Infineon Technologies AG,totalOtherIncomeExpensesNet,2006-09-30,-74068240.0,876
+618,Infineon Technologies AG,incomeBeforeTax,2006-09-30,-107162560.0,877
+619,Infineon Technologies AG,incomeBeforeTaxRatio,2006-09-30,-0.013518886679920477,878
+620,Infineon Technologies AG,incomeTaxExpense,2006-09-30,160743840.0,879
+621,Infineon Technologies AG,netIncome,2006-09-30,-267906400.0,880
+622,Infineon Technologies AG,netIncomeRatio,2006-09-30,-0.033797216699801194,881
+623,Infineon Technologies AG,eps,2006-09-30,-0.323158,882
+624,Infineon Technologies AG,epsdiluted,2006-09-30,-0.323158,883
+625,Infineon Technologies AG,weightedAverageShsOut,2006-09-30,829024957,884
+626,Infineon Technologies AG,weightedAverageShsOutDil,2006-09-30,829024957,885
+627,Infineon Technologies AG,link,2006-09-30,https://www.bundesanzeiger.de/pub/de/suche;wwwsid=627BFD7A56A5CB624C47FDDEAB2FC509.web07-pub?0,886
+628,Infineon Technologies AG,finalLink,2006-09-30,https://www.bundesanzeiger.de/pub/de/suche;wwwsid=627BFD7A56A5CB624C47FDDEAB2FC509.web07-pub?0,887
+629,Infineon Technologies AG,calendarYear,2005-09-30,2005,888
+630,Infineon Technologies AG,period,2005-09-30,FY,889
+631,Infineon Technologies AG,symbol,2005-09-30,IFX.DE,890
+632,Infineon Technologies AG,reportedCurrency,2005-09-30,EUR,891
+633,Infineon Technologies AG,cik,2005-09-30,,892
+634,Infineon Technologies AG,fillingDate,2005-09-30,2005-09-30,893
+635,Infineon Technologies AG,acceptedDate,2005-09-30,2005-09-29 20:00:00,894
+636,Infineon Technologies AG,revenue,2005-09-30,6774198500.0,895
+637,Infineon Technologies AG,costOfRevenue,2005-09-30,4919813610.0,896
+638,Infineon Technologies AG,grossProfit,2005-09-30,1854384890.0,897
+639,Infineon Technologies AG,grossProfitRatio,2005-09-30,0.2737423312883436,898
+640,Infineon Technologies AG,researchAndDevelopmentExpenses,2005-09-30,1295825210.0,899
+641,Infineon Technologies AG,generalAndAdministrativeExpenses,2005-09-30,656640100.0,900
+642,Infineon Technologies AG,sellingAndMarketingExpenses,2005-09-30,0,901
+643,Infineon Technologies AG,sellingGeneralAndAdministrativeExpenses,2005-09-30,656640100.0,902
+644,Infineon Technologies AG,otherExpenses,2005-09-30,92262090.0,903
+645,Infineon Technologies AG,operatingExpenses,2005-09-30,2044727400.0,904
+646,Infineon Technologies AG,costAndExpenses,2005-09-30,6964541010.0,905
+647,Infineon Technologies AG,interestIncome,2005-09-30,0,906
+648,Infineon Technologies AG,interestExpense,2005-09-30,9143090,907
+649,Infineon Technologies AG,depreciationAndAmortization,2005-09-30,1319098530.0,908
+650,Infineon Technologies AG,ebitda,2005-09-30,1135405540.0,909
+651,Infineon Technologies AG,ebitdaratio,2005-09-30,0.16760736196319018,910
+652,Infineon Technologies AG,operatingIncome,2005-09-30,-190342510.0,911
+653,Infineon Technologies AG,operatingIncomeRatio,2005-09-30,-0.028098159509202456,912
+654,Infineon Technologies AG,totalOtherIncomeExpensesNet,2005-09-30,-4155950.0,913
+655,Infineon Technologies AG,incomeBeforeTax,2005-09-30,-194498460.0,914
+656,Infineon Technologies AG,incomeBeforeTaxRatio,2005-09-30,-0.028711656441717793,915
+657,Infineon Technologies AG,incomeTaxExpense,2005-09-30,120522550.0,916
+658,Infineon Technologies AG,netIncome,2005-09-30,-313358630.0,917
+659,Infineon Technologies AG,netIncomeRatio,2005-09-30,-0.046257668711656444,918
+660,Infineon Technologies AG,eps,2005-09-30,-0.377941,919
+661,Infineon Technologies AG,epsdiluted,2005-09-30,-0.377941,920
+662,Infineon Technologies AG,weightedAverageShsOut,2005-09-30,829120576,921
+663,Infineon Technologies AG,weightedAverageShsOutDil,2005-09-30,829120576,922
+664,Infineon Technologies AG,link,2005-09-30,https://www.bundesanzeiger.de/pub/de/suche;wwwsid=627BFD7A56A5CB624C47FDDEAB2FC509.web07-pub?0,923
+665,Infineon Technologies AG,finalLink,2005-09-30,https://www.bundesanzeiger.de/pub/de/suche;wwwsid=627BFD7A56A5CB624C47FDDEAB2FC509.web07-pub?0,924
+666,Infineon Technologies AG,calendarYear,2004-09-30,2004,925
+667,Infineon Technologies AG,period,2004-09-30,FY,926
+668,Infineon Technologies AG,symbol,2004-09-30,IFX.DE,927
+669,Infineon Technologies AG,reportedCurrency,2004-09-30,EUR,928
+670,Infineon Technologies AG,cik,2004-09-30,,929
+671,Infineon Technologies AG,fillingDate,2004-09-30,2004-09-30,930
+672,Infineon Technologies AG,acceptedDate,2004-09-30,2004-09-29 20:00:00,931
+673,Infineon Technologies AG,revenue,2004-09-30,7194194280.0,932
+674,Infineon Technologies AG,costOfRevenue,2004-09-30,4669069080.0,933
+675,Infineon Technologies AG,grossProfit,2004-09-30,2525125200.0,934
+676,Infineon Technologies AG,grossProfitRatio,2004-09-30,0.35099485803711156,935
+677,Infineon Technologies AG,researchAndDevelopmentExpenses,2004-09-30,1219136880.0,936
+678,Infineon Technologies AG,generalAndAdministrativeExpenses,2004-09-30,718132740.0,937
+679,Infineon Technologies AG,sellingAndMarketingExpenses,2004-09-30,0,938
+680,Infineon Technologies AG,sellingGeneralAndAdministrativeExpenses,2004-09-30,718132740.0,939
+681,Infineon Technologies AG,otherExpenses,2004-09-30,256533420.0,940
+682,Infineon Technologies AG,operatingExpenses,2004-09-30,2193803040.0,941
+683,Infineon Technologies AG,costAndExpenses,2004-09-30,6862872120.0,942
+684,Infineon Technologies AG,interestIncome,2004-09-30,0,943
+685,Infineon Technologies AG,interestExpense,2004-09-30,0,944
+686,Infineon Technologies AG,depreciationAndAmortization,2004-09-30,1319659380.0,945
+687,Infineon Technologies AG,ebitda,2004-09-30,1534375440.0,946
+688,Infineon Technologies AG,ebitdaratio,2004-09-30,0.21327967806841047,947
+689,Infineon Technologies AG,operatingIncome,2004-09-30,331322160.0,948
+690,Infineon Technologies AG,operatingIncomeRatio,2004-09-30,0.046054102392130564,949
+691,Infineon Technologies AG,totalOtherIncomeExpensesNet,2004-09-30,-116606100.0,950
+692,Infineon Technologies AG,incomeBeforeTax,2004-09-30,214716060.0,951
+693,Infineon Technologies AG,incomeBeforeTaxRatio,2004-09-30,0.029845741113346747,952
+694,Infineon Technologies AG,incomeTaxExpense,2004-09-30,153598380.0,953
+695,Infineon Technologies AG,netIncome,2004-09-30,61117680.0,954
+696,Infineon Technologies AG,netIncomeRatio,2004-09-30,0.008495416946121171,955
+697,Infineon Technologies AG,eps,2004-09-30,0.071239,956
+698,Infineon Technologies AG,epsdiluted,2004-09-30,0.071239,957
+699,Infineon Technologies AG,weightedAverageShsOut,2004-09-30,857923430,958
+700,Infineon Technologies AG,weightedAverageShsOutDil,2004-09-30,857923430,959
+701,Infineon Technologies AG,link,2004-09-30,https://www.bundesanzeiger.de/pub/de/suche;wwwsid=627BFD7A56A5CB624C47FDDEAB2FC509.web07-pub?0,960
+702,Infineon Technologies AG,finalLink,2004-09-30,https://www.bundesanzeiger.de/pub/de/suche;wwwsid=627BFD7A56A5CB624C47FDDEAB2FC509.web07-pub?0,961
+703,Infineon Technologies AG,calendarYear,2003-09-30,2003,962
+704,Infineon Technologies AG,period,2003-09-30,FY,963
+705,Infineon Technologies AG,symbol,2003-09-30,IFX.DE,964
+706,Infineon Technologies AG,reportedCurrency,2003-09-30,EUR,965
+707,Infineon Technologies AG,cik,2003-09-30,,966
+708,Infineon Technologies AG,fillingDate,2003-09-30,2003-09-30,967
+709,Infineon Technologies AG,acceptedDate,2003-09-30,2003-09-29 20:00:00,968
+710,Infineon Technologies AG,revenue,2003-09-30,6148210950.0,969
+711,Infineon Technologies AG,costOfRevenue,2003-09-30,4610943750.0,970
+712,Infineon Technologies AG,grossProfit,2003-09-30,1537267200.0,971
+713,Infineon Technologies AG,grossProfitRatio,2003-09-30,0.25003488209850705,972
+714,Infineon Technologies AG,researchAndDevelopmentExpenses,2003-09-30,1088611650.0,973
+715,Infineon Technologies AG,generalAndAdministrativeExpenses,2003-09-30,678559350.0,974
+716,Infineon Technologies AG,sellingAndMarketingExpenses,2003-09-30,0,975
+717,Infineon Technologies AG,sellingGeneralAndAdministrativeExpenses,2003-09-30,678559350.0,976
+718,Infineon Technologies AG,otherExpenses,2003-09-30,84927150.0,977
+719,Infineon Technologies AG,operatingExpenses,2003-09-30,1852098150.0,978
+720,Infineon Technologies AG,costAndExpenses,2003-09-30,6463041900.0,979
+721,Infineon Technologies AG,interestIncome,2003-09-30,0,980
+722,Infineon Technologies AG,interestExpense,2003-09-30,0,981
+723,Infineon Technologies AG,depreciationAndAmortization,2003-09-30,1436898750.0,982
+724,Infineon Technologies AG,ebitda,2003-09-30,1086038100.0,983
+725,Infineon Technologies AG,ebitdaratio,2003-09-30,0.17664294683968187,984
+726,Infineon Technologies AG,operatingIncome,2003-09-30,-314830950.0,985
+727,Infineon Technologies AG,operatingIncomeRatio,2003-09-30,-0.051206920608343795,986
+728,Infineon Technologies AG,totalOtherIncomeExpensesNet,2003-09-30,-36029700.0,987
+729,Infineon Technologies AG,incomeBeforeTax,2003-09-30,-350860650.0,988
+730,Infineon Technologies AG,incomeBeforeTaxRatio,2003-09-30,-0.057067113157527556,989
+731,Infineon Technologies AG,incomeTaxExpense,2003-09-30,84069300.0,990
+732,Infineon Technologies AG,netIncome,2003-09-30,-434929950.0,991
+733,Infineon Technologies AG,netIncomeRatio,2003-09-30,-0.07074089577228966,992
+734,Infineon Technologies AG,eps,2003-09-30,-0.53441,993
+735,Infineon Technologies AG,epsdiluted,2003-09-30,-0.53441,994
+736,Infineon Technologies AG,weightedAverageShsOut,2003-09-30,813850186,995
+737,Infineon Technologies AG,weightedAverageShsOutDil,2003-09-30,813850186,996
+738,Infineon Technologies AG,link,2003-09-30,https://www.bundesanzeiger.de/pub/de/suche;wwwsid=627BFD7A56A5CB624C47FDDEAB2FC509.web07-pub?0,997
+739,Infineon Technologies AG,finalLink,2003-09-30,https://www.bundesanzeiger.de/pub/de/suche;wwwsid=627BFD7A56A5CB624C47FDDEAB2FC509.web07-pub?0,998
+740,Infineon Technologies AG,calendarYear,2002-09-30,2002,999
+741,Infineon Technologies AG,period,2002-09-30,FY,1000
+742,Infineon Technologies AG,symbol,2002-09-30,IFX.DE,1001
+743,Infineon Technologies AG,reportedCurrency,2002-09-30,EUR,1002
+744,Infineon Technologies AG,cik,2002-09-30,,1003
+745,Infineon Technologies AG,fillingDate,2002-09-30,2002-09-30,1004
+746,Infineon Technologies AG,acceptedDate,2002-09-30,2002-09-29 20:00:00,1005
+747,Infineon Technologies AG,revenue,2002-09-30,5201021760.0,1006
+748,Infineon Technologies AG,costOfRevenue,2002-09-30,4600514380.0,1007
+749,Infineon Technologies AG,grossProfit,2002-09-30,600507380.0,1008
+750,Infineon Technologies AG,grossProfitRatio,2002-09-30,0.1154595015576324,1009
+751,Infineon Technologies AG,researchAndDevelopmentExpenses,2002-09-30,1058229700.0,1010
+752,Infineon Technologies AG,generalAndAdministrativeExpenses,2002-09-30,642026440.0,1011
+753,Infineon Technologies AG,sellingAndMarketingExpenses,2002-09-30,0,1012
+754,Infineon Technologies AG,sellingGeneralAndAdministrativeExpenses,2002-09-30,642026440.0,1013
+755,Infineon Technologies AG,otherExpenses,2002-09-30,-45569700.0,1014
+756,Infineon Technologies AG,operatingExpenses,2002-09-30,1654686440.0,1015
+757,Infineon Technologies AG,costAndExpenses,2002-09-30,6255200820.0,1016
+758,Infineon Technologies AG,interestIncome,2002-09-30,0,1017
+759,Infineon Technologies AG,interestExpense,2002-09-30,0,1018
+760,Infineon Technologies AG,depreciationAndAmortization,2002-09-30,1369116320.0,1019
+761,Infineon Technologies AG,ebitda,2002-09-30,210633280.0,1020
+762,Infineon Technologies AG,ebitdaratio,2002-09-30,0.040498442367601244,1021
+763,Infineon Technologies AG,operatingIncome,2002-09-30,-1054179060.0,1022
+764,Infineon Technologies AG,operatingIncomeRatio,2002-09-30,-0.20268691588785046,1023
+765,Infineon Technologies AG,totalOtherIncomeExpensesNet,2002-09-30,-104303980.0,1024
+766,Infineon Technologies AG,incomeBeforeTax,2002-09-30,-1158483040.0,1025
+767,Infineon Technologies AG,incomeBeforeTaxRatio,2002-09-30,-0.22274143302180685,1026
+768,Infineon Technologies AG,incomeTaxExpense,2002-09-30,-138734420.0,1027
+769,Infineon Technologies AG,netIncome,2002-09-30,-1019748620.0,1028
+770,Infineon Technologies AG,netIncomeRatio,2002-09-30,-0.19606697819314642,1029
+771,Infineon Technologies AG,eps,2002-09-30,-1.311664,1030
+772,Infineon Technologies AG,epsdiluted,2002-09-30,-1.311664,1031
+773,Infineon Technologies AG,weightedAverageShsOut,2002-09-30,777446401,1032
+774,Infineon Technologies AG,weightedAverageShsOutDil,2002-09-30,777446401,1033
+775,Infineon Technologies AG,link,2002-09-30,https://www.bundesanzeiger.de/pub/de/suche;wwwsid=627BFD7A56A5CB624C47FDDEAB2FC509.web07-pub?0,1034
+776,Infineon Technologies AG,finalLink,2002-09-30,https://www.bundesanzeiger.de/pub/de/suche;wwwsid=627BFD7A56A5CB624C47FDDEAB2FC509.web07-pub?0,1035
+777,Infineon Technologies AG,calendarYear,2001-09-30,2001,1036
+778,Infineon Technologies AG,period,2001-09-30,FY,1037
+779,Infineon Technologies AG,symbol,2001-09-30,IFX.DE,1038
+780,Infineon Technologies AG,reportedCurrency,2001-09-30,EUR,1039
+781,Infineon Technologies AG,cik,2001-09-30,,1040
+782,Infineon Technologies AG,fillingDate,2001-09-30,2001-09-30,1041
+783,Infineon Technologies AG,acceptedDate,2001-09-30,2001-09-29 20:00:00,1042
+784,Infineon Technologies AG,revenue,2001-09-30,6168106926.3,1043
+785,Infineon Technologies AG,costOfRevenue,2001-09-30,5333599162.2,1044
+786,Infineon Technologies AG,grossProfit,2001-09-30,834507764.1000004,1045
+787,Infineon Technologies AG,grossProfitRatio,2001-09-30,0.13529398469760123,1046
+788,Infineon Technologies AG,researchAndDevelopmentExpenses,2001-09-30,1293262938.9,1047
+789,Infineon Technologies AG,generalAndAdministrativeExpenses,2001-09-30,854998530.0,1048
+790,Infineon Technologies AG,sellingAndMarketingExpenses,2001-09-30,0,1049
+791,Infineon Technologies AG,sellingGeneralAndAdministrativeExpenses,2001-09-30,854998530.0,1050
+792,Infineon Technologies AG,otherExpenses,2001-09-30,-216797945.4000001,1051
+793,Infineon Technologies AG,operatingExpenses,2001-09-30,1931463523.5,1052
+794,Infineon Technologies AG,costAndExpenses,2001-09-30,7265062685.7,1053
+795,Infineon Technologies AG,interestIncome,2001-09-30,0,1054
+796,Infineon Technologies AG,interestExpense,2001-09-30,0,1055
+797,Infineon Technologies AG,depreciationAndAmortization,2001-09-30,1220117699.4,1056
+798,Infineon Technologies AG,ebitda,2001-09-30,111402279.9000001,1057
+799,Infineon Technologies AG,ebitdaratio,2001-09-30,0.018061016326580748,1058
+800,Infineon Technologies AG,operatingIncome,2001-09-30,-1096955759.4,1059
+801,Infineon Technologies AG,operatingIncomeRatio,2001-09-30,-0.17784318146670325,1060
+802,Infineon Technologies AG,totalOtherIncomeExpensesNet,2001-09-30,-11758562.399999857,1061
+803,Infineon Technologies AG,incomeBeforeTax,2001-09-30,-1108714321.8,1062
+804,Infineon Technologies AG,incomeBeforeTaxRatio,2001-09-30,-0.17974953013096892,1063
+805,Infineon Technologies AG,incomeTaxExpense,2001-09-30,-466333695.6,1064
+806,Infineon Technologies AG,netIncome,2001-09-30,-642381723.9,1065
+807,Infineon Technologies AG,netIncomeRatio,2001-09-30,-0.10414568547133456,1066
+808,Infineon Technologies AG,eps,2001-09-30,-0.819971,1067
+809,Infineon Technologies AG,epsdiluted,2001-09-30,-0.819971,1068
+810,Infineon Technologies AG,weightedAverageShsOut,2001-09-30,783419582,1069
+811,Infineon Technologies AG,weightedAverageShsOutDil,2001-09-30,783419582,1070
+812,Infineon Technologies AG,link,2001-09-30,https://www.bundesanzeiger.de/pub/de/suche;wwwsid=627BFD7A56A5CB624C47FDDEAB2FC509.web07-pub?0,1071
+813,Infineon Technologies AG,finalLink,2001-09-30,https://www.bundesanzeiger.de/pub/de/suche;wwwsid=627BFD7A56A5CB624C47FDDEAB2FC509.web07-pub?0,1072
+814,Infineon Technologies AG,calendarYear,2000-09-30,2000,1073
+815,Infineon Technologies AG,period,2000-09-30,FY,1074
+816,Infineon Technologies AG,symbol,2000-09-30,IFX.DE,1075
+817,Infineon Technologies AG,reportedCurrency,2000-09-30,EUR,1076
+818,Infineon Technologies AG,cik,2000-09-30,,1077
+819,Infineon Technologies AG,fillingDate,2000-09-30,2000-09-30,1078
+820,Infineon Technologies AG,acceptedDate,2000-09-30,2000-09-29 20:00:00,1079
+821,Infineon Technologies AG,revenue,2000-09-30,7295818573.12,1080
+822,Infineon Technologies AG,costOfRevenue,2000-09-30,4117863504.92,1081
+823,Infineon Technologies AG,grossProfit,2000-09-30,3177955068.2,1082
+824,Infineon Technologies AG,grossProfitRatio,2000-09-30,0.435585813483431,1083
+825,Infineon Technologies AG,researchAndDevelopmentExpenses,2000-09-30,1027239934.82,1084
+826,Infineon Technologies AG,generalAndAdministrativeExpenses,2000-09-30,671043962.82,1085
+827,Infineon Technologies AG,sellingAndMarketingExpenses,2000-09-30,0,1086
+828,Infineon Technologies AG,sellingGeneralAndAdministrativeExpenses,2000-09-30,671043962.82,1087
+829,Infineon Technologies AG,otherExpenses,2000-09-30,-1540643.9400000572,1088
+830,Infineon Technologies AG,operatingExpenses,2000-09-30,1696743253.7,1089
+831,Infineon Technologies AG,costAndExpenses,2000-09-30,5814606758.62,1090
+832,Infineon Technologies AG,interestIncome,2000-09-30,0,1091
+833,Infineon Technologies AG,interestExpense,2000-09-30,0,1092
+834,Infineon Technologies AG,depreciationAndAmortization,2000-09-30,835169589.32,1093
+835,Infineon Technologies AG,ebitda,2000-09-30,2576379522.8599997,1094
+836,Infineon Technologies AG,ebitdaratio,2000-09-30,0.3531309745491973,1095
+837,Infineon Technologies AG,operatingIncome,2000-09-30,1481211814.5,1096
+838,Infineon Technologies AG,operatingIncomeRatio,2000-09-30,0.2030220186611043,1097
+839,Infineon Technologies AG,totalOtherIncomeExpensesNet,2000-09-30,259996985.3800001,1098
+840,Infineon Technologies AG,incomeBeforeTax,2000-09-30,1741208799.88,1099
+841,Infineon Technologies AG,incomeBeforeTaxRatio,2000-09-30,0.23865845654319578,1100
+842,Infineon Technologies AG,incomeTaxExpense,2000-09-30,613581004.74,1101
+843,Infineon Technologies AG,netIncome,2000-09-30,1127628928.8,1102
+844,Infineon Technologies AG,netIncomeRatio,2000-09-30,0.1545582469600499,1103
+845,Infineon Technologies AG,eps,2000-09-30,1.677816,1104
+846,Infineon Technologies AG,epsdiluted,2000-09-30,1.677816,1105
+847,Infineon Technologies AG,weightedAverageShsOut,2000-09-30,688522106,1106
+848,Infineon Technologies AG,weightedAverageShsOutDil,2000-09-30,689933454,1107
+849,Infineon Technologies AG,link,2000-09-30,https://www.bundesanzeiger.de/pub/de/suche;wwwsid=627BFD7A56A5CB624C47FDDEAB2FC509.web07-pub?0,1108
+850,Infineon Technologies AG,finalLink,2000-09-30,https://www.bundesanzeiger.de/pub/de/suche;wwwsid=627BFD7A56A5CB624C47FDDEAB2FC509.web07-pub?0,1109
+851,Infineon Technologies AG,calendarYear,1999-09-30,1999,1110
+852,Infineon Technologies AG,period,1999-09-30,FY,1111
+853,Infineon Technologies AG,symbol,1999-09-30,IFX.DE,1112
+854,Infineon Technologies AG,reportedCurrency,1999-09-30,EUR,1113
+855,Infineon Technologies AG,cik,1999-09-30,,1114
+856,Infineon Technologies AG,fillingDate,1999-09-30,1999-09-30,1115
+857,Infineon Technologies AG,acceptedDate,1999-09-30,1999-09-29 20:00:00,1116
+858,Infineon Technologies AG,revenue,1999-09-30,3990796737.12,1117
+859,Infineon Technologies AG,costOfRevenue,1999-09-30,2835505211.04,1118
+860,Infineon Technologies AG,grossProfit,1999-09-30,1155291526.08,1119
+861,Infineon Technologies AG,grossProfitRatio,1999-09-30,0.28948894222904675,1120
+862,Infineon Technologies AG,researchAndDevelopmentExpenses,1999-09-30,695623852.8,1121
+863,Infineon Technologies AG,generalAndAdministrativeExpenses,1999-09-30,520302810.96,1122
+864,Infineon Technologies AG,sellingAndMarketingExpenses,1999-09-30,0,1123
+865,Infineon Technologies AG,sellingGeneralAndAdministrativeExpenses,1999-09-30,520302810.96,1124
+866,Infineon Technologies AG,otherExpenses,1999-09-30,0.0,1125
+867,Infineon Technologies AG,operatingExpenses,1999-09-30,1215926663.76,1126
+868,Infineon Technologies AG,costAndExpenses,1999-09-30,4051431874.8,1127
+869,Infineon Technologies AG,interestIncome,1999-09-30,0,1128
+870,Infineon Technologies AG,interestExpense,1999-09-30,0,1129
+871,Infineon Technologies AG,depreciationAndAmortization,1999-09-30,539731382.4,1130
+872,Infineon Technologies AG,ebitda,1999-09-30,568481889.5999999,1131
+873,Infineon Technologies AG,ebitdaratio,1999-09-30,0.14244821950271785,1132
+874,Infineon Technologies AG,operatingIncome,1999-09-30,-60635137.68,1133
+875,Infineon Technologies AG,operatingIncomeRatio,1999-09-30,-0.015193742421408809,1134
+876,Infineon Technologies AG,totalOtherIncomeExpensesNet,1999-09-30,89385644.88,1135
+877,Infineon Technologies AG,incomeBeforeTax,1999-09-30,28750507.2,1136
+878,Infineon Technologies AG,incomeBeforeTaxRatio,1999-09-30,0.007204202341998531,1137
+879,Infineon Technologies AG,incomeTaxExpense,1999-09-30,-28357689.6,1138
+880,Infineon Technologies AG,netIncome,1999-09-30,57108196.8,1139
+881,Infineon Technologies AG,netIncomeRatio,1999-09-30,0.01430997381270105,1140
+882,Infineon Technologies AG,eps,1999-09-30,0.083386,1141
+883,Infineon Technologies AG,epsdiluted,1999-09-30,0.083386,1142
+884,Infineon Technologies AG,weightedAverageShsOut,1999-09-30,672973200,1143
+885,Infineon Technologies AG,weightedAverageShsOutDil,1999-09-30,672973200,1144
+886,Infineon Technologies AG,link,1999-09-30,https://www.bundesanzeiger.de/pub/de/suche;wwwsid=627BFD7A56A5CB624C47FDDEAB2FC509.web07-pub?0,1145
+887,Infineon Technologies AG,finalLink,1999-09-30,https://www.bundesanzeiger.de/pub/de/suche;wwwsid=627BFD7A56A5CB624C47FDDEAB2FC509.web07-pub?0,1146
+888,Infineon Technologies AG,calendarYear,1998-09-30,1998,1147
+889,Infineon Technologies AG,period,1998-09-30,FY,1148
+890,Infineon Technologies AG,symbol,1998-09-30,IFX.DE,1149
+891,Infineon Technologies AG,reportedCurrency,1998-09-30,EUR,1150
+892,Infineon Technologies AG,cik,1998-09-30,,1151
+893,Infineon Technologies AG,fillingDate,1998-09-30,1998-09-30,1152
+894,Infineon Technologies AG,acceptedDate,1998-09-30,1998-09-29 20:00:00,1153
+895,Infineon Technologies AG,revenue,1998-09-30,3175000000.0,1154
+896,Infineon Technologies AG,costOfRevenue,1998-09-30,2728000000.0,1155
+897,Infineon Technologies AG,grossProfit,1998-09-30,447000000.0,1156
+898,Infineon Technologies AG,grossProfitRatio,1998-09-30,0.14078740157480316,1157
+899,Infineon Technologies AG,researchAndDevelopmentExpenses,1998-09-30,637000000.0,1158
+900,Infineon Technologies AG,generalAndAdministrativeExpenses,1998-09-30,481000000.0,1159
+901,Infineon Technologies AG,sellingAndMarketingExpenses,1998-09-30,0,1160
+902,Infineon Technologies AG,sellingGeneralAndAdministrativeExpenses,1998-09-30,481000000.0,1161
+903,Infineon Technologies AG,otherExpenses,1998-09-30,9000000.0,1162
+904,Infineon Technologies AG,operatingExpenses,1998-09-30,1127000000.0,1163
+905,Infineon Technologies AG,costAndExpenses,1998-09-30,3855000000.0,1164
+906,Infineon Technologies AG,interestIncome,1998-09-30,0,1165
+907,Infineon Technologies AG,interestExpense,1998-09-30,0,1166
+908,Infineon Technologies AG,depreciationAndAmortization,1998-09-30,578000000.0,1167
+909,Infineon Technologies AG,ebitda,1998-09-30,-1104000000.0,1168
+910,Infineon Technologies AG,ebitdaratio,1998-09-30,-0.34771653543307085,1169
+911,Infineon Technologies AG,operatingIncome,1998-09-30,-680000000.0,1170
+912,Infineon Technologies AG,operatingIncomeRatio,1998-09-30,-0.2141732283464567,1171
+913,Infineon Technologies AG,totalOtherIncomeExpensesNet,1998-09-30,-1002000000.0,1172
+914,Infineon Technologies AG,incomeBeforeTax,1998-09-30,-1682000000.0,1173
+915,Infineon Technologies AG,incomeBeforeTaxRatio,1998-09-30,-0.529763779527559,1174
+916,Infineon Technologies AG,incomeTaxExpense,1998-09-30,-907000000.0,1175
+917,Infineon Technologies AG,netIncome,1998-09-30,-775000000.0,1176
+918,Infineon Technologies AG,netIncomeRatio,1998-09-30,-0.2440944881889764,1177
+919,Infineon Technologies AG,eps,1998-09-30,-1.154249,1178
+920,Infineon Technologies AG,epsdiluted,1998-09-30,-1.154249,1179
+921,Infineon Technologies AG,weightedAverageShsOut,1998-09-30,671432091,1180
+922,Infineon Technologies AG,weightedAverageShsOutDil,1998-09-30,671432091,1181
+923,Infineon Technologies AG,link,1998-09-30,https://www.bundesanzeiger.de/pub/de/suche;wwwsid=627BFD7A56A5CB624C47FDDEAB2FC509.web07-pub?0,1182
+924,Infineon Technologies AG,finalLink,1998-09-30,https://www.bundesanzeiger.de/pub/de/suche;wwwsid=627BFD7A56A5CB624C47FDDEAB2FC509.web07-pub?0,1183
+0,E.ON SE,calendarYear,2021-12-31,2021,1184
+1,E.ON SE,period,2021-12-31,FY,1185
+2,E.ON SE,symbol,2021-12-31,EOAN.DE,1186
+3,E.ON SE,reportedCurrency,2021-12-31,EUR,1187
+4,E.ON SE,cik,2021-12-31,,1188
+5,E.ON SE,fillingDate,2021-12-31,2021-12-31,1189
+6,E.ON SE,acceptedDate,2021-12-31,2021-12-30 19:00:00,1190
+7,E.ON SE,revenue,2021-12-31,77358000000,1191
+8,E.ON SE,costOfRevenue,2021-12-31,77313000000,1192
+9,E.ON SE,grossProfit,2021-12-31,45000000,1193
+10,E.ON SE,grossProfitRatio,2021-12-31,0.000581711005972233,1194
+11,E.ON SE,researchAndDevelopmentExpenses,2021-12-31,0,1195
+12,E.ON SE,generalAndAdministrativeExpenses,2021-12-31,0,1196
+13,E.ON SE,sellingAndMarketingExpenses,2021-12-31,0,1197
+14,E.ON SE,sellingGeneralAndAdministrativeExpenses,2021-12-31,0,1198
+15,E.ON SE,otherExpenses,2021-12-31,11717000000,1199
+16,E.ON SE,operatingExpenses,2021-12-31,11717000000,1200
+17,E.ON SE,costAndExpenses,2021-12-31,89030000000,1201
+18,E.ON SE,interestIncome,2021-12-31,251000000,1202
+19,E.ON SE,interestExpense,2021-12-31,1044000000,1203
+20,E.ON SE,depreciationAndAmortization,2021-12-31,3922000000,1204
+21,E.ON SE,ebitda,2021-12-31,10475000000,1205
+22,E.ON SE,ebitdaratio,2021-12-31,0.13540939527909202,1206
+23,E.ON SE,operatingIncome,2021-12-31,-11672000000,1207
+24,E.ON SE,operatingIncomeRatio,2021-12-31,-0.1508829080379534,1208
+25,E.ON SE,totalOtherIncomeExpensesNet,2021-12-31,17795000000,1209
+26,E.ON SE,incomeBeforeTax,2021-12-31,6123000000,1210
+27,E.ON SE,incomeBeforeTaxRatio,2021-12-31,0.07915147754595517,1211
+28,E.ON SE,incomeTaxExpense,2021-12-31,818000000,1212
+29,E.ON SE,netIncome,2021-12-31,4691000000,1213
+30,E.ON SE,netIncomeRatio,2021-12-31,0.06064014064479433,1214
+31,E.ON SE,eps,2021-12-31,1.8,1215
+32,E.ON SE,epsdiluted,2021-12-31,1.8,1216
+33,E.ON SE,weightedAverageShsOut,2021-12-31,2608000000,1217
+34,E.ON SE,weightedAverageShsOutDil,2021-12-31,2608000000,1218
+35,E.ON SE,link,2021-12-31,https://www.bundesanzeiger.de/pub/de/suche;wwwsid=627BFD7A56A5CB624C47FDDEAB2FC509.web07-pub?0,1219
+36,E.ON SE,finalLink,2021-12-31,https://www.bundesanzeiger.de/pub/de/suche;wwwsid=627BFD7A56A5CB624C47FDDEAB2FC509.web07-pub?0,1220
+37,E.ON SE,calendarYear,2020-12-31,2020,1221
+38,E.ON SE,period,2020-12-31,FY,1222
+39,E.ON SE,symbol,2020-12-31,EOAN.DE,1223
+40,E.ON SE,reportedCurrency,2020-12-31,EUR,1224
+41,E.ON SE,cik,2020-12-31,,1225
+42,E.ON SE,fillingDate,2020-12-31,2020-12-31,1226
+43,E.ON SE,acceptedDate,2020-12-31,2020-12-30 19:00:00,1227
+44,E.ON SE,revenue,2020-12-31,60944000000,1228
+45,E.ON SE,costOfRevenue,2020-12-31,46425000000,1229
+46,E.ON SE,grossProfit,2020-12-31,14519000000,1230
+47,E.ON SE,grossProfitRatio,2020-12-31,0.238235101076398,1231
+48,E.ON SE,researchAndDevelopmentExpenses,2020-12-31,0,1232
+49,E.ON SE,generalAndAdministrativeExpenses,2020-12-31,0,1233
+50,E.ON SE,sellingAndMarketingExpenses,2020-12-31,0,1234
+51,E.ON SE,sellingGeneralAndAdministrativeExpenses,2020-12-31,0,1235
+52,E.ON SE,otherExpenses,2020-12-31,12608000000,1236
+53,E.ON SE,operatingExpenses,2020-12-31,12608000000,1237
+54,E.ON SE,costAndExpenses,2020-12-31,59033000000,1238
+55,E.ON SE,interestIncome,2020-12-31,360000000,1239
+56,E.ON SE,interestExpense,2020-12-31,1067000000,1240
+57,E.ON SE,depreciationAndAmortization,2020-12-31,4166000000,1241
+58,E.ON SE,ebitda,2020-12-31,7121000000,1242
+59,E.ON SE,ebitdaratio,2020-12-31,0.11684497243370963,1243
+60,E.ON SE,operatingIncome,2020-12-31,1911000000,1244
+61,E.ON SE,operatingIncomeRatio,2020-12-31,0.03135665529010239,1245
+62,E.ON SE,totalOtherIncomeExpensesNet,2020-12-31,270000000,1246
+63,E.ON SE,incomeBeforeTax,2020-12-31,2181000000,1247
+64,E.ON SE,incomeBeforeTaxRatio,2020-12-31,0.03578695195589394,1248
+65,E.ON SE,incomeTaxExpense,2020-12-31,871000000,1249
+66,E.ON SE,netIncome,2020-12-31,1017000000,1250
+67,E.ON SE,netIncomeRatio,2020-12-31,0.016687450774481492,1251
+68,E.ON SE,eps,2020-12-31,0.39,1252
+69,E.ON SE,epsdiluted,2020-12-31,0.39,1253
+70,E.ON SE,weightedAverageShsOut,2020-12-31,2607000000,1254
+71,E.ON SE,weightedAverageShsOutDil,2020-12-31,2607000000,1255
+72,E.ON SE,link,2020-12-31,https://www.bundesanzeiger.de/pub/de/suche;wwwsid=627BFD7A56A5CB624C47FDDEAB2FC509.web07-pub?0,1256
+73,E.ON SE,finalLink,2020-12-31,https://www.bundesanzeiger.de/pub/de/suche;wwwsid=627BFD7A56A5CB624C47FDDEAB2FC509.web07-pub?0,1257
+74,E.ON SE,calendarYear,2019-12-31,2019,1258
+75,E.ON SE,period,2019-12-31,FY,1259
+76,E.ON SE,symbol,2019-12-31,EOAN.DE,1260
+77,E.ON SE,reportedCurrency,2019-12-31,EUR,1261
+78,E.ON SE,cik,2019-12-31,,1262
+79,E.ON SE,fillingDate,2019-12-31,2019-12-31,1263
+80,E.ON SE,acceptedDate,2019-12-31,2019-12-30 19:00:00,1264
+81,E.ON SE,revenue,2019-12-31,41003000000,1265
+82,E.ON SE,costOfRevenue,2019-12-31,31764000000,1266
+83,E.ON SE,grossProfit,2019-12-31,9239000000,1267
+84,E.ON SE,grossProfitRatio,2019-12-31,0.2253249762212521,1268
+85,E.ON SE,researchAndDevelopmentExpenses,2019-12-31,0,1269
+86,E.ON SE,generalAndAdministrativeExpenses,2019-12-31,0,1270
+87,E.ON SE,sellingAndMarketingExpenses,2019-12-31,0,1271
+88,E.ON SE,sellingGeneralAndAdministrativeExpenses,2019-12-31,0,1272
+89,E.ON SE,otherExpenses,2019-12-31,8174000000,1273
+90,E.ON SE,operatingExpenses,2019-12-31,8174000000,1274
+91,E.ON SE,costAndExpenses,2019-12-31,39938000000,1275
+92,E.ON SE,interestIncome,2019-12-31,1065000000,1276
+93,E.ON SE,interestExpense,2019-12-31,1677000000,1277
+94,E.ON SE,depreciationAndAmortization,2019-12-31,2502000000,1278
+95,E.ON SE,ebitda,2019-12-31,5798000000,1279
+96,E.ON SE,ebitdaratio,2019-12-31,0.1414042874911592,1280
+97,E.ON SE,operatingIncome,2019-12-31,1065000000,1281
+98,E.ON SE,operatingIncomeRatio,2019-12-31,0.02597370924078726,1282
+99,E.ON SE,totalOtherIncomeExpensesNet,2019-12-31,-268000000,1283
+100,E.ON SE,incomeBeforeTax,2019-12-31,797000000,1284
+101,E.ON SE,incomeBeforeTaxRatio,2019-12-31,0.01943760212667366,1285
+102,E.ON SE,incomeTaxExpense,2019-12-31,53000000,1286
+103,E.ON SE,netIncome,2019-12-31,1566000000,1287
+104,E.ON SE,netIncomeRatio,2019-12-31,0.03819232739067873,1288
+105,E.ON SE,eps,2019-12-31,0.68,1289
+106,E.ON SE,epsdiluted,2019-12-31,0.68,1290
+107,E.ON SE,weightedAverageShsOut,2019-12-31,2293000000,1291
+108,E.ON SE,weightedAverageShsOutDil,2019-12-31,2293000000,1292
+109,E.ON SE,link,2019-12-31,https://www.bundesanzeiger.de/pub/de/suche;wwwsid=627BFD7A56A5CB624C47FDDEAB2FC509.web07-pub?0,1293
+110,E.ON SE,finalLink,2019-12-31,https://www.bundesanzeiger.de/pub/de/suche;wwwsid=627BFD7A56A5CB624C47FDDEAB2FC509.web07-pub?0,1294
+111,E.ON SE,calendarYear,2018-12-31,2018,1295
+112,E.ON SE,period,2018-12-31,FY,1296
+113,E.ON SE,symbol,2018-12-31,EOAN.DE,1297
+114,E.ON SE,reportedCurrency,2018-12-31,EUR,1298
+115,E.ON SE,cik,2018-12-31,,1299
+116,E.ON SE,fillingDate,2018-12-31,2018-12-31,1300
+117,E.ON SE,acceptedDate,2018-12-31,2018-12-30 19:00:00,1301
+118,E.ON SE,revenue,2018-12-31,29565000000,1302
+119,E.ON SE,costOfRevenue,2018-12-31,22403000000,1303
+120,E.ON SE,grossProfit,2018-12-31,7162000000,1304
+121,E.ON SE,grossProfitRatio,2018-12-31,0.24224589886690343,1305
+122,E.ON SE,researchAndDevelopmentExpenses,2018-12-31,0,1306
+123,E.ON SE,generalAndAdministrativeExpenses,2018-12-31,0,1307
+124,E.ON SE,sellingAndMarketingExpenses,2018-12-31,0,1308
+125,E.ON SE,sellingGeneralAndAdministrativeExpenses,2018-12-31,0,1309
+126,E.ON SE,otherExpenses,2018-12-31,5059000000,1310
+127,E.ON SE,operatingExpenses,2018-12-31,5059000000,1311
+128,E.ON SE,costAndExpenses,2018-12-31,27462000000,1312
+129,E.ON SE,interestIncome,2018-12-31,523000000,1313
+130,E.ON SE,interestExpense,2018-12-31,1236000000,1314
+131,E.ON SE,depreciationAndAmortization,2018-12-31,1575000000,1315
+132,E.ON SE,ebitda,2018-12-31,6080000000,1316
+133,E.ON SE,ebitdaratio,2018-12-31,0.2056485709453746,1317
+134,E.ON SE,operatingIncome,2018-12-31,2103000000,1318
+135,E.ON SE,operatingIncomeRatio,2018-12-31,0.07113140537798072,1319
+136,E.ON SE,totalOtherIncomeExpensesNet,2018-12-31,1181000000,1320
+137,E.ON SE,incomeBeforeTax,2018-12-31,3284000000,1321
+138,E.ON SE,incomeBeforeTaxRatio,2018-12-31,0.1110772873329951,1322
+139,E.ON SE,incomeTaxExpense,2018-12-31,46000000,1323
+140,E.ON SE,netIncome,2018-12-31,3223000000,1324
+141,E.ON SE,netIncomeRatio,2018-12-31,0.10901403686791815,1325
+142,E.ON SE,eps,2018-12-31,1.49,1326
+143,E.ON SE,epsdiluted,2018-12-31,1.49,1327
+144,E.ON SE,weightedAverageShsOut,2018-12-31,2167000000,1328
+145,E.ON SE,weightedAverageShsOutDil,2018-12-31,2167000000,1329
+146,E.ON SE,link,2018-12-31,https://www.bundesanzeiger.de/pub/de/suche;wwwsid=627BFD7A56A5CB624C47FDDEAB2FC509.web07-pub?0,1330
+147,E.ON SE,finalLink,2018-12-31,https://www.bundesanzeiger.de/pub/de/suche;wwwsid=627BFD7A56A5CB624C47FDDEAB2FC509.web07-pub?0,1331
+148,E.ON SE,calendarYear,2017-12-31,2017,1332
+149,E.ON SE,period,2017-12-31,FY,1333
+150,E.ON SE,symbol,2017-12-31,EOAN.DE,1334
+151,E.ON SE,reportedCurrency,2017-12-31,EUR,1335
+152,E.ON SE,cik,2017-12-31,,1336
+153,E.ON SE,fillingDate,2017-12-31,2017-12-31,1337
+154,E.ON SE,acceptedDate,2017-12-31,2017-12-30 19:00:00,1338
+155,E.ON SE,revenue,2017-12-31,37965000000,1339
+156,E.ON SE,costOfRevenue,2017-12-31,29260000000,1340
+157,E.ON SE,grossProfit,2017-12-31,8705000000,1341
+158,E.ON SE,grossProfitRatio,2017-12-31,0.22929013565125775,1342
+159,E.ON SE,researchAndDevelopmentExpenses,2017-12-31,0,1343
+160,E.ON SE,generalAndAdministrativeExpenses,2017-12-31,0,1344
+161,E.ON SE,sellingAndMarketingExpenses,2017-12-31,0,1345
+162,E.ON SE,sellingGeneralAndAdministrativeExpenses,2017-12-31,0,1346
+163,E.ON SE,otherExpenses,2017-12-31,4369000000,1347
+164,E.ON SE,operatingExpenses,2017-12-31,4369000000,1348
+165,E.ON SE,costAndExpenses,2017-12-31,33629000000,1349
+166,E.ON SE,interestIncome,2017-12-31,1299000000,1350
+167,E.ON SE,interestExpense,2017-12-31,1276000000,1351
+168,E.ON SE,depreciationAndAmortization,2017-12-31,2769000000,1352
+169,E.ON SE,ebitda,2017-12-31,8410000000,1353
+170,E.ON SE,ebitdaratio,2017-12-31,0.22151982088765967,1354
+171,E.ON SE,operatingIncome,2017-12-31,4336000000,1355
+172,E.ON SE,operatingIncomeRatio,2017-12-31,0.1142104569998683,1356
+173,E.ON SE,totalOtherIncomeExpensesNet,2017-12-31,284000000,1357
+174,E.ON SE,incomeBeforeTax,2017-12-31,4620000000,1358
+175,E.ON SE,incomeBeforeTaxRatio,2017-12-31,0.12169103121295931,1359
+176,E.ON SE,incomeTaxExpense,2017-12-31,440000000,1360
+177,E.ON SE,netIncome,2017-12-31,3925000000,1361
+178,E.ON SE,netIncomeRatio,2017-12-31,0.10338469643092321,1362
+179,E.ON SE,eps,2017-12-31,1.84,1363
+180,E.ON SE,epsdiluted,2017-12-31,1.84,1364
+181,E.ON SE,weightedAverageShsOut,2017-12-31,2129000000,1365
+182,E.ON SE,weightedAverageShsOutDil,2017-12-31,2129000000,1366
+183,E.ON SE,link,2017-12-31,https://www.bundesanzeiger.de/pub/de/suche;wwwsid=627BFD7A56A5CB624C47FDDEAB2FC509.web07-pub?0,1367
+184,E.ON SE,finalLink,2017-12-31,https://www.bundesanzeiger.de/pub/de/suche;wwwsid=627BFD7A56A5CB624C47FDDEAB2FC509.web07-pub?0,1368
+185,E.ON SE,calendarYear,2016-12-31,2016,1369
+186,E.ON SE,period,2016-12-31,FY,1370
+187,E.ON SE,symbol,2016-12-31,EOAN.DE,1371
+188,E.ON SE,reportedCurrency,2016-12-31,EUR,1372
+189,E.ON SE,cik,2016-12-31,,1373
+190,E.ON SE,fillingDate,2016-12-31,2016-12-31,1374
+191,E.ON SE,acceptedDate,2016-12-31,2016-12-30 19:00:00,1375
+192,E.ON SE,revenue,2016-12-31,38173000000,1376
+193,E.ON SE,costOfRevenue,2016-12-31,31788000000,1377
+194,E.ON SE,grossProfit,2016-12-31,6385000000,1378
+195,E.ON SE,grossProfitRatio,2016-12-31,0.1672648206847772,1379
+196,E.ON SE,researchAndDevelopmentExpenses,2016-12-31,0,1380
+197,E.ON SE,generalAndAdministrativeExpenses,2016-12-31,0,1381
+198,E.ON SE,sellingAndMarketingExpenses,2016-12-31,0,1382
+199,E.ON SE,sellingGeneralAndAdministrativeExpenses,2016-12-31,0,1383
+200,E.ON SE,otherExpenses,2016-12-31,9146000000,1384
+201,E.ON SE,operatingExpenses,2016-12-31,9146000000,1385
+202,E.ON SE,costAndExpenses,2016-12-31,40934000000,1386
+203,E.ON SE,interestIncome,2016-12-31,343000000,1387
+204,E.ON SE,interestExpense,2016-12-31,868000000,1388
+205,E.ON SE,depreciationAndAmortization,2016-12-31,3823000000,1389
+206,E.ON SE,ebitda,2016-12-31,-3319000000,1390
+207,E.ON SE,ebitdaratio,2016-12-31,-0.08694627092447542,1391
+208,E.ON SE,operatingIncome,2016-12-31,-2761000000,1392
+209,E.ON SE,operatingIncomeRatio,2016-12-31,-0.07232860922641658,1393
+210,E.ON SE,totalOtherIncomeExpensesNet,2016-12-31,1036000000,1394
+211,E.ON SE,incomeBeforeTax,2016-12-31,-1725000000,1395
+212,E.ON SE,incomeBeforeTaxRatio,2016-12-31,-0.04518900793754748,1396
+213,E.ON SE,incomeTaxExpense,2016-12-31,440000000,1397
+214,E.ON SE,netIncome,2016-12-31,-8450000000,1398
+215,E.ON SE,netIncomeRatio,2016-12-31,-0.22136064757813115,1399
+216,E.ON SE,eps,2016-12-31,-4.33,1400
+217,E.ON SE,epsdiluted,2016-12-31,-4.33,1401
+218,E.ON SE,weightedAverageShsOut,2016-12-31,1952000000,1402
+219,E.ON SE,weightedAverageShsOutDil,2016-12-31,1952000000,1403
+220,E.ON SE,link,2016-12-31,https://www.bundesanzeiger.de/pub/de/suche;wwwsid=627BFD7A56A5CB624C47FDDEAB2FC509.web07-pub?0,1404
+221,E.ON SE,finalLink,2016-12-31,https://www.bundesanzeiger.de/pub/de/suche;wwwsid=627BFD7A56A5CB624C47FDDEAB2FC509.web07-pub?0,1405
+222,E.ON SE,calendarYear,2015-12-31,2015,1406
+223,E.ON SE,period,2015-12-31,FY,1407
+224,E.ON SE,symbol,2015-12-31,EOAN.DE,1408
+225,E.ON SE,reportedCurrency,2015-12-31,EUR,1409
+226,E.ON SE,cik,2015-12-31,,1410
+227,E.ON SE,fillingDate,2015-12-31,2015-12-31,1411
+228,E.ON SE,acceptedDate,2015-12-31,2015-12-30 19:00:00,1412
+229,E.ON SE,revenue,2015-12-31,116218000000,1413
+230,E.ON SE,costOfRevenue,2015-12-31,103722000000,1414
+231,E.ON SE,grossProfit,2015-12-31,12496000000,1415
+232,E.ON SE,grossProfitRatio,2015-12-31,0.10752207059147464,1416
+233,E.ON SE,researchAndDevelopmentExpenses,2015-12-31,0,1417
+234,E.ON SE,generalAndAdministrativeExpenses,2015-12-31,0,1418
+235,E.ON SE,sellingAndMarketingExpenses,2015-12-31,0,1419
+236,E.ON SE,sellingGeneralAndAdministrativeExpenses,2015-12-31,0,1420
+237,E.ON SE,otherExpenses,2015-12-31,19326000000,1421
+238,E.ON SE,operatingExpenses,2015-12-31,19326000000,1422
+239,E.ON SE,costAndExpenses,2015-12-31,123048000000,1423
+240,E.ON SE,interestIncome,2015-12-31,697000000,1424
+241,E.ON SE,interestExpense,2015-12-31,1149000000,1425
+242,E.ON SE,depreciationAndAmortization,2015-12-31,11894000000,1426
+243,E.ON SE,ebitda,2015-12-31,6879000000,1427
+244,E.ON SE,ebitdaratio,2015-12-31,0.059190486843690306,1428
+245,E.ON SE,operatingIncome,2015-12-31,-6830000000,1429
+246,E.ON SE,operatingIncomeRatio,2015-12-31,-0.05876886540811234,1430
+247,E.ON SE,totalOtherIncomeExpensesNet,2015-12-31,1287000000,1431
+248,E.ON SE,incomeBeforeTax,2015-12-31,-5543000000,1432
+249,E.ON SE,incomeBeforeTaxRatio,2015-12-31,-0.04769484933487068,1433
+250,E.ON SE,incomeTaxExpense,2015-12-31,835000000,1434
+251,E.ON SE,netIncome,2015-12-31,-6999000000,1435
+252,E.ON SE,netIncomeRatio,2015-12-31,-0.06022302913490165,1436
+253,E.ON SE,eps,2015-12-31,-3.6,1437
+254,E.ON SE,epsdiluted,2015-12-31,-3.6,1438
+255,E.ON SE,weightedAverageShsOut,2015-12-31,1944000000,1439
+256,E.ON SE,weightedAverageShsOutDil,2015-12-31,1944000000,1440
+257,E.ON SE,link,2015-12-31,https://www.bundesanzeiger.de/pub/de/suche;wwwsid=627BFD7A56A5CB624C47FDDEAB2FC509.web07-pub?0,1441
+258,E.ON SE,finalLink,2015-12-31,https://www.bundesanzeiger.de/pub/de/suche;wwwsid=627BFD7A56A5CB624C47FDDEAB2FC509.web07-pub?0,1442
+259,E.ON SE,calendarYear,2014-12-31,2014,1443
+260,E.ON SE,period,2014-12-31,FY,1444
+261,E.ON SE,symbol,2014-12-31,EOAN.DE,1445
+262,E.ON SE,reportedCurrency,2014-12-31,EUR,1446
+263,E.ON SE,cik,2014-12-31,,1447
+264,E.ON SE,fillingDate,2014-12-31,2014-12-31,1448
+265,E.ON SE,acceptedDate,2014-12-31,2014-12-30 19:00:00,1449
+266,E.ON SE,revenue,2014-12-31,111556000000,1450
+267,E.ON SE,costOfRevenue,2014-12-31,98212000000,1451
+268,E.ON SE,grossProfit,2014-12-31,13344000000,1452
+269,E.ON SE,grossProfitRatio,2014-12-31,0.11961705331851268,1453
+270,E.ON SE,researchAndDevelopmentExpenses,2014-12-31,0,1454
+271,E.ON SE,generalAndAdministrativeExpenses,2014-12-31,0,1455
+272,E.ON SE,sellingAndMarketingExpenses,2014-12-31,0,1456
+273,E.ON SE,sellingGeneralAndAdministrativeExpenses,2014-12-31,0,1457
+274,E.ON SE,otherExpenses,2014-12-31,15945000000,1458
+275,E.ON SE,operatingExpenses,2014-12-31,15945000000,1459
+276,E.ON SE,costAndExpenses,2014-12-31,114157000000,1460
+277,E.ON SE,interestIncome,2014-12-31,882000000,1461
+278,E.ON SE,interestExpense,2014-12-31,1810000000,1462
+279,E.ON SE,depreciationAndAmortization,2014-12-31,8667000000,1463
+280,E.ON SE,ebitda,2014-12-31,7893000000,1464
+281,E.ON SE,ebitdaratio,2014-12-31,0.07075370217648536,1465
+282,E.ON SE,operatingIncome,2014-12-31,-2601000000,1466
+283,E.ON SE,operatingIncomeRatio,2014-12-31,-0.023315644160780236,1467
+284,E.ON SE,totalOtherIncomeExpensesNet,2014-12-31,222000000,1468
+285,E.ON SE,incomeBeforeTax,2014-12-31,-2379000000,1469
+286,E.ON SE,incomeBeforeTaxRatio,2014-12-31,-0.02132561224855678,1470
+287,E.ON SE,incomeTaxExpense,2014-12-31,576000000,1471
+288,E.ON SE,netIncome,2014-12-31,-3160000000,1472
+289,E.ON SE,netIncomeRatio,2014-12-31,-0.028326580372189752,1473
+290,E.ON SE,eps,2014-12-31,-1.64,1474
+291,E.ON SE,epsdiluted,2014-12-31,-1.64,1475
+292,E.ON SE,weightedAverageShsOut,2014-12-31,1923000000,1476
+293,E.ON SE,weightedAverageShsOutDil,2014-12-31,1923000000,1477
+294,E.ON SE,link,2014-12-31,https://www.bundesanzeiger.de/pub/de/suche;wwwsid=627BFD7A56A5CB624C47FDDEAB2FC509.web07-pub?0,1478
+295,E.ON SE,finalLink,2014-12-31,https://www.bundesanzeiger.de/pub/de/suche;wwwsid=627BFD7A56A5CB624C47FDDEAB2FC509.web07-pub?0,1479
+296,E.ON SE,calendarYear,2013-12-31,2013,1480
+297,E.ON SE,period,2013-12-31,FY,1481
+298,E.ON SE,symbol,2013-12-31,EOAN.DE,1482
+299,E.ON SE,reportedCurrency,2013-12-31,EUR,1483
+300,E.ON SE,cik,2013-12-31,,1484
+301,E.ON SE,fillingDate,2013-12-31,2013-12-31,1485
+302,E.ON SE,acceptedDate,2013-12-31,2013-12-30 19:00:00,1486
+303,E.ON SE,revenue,2013-12-31,122450000000,1487
+304,E.ON SE,costOfRevenue,2013-12-31,107730000000,1488
+305,E.ON SE,grossProfit,2013-12-31,14720000000,1489
+306,E.ON SE,grossProfitRatio,2013-12-31,0.12021233156390364,1490
+307,E.ON SE,researchAndDevelopmentExpenses,2013-12-31,0,1491
+308,E.ON SE,generalAndAdministrativeExpenses,2013-12-31,0,1492
+309,E.ON SE,sellingAndMarketingExpenses,2013-12-31,0,1493
+310,E.ON SE,sellingGeneralAndAdministrativeExpenses,2013-12-31,0,1494
+311,E.ON SE,otherExpenses,2013-12-31,13460000000,1495
+312,E.ON SE,operatingExpenses,2013-12-31,13460000000,1496
+313,E.ON SE,costAndExpenses,2013-12-31,121190000000,1497
+314,E.ON SE,interestIncome,2013-12-31,583000000,1498
+315,E.ON SE,interestExpense,2013-12-31,1735000000,1499
+316,E.ON SE,depreciationAndAmortization,2013-12-31,5273000000,1500
+317,E.ON SE,ebitda,2013-12-31,9853000000,1501
+318,E.ON SE,ebitdaratio,2013-12-31,0.08046549612086566,1502
+319,E.ON SE,operatingIncome,2013-12-31,1260000000,1503
+320,E.ON SE,operatingIncomeRatio,2013-12-31,0.010289914250714577,1504
+321,E.ON SE,totalOtherIncomeExpensesNet,2013-12-31,1946000000,1505
+322,E.ON SE,incomeBeforeTax,2013-12-31,3206000000,1506
+323,E.ON SE,incomeBeforeTaxRatio,2013-12-31,0.026182115149040425,1507
+324,E.ON SE,incomeTaxExpense,2013-12-31,703000000,1508
+325,E.ON SE,netIncome,2013-12-31,2142000000,1509
+326,E.ON SE,netIncomeRatio,2013-12-31,0.01749285422621478,1510
+327,E.ON SE,eps,2013-12-31,1.12,1511
+328,E.ON SE,epsdiluted,2013-12-31,1.12,1512
+329,E.ON SE,weightedAverageShsOut,2013-12-31,1907000000,1513
+330,E.ON SE,weightedAverageShsOutDil,2013-12-31,1907000000,1514
+331,E.ON SE,link,2013-12-31,https://www.bundesanzeiger.de/pub/de/suche;wwwsid=627BFD7A56A5CB624C47FDDEAB2FC509.web07-pub?0,1515
+332,E.ON SE,finalLink,2013-12-31,https://www.bundesanzeiger.de/pub/de/suche;wwwsid=627BFD7A56A5CB624C47FDDEAB2FC509.web07-pub?0,1516
+333,E.ON SE,calendarYear,2012-12-31,2012,1517
+334,E.ON SE,period,2012-12-31,FY,1518
+335,E.ON SE,symbol,2012-12-31,EOAN.DE,1519
+336,E.ON SE,reportedCurrency,2012-12-31,EUR,1520
+337,E.ON SE,cik,2012-12-31,,1521
+338,E.ON SE,fillingDate,2012-12-31,2012-12-31,1522
+339,E.ON SE,acceptedDate,2012-12-31,2012-12-30 19:00:00,1523
+340,E.ON SE,revenue,2012-12-31,132093000000,1524
+341,E.ON SE,costOfRevenue,2012-12-31,114843000000,1525
+342,E.ON SE,grossProfit,2012-12-31,17250000000,1526
+343,E.ON SE,grossProfitRatio,2012-12-31,0.1305898117235584,1527
+344,E.ON SE,researchAndDevelopmentExpenses,2012-12-31,0,1528
+345,E.ON SE,generalAndAdministrativeExpenses,2012-12-31,0,1529
+346,E.ON SE,sellingAndMarketingExpenses,2012-12-31,0,1530
+347,E.ON SE,sellingGeneralAndAdministrativeExpenses,2012-12-31,0,1531
+348,E.ON SE,otherExpenses,2012-12-31,13951000000,1532
+349,E.ON SE,operatingExpenses,2012-12-31,13951000000,1533
+350,E.ON SE,costAndExpenses,2012-12-31,128794000000,1534
+351,E.ON SE,interestIncome,2012-12-31,1191000000,1535
+352,E.ON SE,interestExpense,2012-12-31,1804000000,1536
+353,E.ON SE,depreciationAndAmortization,2012-12-31,5078000000,1537
+354,E.ON SE,ebitda,2012-12-31,9809000000,1538
+355,E.ON SE,ebitdaratio,2012-12-31,0.07425828772152952,1539
+356,E.ON SE,operatingIncome,2012-12-31,3299000000,1540
+357,E.ON SE,operatingIncomeRatio,2012-12-31,0.024974828340638792,1541
+358,E.ON SE,totalOtherIncomeExpensesNet,2012-12-31,15000000,1542
+359,E.ON SE,incomeBeforeTax,2012-12-31,3314000000,1543
+360,E.ON SE,incomeBeforeTaxRatio,2012-12-31,0.025088384698659278,1544
+361,E.ON SE,incomeTaxExpense,2012-12-31,710000000,1545
+362,E.ON SE,netIncome,2012-12-31,2217000000,1546
+363,E.ON SE,netIncomeRatio,2012-12-31,0.016783629715427767,1547
+364,E.ON SE,eps,2012-12-31,1.16,1548
+365,E.ON SE,epsdiluted,2012-12-31,1.16,1549
+366,E.ON SE,weightedAverageShsOut,2012-12-31,1906000000,1550
+367,E.ON SE,weightedAverageShsOutDil,2012-12-31,1906000000,1551
+368,E.ON SE,link,2012-12-31,https://www.bundesanzeiger.de/pub/de/suche;wwwsid=627BFD7A56A5CB624C47FDDEAB2FC509.web07-pub?0,1552
+369,E.ON SE,finalLink,2012-12-31,https://www.bundesanzeiger.de/pub/de/suche;wwwsid=627BFD7A56A5CB624C47FDDEAB2FC509.web07-pub?0,1553
+370,E.ON SE,calendarYear,2011-12-31,2011,1554
+371,E.ON SE,period,2011-12-31,FY,1555
+372,E.ON SE,symbol,2011-12-31,EOAN.DE,1556
+373,E.ON SE,reportedCurrency,2011-12-31,EUR,1557
+374,E.ON SE,cik,2011-12-31,,1558
+375,E.ON SE,fillingDate,2011-12-31,2011-12-31,1559
+376,E.ON SE,acceptedDate,2011-12-31,2011-12-30 19:00:00,1560
+377,E.ON SE,revenue,2011-12-31,112954000000,1561
+378,E.ON SE,costOfRevenue,2011-12-31,97324000000,1562
+379,E.ON SE,grossProfit,2011-12-31,15630000000,1563
+380,E.ON SE,grossProfitRatio,2011-12-31,0.13837491368167573,1564
+381,E.ON SE,researchAndDevelopmentExpenses,2011-12-31,0,1565
+382,E.ON SE,generalAndAdministrativeExpenses,2011-12-31,0,1566
+383,E.ON SE,sellingAndMarketingExpenses,2011-12-31,0,1567
+384,E.ON SE,sellingGeneralAndAdministrativeExpenses,2011-12-31,0,1568
+385,E.ON SE,otherExpenses,2011-12-31,16899000000,1569
+386,E.ON SE,operatingExpenses,2011-12-31,16899000000,1570
+387,E.ON SE,costAndExpenses,2011-12-31,114223000000,1571
+388,E.ON SE,interestIncome,2011-12-31,0,1572
+389,E.ON SE,interestExpense,2011-12-31,0,1573
+390,E.ON SE,depreciationAndAmortization,2011-12-31,7081000000,1574
+391,E.ON SE,ebitda,2011-12-31,3826000000,1575
+392,E.ON SE,ebitdaratio,2011-12-31,0.03387219576110629,1576
+393,E.ON SE,operatingIncome,2011-12-31,-1269000000,1577
+394,E.ON SE,operatingIncomeRatio,2011-12-31,-0.011234661897763691,1578
+395,E.ON SE,totalOtherIncomeExpensesNet,2011-12-31,-1642000000,1579
+396,E.ON SE,incomeBeforeTax,2011-12-31,-2911000000,1580
+397,E.ON SE,incomeBeforeTaxRatio,2011-12-31,-0.025771553021584008,1581
+398,E.ON SE,incomeTaxExpense,2011-12-31,-1036000000,1582
+399,E.ON SE,netIncome,2011-12-31,-2219000000,1583
+400,E.ON SE,netIncomeRatio,2011-12-31,-0.019645165288524533,1584
+401,E.ON SE,eps,2011-12-31,-1.16,1585
+402,E.ON SE,epsdiluted,2011-12-31,-1.164829,1586
+403,E.ON SE,weightedAverageShsOut,2011-12-31,1905000000,1587
+404,E.ON SE,weightedAverageShsOutDil,2011-12-31,1905000000,1588
+405,E.ON SE,link,2011-12-31,https://www.bundesanzeiger.de/pub/de/suche;wwwsid=627BFD7A56A5CB624C47FDDEAB2FC509.web07-pub?0,1589
+406,E.ON SE,finalLink,2011-12-31,https://www.bundesanzeiger.de/pub/de/suche;wwwsid=627BFD7A56A5CB624C47FDDEAB2FC509.web07-pub?0,1590
+407,E.ON SE,calendarYear,2010-12-31,2010,1591
+408,E.ON SE,period,2010-12-31,FY,1592
+409,E.ON SE,symbol,2010-12-31,EOAN.DE,1593
+410,E.ON SE,reportedCurrency,2010-12-31,EUR,1594
+411,E.ON SE,cik,2010-12-31,,1595
+412,E.ON SE,fillingDate,2010-12-31,2010-12-31,1596
+413,E.ON SE,acceptedDate,2010-12-31,2010-12-30 19:00:00,1597
+414,E.ON SE,revenue,2010-12-31,92863000000,1598
+415,E.ON SE,costOfRevenue,2010-12-31,73575000000,1599
+416,E.ON SE,grossProfit,2010-12-31,19288000000,1600
+417,E.ON SE,grossProfitRatio,2010-12-31,0.2077038217589352,1601
+418,E.ON SE,researchAndDevelopmentExpenses,2010-12-31,0,1602
+419,E.ON SE,generalAndAdministrativeExpenses,2010-12-31,5281000000,1603
+420,E.ON SE,sellingAndMarketingExpenses,2010-12-31,0,1604
+421,E.ON SE,sellingGeneralAndAdministrativeExpenses,2010-12-31,5281000000,1605
+422,E.ON SE,otherExpenses,2010-12-31,18721000000,1606
+423,E.ON SE,operatingExpenses,2010-12-31,24002000000,1607
+424,E.ON SE,costAndExpenses,2010-12-31,97577000000,1608
+425,E.ON SE,interestIncome,2010-12-31,653000000,1609
+426,E.ON SE,interestExpense,2010-12-31,2956000000,1610
+427,E.ON SE,depreciationAndAmortization,2010-12-31,6457000000,1611
+428,E.ON SE,ebitda,2010-12-31,17212000000,1612
+429,E.ON SE,ebitdaratio,2010-12-31,0.18534830879898345,1613
+430,E.ON SE,operatingIncome,2010-12-31,-4714000000,1614
+431,E.ON SE,operatingIncomeRatio,2010-12-31,-0.05076295187534325,1615
+432,E.ON SE,totalOtherIncomeExpensesNet,2010-12-31,13777000000,1616
+433,E.ON SE,incomeBeforeTax,2010-12-31,9063000000,1617
+434,E.ON SE,incomeBeforeTaxRatio,2010-12-31,0.0975953824451073,1618
+435,E.ON SE,incomeTaxExpense,2010-12-31,1946000000,1619
+436,E.ON SE,netIncome,2010-12-31,5853000000,1620
+437,E.ON SE,netIncomeRatio,2010-12-31,0.06302833205905474,1621
+438,E.ON SE,eps,2010-12-31,3.07,1622
+439,E.ON SE,epsdiluted,2010-12-31,3.07,1623
+440,E.ON SE,weightedAverageShsOut,2010-12-31,1905000000,1624
+441,E.ON SE,weightedAverageShsOutDil,2010-12-31,1905000000,1625
+442,E.ON SE,link,2010-12-31,https://www.bundesanzeiger.de/pub/de/suche;wwwsid=627BFD7A56A5CB624C47FDDEAB2FC509.web07-pub?0,1626
+443,E.ON SE,finalLink,2010-12-31,https://www.bundesanzeiger.de/pub/de/suche;wwwsid=627BFD7A56A5CB624C47FDDEAB2FC509.web07-pub?0,1627
+444,E.ON SE,calendarYear,2009-12-31,2009,1628
+445,E.ON SE,period,2009-12-31,FY,1629
+446,E.ON SE,symbol,2009-12-31,EOAN.DE,1630
+447,E.ON SE,reportedCurrency,2009-12-31,EUR,1631
+448,E.ON SE,cik,2009-12-31,,1632
+449,E.ON SE,fillingDate,2009-12-31,2009-12-31,1633
+450,E.ON SE,acceptedDate,2009-12-31,2009-12-30 19:00:00,1634
+451,E.ON SE,revenue,2009-12-31,81817000000,1635
+452,E.ON SE,costOfRevenue,2009-12-31,62087000000,1636
+453,E.ON SE,grossProfit,2009-12-31,19730000000,1637
+454,E.ON SE,grossProfitRatio,2009-12-31,0.24114792769228888,1638
+455,E.ON SE,researchAndDevelopmentExpenses,2009-12-31,0,1639
+456,E.ON SE,generalAndAdministrativeExpenses,2009-12-31,5357000000,1640
+457,E.ON SE,sellingAndMarketingExpenses,2009-12-31,0,1641
+458,E.ON SE,sellingGeneralAndAdministrativeExpenses,2009-12-31,5357000000,1642
+459,E.ON SE,otherExpenses,2009-12-31,25068000000,1643
+460,E.ON SE,operatingExpenses,2009-12-31,30425000000,1644
+461,E.ON SE,costAndExpenses,2009-12-31,92512000000,1645
+462,E.ON SE,interestIncome,2009-12-31,601000000,1646
+463,E.ON SE,interestExpense,2009-12-31,2850000000,1647
+464,E.ON SE,depreciationAndAmortization,2009-12-31,3981000000,1648
+465,E.ON SE,ebitda,2009-12-31,18203000000,1649
+466,E.ON SE,ebitdaratio,2009-12-31,0.22248432477358007,1650
+467,E.ON SE,operatingIncome,2009-12-31,-10695000000,1651
+468,E.ON SE,operatingIncomeRatio,2009-12-31,-0.13071855482356967,1652
+469,E.ON SE,totalOtherIncomeExpensesNet,2009-12-31,22488000000,1653
+470,E.ON SE,incomeBeforeTax,2009-12-31,11793000000,1654
+471,E.ON SE,incomeBeforeTaxRatio,2009-12-31,0.14413874867081414,1655
+472,E.ON SE,incomeTaxExpense,2009-12-31,2976000000,1656
+473,E.ON SE,netIncome,2009-12-31,8396000000,1657
+474,E.ON SE,netIncomeRatio,2009-12-31,0.10261926005597859,1658
+475,E.ON SE,eps,2009-12-31,4.41,1659
+476,E.ON SE,epsdiluted,2009-12-31,4.41,1660
+477,E.ON SE,weightedAverageShsOut,2009-12-31,1905000000,1661
+478,E.ON SE,weightedAverageShsOutDil,2009-12-31,1905000000,1662
+479,E.ON SE,link,2009-12-31,https://www.bundesanzeiger.de/pub/de/suche;wwwsid=627BFD7A56A5CB624C47FDDEAB2FC509.web07-pub?0,1663
+480,E.ON SE,finalLink,2009-12-31,https://www.bundesanzeiger.de/pub/de/suche;wwwsid=627BFD7A56A5CB624C47FDDEAB2FC509.web07-pub?0,1664
+481,E.ON SE,calendarYear,2008-12-31,2008,1665
+482,E.ON SE,period,2008-12-31,FY,1666
+483,E.ON SE,symbol,2008-12-31,EOAN.DE,1667
+484,E.ON SE,reportedCurrency,2008-12-31,EUR,1668
+485,E.ON SE,cik,2008-12-31,,1669
+486,E.ON SE,fillingDate,2008-12-31,2008-12-31,1670
+487,E.ON SE,acceptedDate,2008-12-31,2008-12-30 19:00:00,1671
+488,E.ON SE,revenue,2008-12-31,86753000000,1672
+489,E.ON SE,costOfRevenue,2008-12-31,66419000000,1673
+490,E.ON SE,grossProfit,2008-12-31,20334000000,1674
+491,E.ON SE,grossProfitRatio,2008-12-31,0.23438958883266284,1675
+492,E.ON SE,researchAndDevelopmentExpenses,2008-12-31,0,1676
+493,E.ON SE,generalAndAdministrativeExpenses,2008-12-31,5130000000,1677
+494,E.ON SE,sellingAndMarketingExpenses,2008-12-31,0,1678
+495,E.ON SE,sellingGeneralAndAdministrativeExpenses,2008-12-31,5130000000,1679
+496,E.ON SE,otherExpenses,2008-12-31,27227000000,1680
+497,E.ON SE,operatingExpenses,2008-12-31,32357000000,1681
+498,E.ON SE,costAndExpenses,2008-12-31,98776000000,1682
+499,E.ON SE,interestIncome,2008-12-31,0,1683
+500,E.ON SE,interestExpense,2008-12-31,3052000000,1684
+501,E.ON SE,depreciationAndAmortization,2008-12-31,6890000000,1685
+502,E.ON SE,ebitda,2008-12-31,12071000000,1686
+503,E.ON SE,ebitdaratio,2008-12-31,0.13914216223070094,1687
+504,E.ON SE,operatingIncome,2008-12-31,-12023000000,1688
+505,E.ON SE,operatingIncomeRatio,2008-12-31,-0.13858886724378408,1689
+506,E.ON SE,totalOtherIncomeExpensesNet,2008-12-31,14618000000,1690
+507,E.ON SE,incomeBeforeTax,2008-12-31,2595000000,1691
+508,E.ON SE,incomeBeforeTaxRatio,2008-12-31,0.02991251023019377,1692
+509,E.ON SE,incomeTaxExpense,2008-12-31,863000000,1693
+510,E.ON SE,netIncome,2008-12-31,1266000000,1694
+511,E.ON SE,netIncomeRatio,2008-12-31,0.014593155279932683,1695
+512,E.ON SE,eps,2008-12-31,0.68,1696
+513,E.ON SE,epsdiluted,2008-12-31,0.68,1697
+514,E.ON SE,weightedAverageShsOut,2008-12-31,1862000000,1698
+515,E.ON SE,weightedAverageShsOutDil,2008-12-31,1862000000,1699
+516,E.ON SE,link,2008-12-31,https://www.bundesanzeiger.de/pub/de/suche;wwwsid=627BFD7A56A5CB624C47FDDEAB2FC509.web07-pub?0,1700
+517,E.ON SE,finalLink,2008-12-31,https://www.bundesanzeiger.de/pub/de/suche;wwwsid=627BFD7A56A5CB624C47FDDEAB2FC509.web07-pub?0,1701
+518,E.ON SE,calendarYear,2007-12-31,2007,1702
+519,E.ON SE,period,2007-12-31,FY,1703
+520,E.ON SE,symbol,2007-12-31,EOAN.DE,1704
+521,E.ON SE,reportedCurrency,2007-12-31,EUR,1705
+522,E.ON SE,cik,2007-12-31,,1706
+523,E.ON SE,fillingDate,2007-12-31,2007-12-31,1707
+524,E.ON SE,acceptedDate,2007-12-31,2007-12-30 19:00:00,1708
+525,E.ON SE,revenue,2007-12-31,68731000000,1709
+526,E.ON SE,costOfRevenue,2007-12-31,50223000000,1710
+527,E.ON SE,grossProfit,2007-12-31,18508000000,1711
+528,E.ON SE,grossProfitRatio,2007-12-31,0.26928169239498917,1712
+529,E.ON SE,researchAndDevelopmentExpenses,2007-12-31,0,1713
+530,E.ON SE,generalAndAdministrativeExpenses,2007-12-31,4597000000,1714
+531,E.ON SE,sellingAndMarketingExpenses,2007-12-31,0,1715
+532,E.ON SE,sellingGeneralAndAdministrativeExpenses,2007-12-31,4597000000,1716
+533,E.ON SE,otherExpenses,2007-12-31,12918000000,1717
+534,E.ON SE,operatingExpenses,2007-12-31,17515000000,1718
+535,E.ON SE,costAndExpenses,2007-12-31,67738000000,1719
+536,E.ON SE,interestIncome,2007-12-31,1035000000,1720
+537,E.ON SE,interestExpense,2007-12-31,1986000000,1721
+538,E.ON SE,depreciationAndAmortization,2007-12-31,3194000000,1722
+539,E.ON SE,ebitda,2007-12-31,14673000000,1723
+540,E.ON SE,ebitdaratio,2007-12-31,0.21348445388543744,1724
+541,E.ON SE,operatingIncome,2007-12-31,993000000,1725
+542,E.ON SE,operatingIncomeRatio,2007-12-31,0.014447629162968675,1726
+543,E.ON SE,totalOtherIncomeExpensesNet,2007-12-31,8690000000,1727
+544,E.ON SE,incomeBeforeTax,2007-12-31,9683000000,1728
+545,E.ON SE,incomeBeforeTaxRatio,2007-12-31,0.14088257118330885,1729
+546,E.ON SE,incomeTaxExpense,2007-12-31,2289000000,1730
+547,E.ON SE,netIncome,2007-12-31,7204000000,1731
+548,E.ON SE,netIncomeRatio,2007-12-31,0.10481442144010708,1732
+549,E.ON SE,eps,2007-12-31,3.686298,1733
+550,E.ON SE,epsdiluted,2007-12-31,3.686298,1734
+551,E.ON SE,weightedAverageShsOut,2007-12-31,1953195319,1735
+552,E.ON SE,weightedAverageShsOutDil,2007-12-31,1977000000,1736
+553,E.ON SE,link,2007-12-31,https://www.bundesanzeiger.de/pub/de/suche;wwwsid=627BFD7A56A5CB624C47FDDEAB2FC509.web07-pub?0,1737
+554,E.ON SE,finalLink,2007-12-31,https://www.bundesanzeiger.de/pub/de/suche;wwwsid=627BFD7A56A5CB624C47FDDEAB2FC509.web07-pub?0,1738
+555,E.ON SE,calendarYear,2006-12-31,2006,1739
+556,E.ON SE,period,2006-12-31,FY,1740
+557,E.ON SE,symbol,2006-12-31,EOAN.DE,1741
+558,E.ON SE,reportedCurrency,2006-12-31,EUR,1742
+559,E.ON SE,cik,2006-12-31,,1743
+560,E.ON SE,fillingDate,2006-12-31,2006-12-31,1744
+561,E.ON SE,acceptedDate,2006-12-31,2006-12-30 19:00:00,1745
+562,E.ON SE,revenue,2006-12-31,64197000000,1746
+563,E.ON SE,costOfRevenue,2006-12-31,52304000000,1747
+564,E.ON SE,grossProfit,2006-12-31,11893000000,1748
+565,E.ON SE,grossProfitRatio,2006-12-31,0.18525787809399194,1749
+566,E.ON SE,researchAndDevelopmentExpenses,2006-12-31,0,1750
+567,E.ON SE,generalAndAdministrativeExpenses,2006-12-31,1774000000,1751
+568,E.ON SE,sellingAndMarketingExpenses,2006-12-31,4341000000,1752
+569,E.ON SE,sellingGeneralAndAdministrativeExpenses,2006-12-31,6115000000,1753
+570,E.ON SE,otherExpenses,2006-12-31,0,1754
+571,E.ON SE,operatingExpenses,2006-12-31,6115000000,1755
+572,E.ON SE,costAndExpenses,2006-12-31,58419000000,1756
+573,E.ON SE,interestIncome,2006-12-31,0,1757
+574,E.ON SE,interestExpense,2006-12-31,633000000,1758
+575,E.ON SE,depreciationAndAmortization,2006-12-31,3751000000,1759
+576,E.ON SE,ebitda,2006-12-31,9118000000,1760
+577,E.ON SE,ebitdaratio,2006-12-31,0.1420315591071234,1761
+578,E.ON SE,operatingIncome,2006-12-31,5778000000,1762
+579,E.ON SE,operatingIncomeRatio,2006-12-31,0.09000420580400953,1763
+580,E.ON SE,totalOtherIncomeExpensesNet,2006-12-31,-645000000,1764
+581,E.ON SE,incomeBeforeTax,2006-12-31,5133000000,1765
+582,E.ON SE,incomeBeforeTaxRatio,2006-12-31,0.07995700733679144,1766
+583,E.ON SE,incomeTaxExpense,2006-12-31,-323000000,1767
+584,E.ON SE,netIncome,2006-12-31,5057000000,1768
+585,E.ON SE,netIncomeRatio,2006-12-31,0.0787731513933673,1769
+586,E.ON SE,eps,2006-12-31,2.556411,1770
+587,E.ON SE,epsdiluted,2006-12-31,2.556411,1771
+588,E.ON SE,weightedAverageShsOut,2006-12-31,1977197719,1772
+589,E.ON SE,weightedAverageShsOutDil,2006-12-31,1977197719,1773
+590,E.ON SE,link,2006-12-31,https://www.bundesanzeiger.de/pub/de/suche;wwwsid=627BFD7A56A5CB624C47FDDEAB2FC509.web07-pub?0,1774
+591,E.ON SE,finalLink,2006-12-31,https://www.bundesanzeiger.de/pub/de/suche;wwwsid=627BFD7A56A5CB624C47FDDEAB2FC509.web07-pub?0,1775
+592,E.ON SE,calendarYear,2005-12-31,2005,1776
+593,E.ON SE,period,2005-12-31,FY,1777
+594,E.ON SE,symbol,2005-12-31,EOAN.DE,1778
+595,E.ON SE,reportedCurrency,2005-12-31,EUR,1779
+596,E.ON SE,cik,2005-12-31,,1780
+597,E.ON SE,fillingDate,2005-12-31,2005-12-31,1781
+598,E.ON SE,acceptedDate,2005-12-31,2005-12-30 19:00:00,1782
+599,E.ON SE,revenue,2005-12-31,51854000000,1783
+600,E.ON SE,costOfRevenue,2005-12-31,40787000000,1784
+601,E.ON SE,grossProfit,2005-12-31,11067000000,1785
+602,E.ON SE,grossProfitRatio,2005-12-31,0.21342615805916612,1786
+603,E.ON SE,researchAndDevelopmentExpenses,2005-12-31,0,1787
+604,E.ON SE,generalAndAdministrativeExpenses,2005-12-31,1528000000,1788
+605,E.ON SE,sellingAndMarketingExpenses,2005-12-31,3852000000,1789
+606,E.ON SE,sellingGeneralAndAdministrativeExpenses,2005-12-31,5380000000,1790
+607,E.ON SE,otherExpenses,2005-12-31,0,1791
+608,E.ON SE,operatingExpenses,2005-12-31,5380000000,1792
+609,E.ON SE,costAndExpenses,2005-12-31,46167000000,1793
+610,E.ON SE,interestIncome,2005-12-31,0,1794
+611,E.ON SE,interestExpense,2005-12-31,174000000,1795
+612,E.ON SE,depreciationAndAmortization,2005-12-31,3068000000,1796
+613,E.ON SE,ebitda,2005-12-31,12925000000,1797
+614,E.ON SE,ebitdaratio,2005-12-31,0.24925753075943996,1798
+615,E.ON SE,operatingIncome,2005-12-31,5687000000,1799
+616,E.ON SE,operatingIncomeRatio,2005-12-31,0.10967331353415359,1800
+617,E.ON SE,totalOtherIncomeExpensesNet,2005-12-31,1521000000,1801
+618,E.ON SE,incomeBeforeTax,2005-12-31,7208000000,1802
+619,E.ON SE,incomeBeforeTaxRatio,2005-12-31,0.13900566976510972,1803
+620,E.ON SE,incomeTaxExpense,2005-12-31,2276000000,1804
+621,E.ON SE,netIncome,2005-12-31,7407000000,1805
+622,E.ON SE,netIncomeRatio,2005-12-31,0.14284336791761484,1806
+623,E.ON SE,eps,2005-12-31,3.746292,1807
+624,E.ON SE,epsdiluted,2005-12-31,3.746292,1808
+625,E.ON SE,weightedAverageShsOut,2005-12-31,1977197719,1809
+626,E.ON SE,weightedAverageShsOutDil,2005-12-31,1977197719,1810
+627,E.ON SE,link,2005-12-31,https://www.bundesanzeiger.de/pub/de/suche;wwwsid=627BFD7A56A5CB624C47FDDEAB2FC509.web07-pub?0,1811
+628,E.ON SE,finalLink,2005-12-31,https://www.bundesanzeiger.de/pub/de/suche;wwwsid=627BFD7A56A5CB624C47FDDEAB2FC509.web07-pub?0,1812
+629,E.ON SE,calendarYear,2004-12-31,2004,1813
+630,E.ON SE,period,2004-12-31,FY,1814
+631,E.ON SE,symbol,2004-12-31,EOAN.DE,1815
+632,E.ON SE,reportedCurrency,2004-12-31,EUR,1816
+633,E.ON SE,cik,2004-12-31,,1817
+634,E.ON SE,fillingDate,2004-12-31,2004-12-31,1818
+635,E.ON SE,acceptedDate,2004-12-31,2004-12-30 19:00:00,1819
+636,E.ON SE,revenue,2004-12-31,44745000000,1820
+637,E.ON SE,costOfRevenue,2004-12-31,33353000000,1821
+638,E.ON SE,grossProfit,2004-12-31,11392000000,1822
+639,E.ON SE,grossProfitRatio,2004-12-31,0.2545982791373338,1823
+640,E.ON SE,researchAndDevelopmentExpenses,2004-12-31,0,1824
+641,E.ON SE,generalAndAdministrativeExpenses,2004-12-31,1508000000,1825
+642,E.ON SE,sellingAndMarketingExpenses,2004-12-31,4387000000,1826
+643,E.ON SE,sellingGeneralAndAdministrativeExpenses,2004-12-31,5895000000,1827
+644,E.ON SE,otherExpenses,2004-12-31,0,1828
+645,E.ON SE,operatingExpenses,2004-12-31,5895000000,1829
+646,E.ON SE,costAndExpenses,2004-12-31,39248000000,1830
+647,E.ON SE,interestIncome,2004-12-31,0,1831
+648,E.ON SE,interestExpense,2004-12-31,433000000,1832
+649,E.ON SE,depreciationAndAmortization,2004-12-31,3256000000,1833
+650,E.ON SE,ebitda,2004-12-31,9975000000,1834
+651,E.ON SE,ebitdaratio,2004-12-31,0.2229299363057325,1835
+652,E.ON SE,operatingIncome,2004-12-31,5497000000,1836
+653,E.ON SE,operatingIncomeRatio,2004-12-31,0.12285171527544977,1837
+654,E.ON SE,totalOtherIncomeExpensesNet,2004-12-31,1302000000,1838
+655,E.ON SE,incomeBeforeTax,2004-12-31,6799000000,1839
+656,E.ON SE,incomeBeforeTaxRatio,2004-12-31,0.15194993854061906,1840
+657,E.ON SE,incomeTaxExpense,2004-12-31,1947000000,1841
+658,E.ON SE,netIncome,2004-12-31,4339000000,1842
+659,E.ON SE,netIncomeRatio,2004-12-31,0.09697172868476925,1843
+660,E.ON SE,eps,2004-12-31,2.203113,1844
+661,E.ON SE,epsdiluted,2004-12-31,2.203113,1845
+662,E.ON SE,weightedAverageShsOut,2004-12-31,1971197119,1846
+663,E.ON SE,weightedAverageShsOutDil,2004-12-31,1971197119,1847
+664,E.ON SE,link,2004-12-31,https://www.bundesanzeiger.de/pub/de/suche;wwwsid=627BFD7A56A5CB624C47FDDEAB2FC509.web07-pub?0,1848
+665,E.ON SE,finalLink,2004-12-31,https://www.bundesanzeiger.de/pub/de/suche;wwwsid=627BFD7A56A5CB624C47FDDEAB2FC509.web07-pub?0,1849
+666,E.ON SE,calendarYear,2003-12-31,2003,1850
+667,E.ON SE,period,2003-12-31,FY,1851
+668,E.ON SE,symbol,2003-12-31,EOAN.DE,1852
+669,E.ON SE,reportedCurrency,2003-12-31,EUR,1853
+670,E.ON SE,cik,2003-12-31,,1854
+671,E.ON SE,fillingDate,2003-12-31,2003-12-31,1855
+672,E.ON SE,acceptedDate,2003-12-31,2003-12-30 19:00:00,1856
+673,E.ON SE,revenue,2003-12-31,42541000000,1857
+674,E.ON SE,costOfRevenue,2003-12-31,32780000000,1858
+675,E.ON SE,grossProfit,2003-12-31,9761000000,1859
+676,E.ON SE,grossProfitRatio,2003-12-31,0.22944923720645966,1860
+677,E.ON SE,researchAndDevelopmentExpenses,2003-12-31,0,1861
+678,E.ON SE,generalAndAdministrativeExpenses,2003-12-31,1399000000,1862
+679,E.ON SE,sellingAndMarketingExpenses,2003-12-31,4556000000,1863
+680,E.ON SE,sellingGeneralAndAdministrativeExpenses,2003-12-31,5955000000,1864
+681,E.ON SE,otherExpenses,2003-12-31,0,1865
+682,E.ON SE,operatingExpenses,2003-12-31,5955000000,1866
+683,E.ON SE,costAndExpenses,2003-12-31,38735000000,1867
+684,E.ON SE,interestIncome,2003-12-31,0,1868
+685,E.ON SE,interestExpense,2003-12-31,359000000,1869
+686,E.ON SE,depreciationAndAmortization,2003-12-31,3272000000,1870
+687,E.ON SE,ebitda,2003-12-31,9402000000,1871
+688,E.ON SE,ebitdaratio,2003-12-31,0.2210103194565243,1872
+689,E.ON SE,operatingIncome,2003-12-31,3806000000,1873
+690,E.ON SE,operatingIncomeRatio,2003-12-31,0.08946663219012246,1874
+691,E.ON SE,totalOtherIncomeExpensesNet,2003-12-31,1732000000,1875
+692,E.ON SE,incomeBeforeTax,2003-12-31,5538000000,1876
+693,E.ON SE,incomeBeforeTaxRatio,2003-12-31,0.13018029665499165,1877
+694,E.ON SE,incomeTaxExpense,2003-12-31,1124000000,1878
+695,E.ON SE,netIncome,2003-12-31,4647000000,1879
+696,E.ON SE,netIncomeRatio,2003-12-31,0.10923579605556992,1880
+697,E.ON SE,eps,2003-12-31,2.369763,1881
+698,E.ON SE,epsdiluted,2003-12-31,2.369763,1882
+699,E.ON SE,weightedAverageShsOut,2003-12-31,1962196219,1883
+700,E.ON SE,weightedAverageShsOutDil,2003-12-31,1962196219,1884
+701,E.ON SE,link,2003-12-31,https://www.bundesanzeiger.de/pub/de/suche;wwwsid=627BFD7A56A5CB624C47FDDEAB2FC509.web07-pub?0,1885
+702,E.ON SE,finalLink,2003-12-31,https://www.bundesanzeiger.de/pub/de/suche;wwwsid=627BFD7A56A5CB624C47FDDEAB2FC509.web07-pub?0,1886
+703,E.ON SE,calendarYear,2002-12-31,2002,1887
+704,E.ON SE,period,2002-12-31,FY,1888
+705,E.ON SE,symbol,2002-12-31,EOAN.DE,1889
+706,E.ON SE,reportedCurrency,2002-12-31,EUR,1890
+707,E.ON SE,cik,2002-12-31,,1891
+708,E.ON SE,fillingDate,2002-12-31,2002-12-31,1892
+709,E.ON SE,acceptedDate,2002-12-31,2002-12-30 19:00:00,1893
+710,E.ON SE,revenue,2002-12-31,35927000000,1894
+711,E.ON SE,costOfRevenue,2002-12-31,26534000000,1895
+712,E.ON SE,grossProfit,2002-12-31,9393000000,1896
+713,E.ON SE,grossProfitRatio,2002-12-31,0.2614468227238567,1897
+714,E.ON SE,researchAndDevelopmentExpenses,2002-12-31,0,1898
+715,E.ON SE,generalAndAdministrativeExpenses,2002-12-31,1649000000,1899
+716,E.ON SE,sellingAndMarketingExpenses,2002-12-31,4839000000,1900
+717,E.ON SE,sellingGeneralAndAdministrativeExpenses,2002-12-31,6488000000,1901
+718,E.ON SE,otherExpenses,2002-12-31,0,1902
+719,E.ON SE,operatingExpenses,2002-12-31,6488000000,1903
+720,E.ON SE,costAndExpenses,2002-12-31,33022000000,1904
+721,E.ON SE,interestIncome,2002-12-31,0,1905
+722,E.ON SE,interestExpense,2002-12-31,1273000000,1906
+723,E.ON SE,depreciationAndAmortization,2002-12-31,6767000000,1907
+724,E.ON SE,ebitda,2002-12-31,10155000000,1908
+725,E.ON SE,ebitdaratio,2002-12-31,0.28265649789851643,1909
+726,E.ON SE,operatingIncome,2002-12-31,2905000000,1910
+727,E.ON SE,operatingIncomeRatio,2002-12-31,0.08085840732596654,1911
+728,E.ON SE,totalOtherIncomeExpensesNet,2002-12-31,-3664000000,1912
+729,E.ON SE,incomeBeforeTax,2002-12-31,-759000000,1913
+730,E.ON SE,incomeBeforeTaxRatio,2002-12-31,-0.021126172516491775,1914
+731,E.ON SE,incomeTaxExpense,2002-12-31,-662000000,1915
+732,E.ON SE,netIncome,2002-12-31,2777000000,1916
+733,E.ON SE,netIncomeRatio,2002-12-31,0.07729562724413394,1917
+734,E.ON SE,eps,2002-12-31,1.419858,1918
+735,E.ON SE,epsdiluted,2002-12-31,1.419858,1919
+736,E.ON SE,weightedAverageShsOut,2002-12-31,1956195619,1920
+737,E.ON SE,weightedAverageShsOutDil,2002-12-31,1956195619,1921
+738,E.ON SE,link,2002-12-31,https://www.bundesanzeiger.de/pub/de/suche;wwwsid=627BFD7A56A5CB624C47FDDEAB2FC509.web07-pub?0,1922
+739,E.ON SE,finalLink,2002-12-31,https://www.bundesanzeiger.de/pub/de/suche;wwwsid=627BFD7A56A5CB624C47FDDEAB2FC509.web07-pub?0,1923
+740,E.ON SE,calendarYear,2001-12-31,2001,1924
+741,E.ON SE,period,2001-12-31,FY,1925
+742,E.ON SE,symbol,2001-12-31,EOAN.DE,1926
+743,E.ON SE,reportedCurrency,2001-12-31,EUR,1927
+744,E.ON SE,cik,2001-12-31,,1928
+745,E.ON SE,fillingDate,2001-12-31,2001-12-31,1929
+746,E.ON SE,acceptedDate,2001-12-31,2001-12-30 19:00:00,1930
+747,E.ON SE,revenue,2001-12-31,79695334190,1931
+748,E.ON SE,costOfRevenue,2001-12-31,58094907900,1932
+749,E.ON SE,grossProfit,2001-12-31,21600426290,1933
+750,E.ON SE,grossProfitRatio,2001-12-31,0.27103752697118844,1934
+751,E.ON SE,researchAndDevelopmentExpenses,2001-12-31,0,1935
+752,E.ON SE,generalAndAdministrativeExpenses,2001-12-31,9274505320,1936
+753,E.ON SE,sellingAndMarketingExpenses,2001-12-31,0,1937
+754,E.ON SE,sellingGeneralAndAdministrativeExpenses,2001-12-31,9274505320,1938
+755,E.ON SE,otherExpenses,2001-12-31,9828592950,1939
+756,E.ON SE,operatingExpenses,2001-12-31,19103098270,1940
+757,E.ON SE,costAndExpenses,2001-12-31,77198006170,1941
+758,E.ON SE,interestIncome,2001-12-31,0,1942
+759,E.ON SE,interestExpense,2001-12-31,0,1943
+760,E.ON SE,depreciationAndAmortization,2001-12-31,4460798790,1944
+761,E.ON SE,ebitda,2001-12-31,7297547630,1945
+762,E.ON SE,ebitdaratio,2001-12-31,0.09156806611290527,1946
+763,E.ON SE,operatingIncome,2001-12-31,2497328020,1947
+764,E.ON SE,operatingIncomeRatio,2001-12-31,0.031335937610176424,1948
+765,E.ON SE,totalOtherIncomeExpensesNet,2001-12-31,875525890,1949
+766,E.ON SE,incomeBeforeTax,2001-12-31,3372853910,1950
+767,E.ON SE,incomeBeforeTaxRatio,2001-12-31,0.04232184913057581,1951
+768,E.ON SE,incomeTaxExpense,2001-12-31,762010980,1952
+769,E.ON SE,netIncome,2001-12-31,2074737860,1953
+770,E.ON SE,netIncomeRatio,2001-12-31,0.0260333667094445,1954
+771,E.ON SE,eps,2001-12-31,1.010507,1955
+772,E.ON SE,epsdiluted,2001-12-31,1.010507,1956
+773,E.ON SE,weightedAverageShsOut,2001-12-31,2064057057,1957
+774,E.ON SE,weightedAverageShsOutDil,2001-12-31,2064057057,1958
+775,E.ON SE,link,2001-12-31,https://www.bundesanzeiger.de/pub/de/suche;wwwsid=627BFD7A56A5CB624C47FDDEAB2FC509.web07-pub?0,1959
+776,E.ON SE,finalLink,2001-12-31,https://www.bundesanzeiger.de/pub/de/suche;wwwsid=627BFD7A56A5CB624C47FDDEAB2FC509.web07-pub?0,1960
+777,E.ON SE,calendarYear,2000-12-31,2000,1961
+778,E.ON SE,period,2000-12-31,FY,1962
+779,E.ON SE,symbol,2000-12-31,EOAN.DE,1963
+780,E.ON SE,reportedCurrency,2000-12-31,EUR,1964
+781,E.ON SE,cik,2000-12-31,,1965
+782,E.ON SE,fillingDate,2000-12-31,2000-12-31,1966
+783,E.ON SE,acceptedDate,2000-12-31,2000-12-30 19:00:00,1967
+784,E.ON SE,revenue,2000-12-31,82947504960,1968
+785,E.ON SE,costOfRevenue,2000-12-31,57938891840,1969
+786,E.ON SE,grossProfit,2000-12-31,25008613120,1970
+787,E.ON SE,grossProfitRatio,2000-12-31,0.301499281166564,1971
+788,E.ON SE,researchAndDevelopmentExpenses,2000-12-31,0,1972
+789,E.ON SE,generalAndAdministrativeExpenses,2000-12-31,8869284200,1973
+790,E.ON SE,sellingAndMarketingExpenses,2000-12-31,0,1974
+791,E.ON SE,sellingGeneralAndAdministrativeExpenses,2000-12-31,8869284200,1975
+792,E.ON SE,otherExpenses,2000-12-31,13834166820,1976
+793,E.ON SE,operatingExpenses,2000-12-31,22703451020,1977
+794,E.ON SE,costAndExpenses,2000-12-31,80642342860,1978
+795,E.ON SE,interestIncome,2000-12-31,0,1979
+796,E.ON SE,interestExpense,2000-12-31,0,1980
+797,E.ON SE,depreciationAndAmortization,2000-12-31,4903127700,1981
+798,E.ON SE,ebitda,2000-12-31,10982793100,1982
+799,E.ON SE,ebitdaratio,2000-12-31,0.1324065516533169,1983
+800,E.ON SE,operatingIncome,2000-12-31,2305162100,1984
+801,E.ON SE,operatingIncomeRatio,2000-12-31,0.027790614089135347,1985
+802,E.ON SE,totalOtherIncomeExpensesNet,2000-12-31,3774503300,1986
+803,E.ON SE,incomeBeforeTax,2000-12-31,6079665400,1987
+804,E.ON SE,incomeBeforeTaxRatio,2000-12-31,0.07329533785171494,1988
+805,E.ON SE,incomeTaxExpense,2000-12-31,2510656920,1989
+806,E.ON SE,netIncome,2000-12-31,3569008480,1990
+807,E.ON SE,netIncomeRatio,2000-12-31,0.0430273156705689,1991
+808,E.ON SE,eps,2000-12-31,1.914616,1992
+809,E.ON SE,epsdiluted,2000-12-31,1.914616,1993
+810,E.ON SE,weightedAverageShsOut,2000-12-31,2292188814,1994
+811,E.ON SE,weightedAverageShsOutDil,2000-12-31,2292188814,1995
+812,E.ON SE,link,2000-12-31,https://www.bundesanzeiger.de/pub/de/suche;wwwsid=627BFD7A56A5CB624C47FDDEAB2FC509.web07-pub?0,1996
+813,E.ON SE,finalLink,2000-12-31,https://www.bundesanzeiger.de/pub/de/suche;wwwsid=627BFD7A56A5CB624C47FDDEAB2FC509.web07-pub?0,1997
+814,E.ON SE,calendarYear,1999-12-31,1999,1998
+815,E.ON SE,period,1999-12-31,FY,1999
+816,E.ON SE,symbol,1999-12-31,EOAN.DE,2000
+817,E.ON SE,reportedCurrency,1999-12-31,EUR,2001
+818,E.ON SE,cik,1999-12-31,,2002
+819,E.ON SE,fillingDate,1999-12-31,1999-12-31,2003
+820,E.ON SE,acceptedDate,1999-12-31,1999-12-30 19:00:00,2004
+821,E.ON SE,revenue,1999-12-31,53060435680,2005
+822,E.ON SE,costOfRevenue,1999-12-31,40161041480,2006
+823,E.ON SE,grossProfit,1999-12-31,12899394200,2007
+824,E.ON SE,grossProfitRatio,1999-12-31,0.24310758166017382,2008
+825,E.ON SE,researchAndDevelopmentExpenses,1999-12-31,584348520,2009
+826,E.ON SE,generalAndAdministrativeExpenses,1999-12-31,5944851780,2010
+827,E.ON SE,sellingAndMarketingExpenses,1999-12-31,0,2011
+828,E.ON SE,sellingGeneralAndAdministrativeExpenses,1999-12-31,5944851780,2012
+829,E.ON SE,otherExpenses,1999-12-31,7127461880,2013
+830,E.ON SE,operatingExpenses,1999-12-31,13656662180,2014
+831,E.ON SE,costAndExpenses,1999-12-31,53817703660,2015
+832,E.ON SE,interestIncome,1999-12-31,0,2016
+833,E.ON SE,interestExpense,1999-12-31,0,2017
+834,E.ON SE,depreciationAndAmortization,1999-12-31,3174165260,2018
+835,E.ON SE,ebitda,1999-12-31,6904852920,2019
+836,E.ON SE,ebitdaratio,1999-12-31,0.1301318549595445,2020
+837,E.ON SE,operatingIncome,1999-12-31,-757267980,2021
+838,E.ON SE,operatingIncomeRatio,1999-12-31,-0.014271801018879232,2022
+839,E.ON SE,totalOtherIncomeExpensesNet,1999-12-31,4487955640,2023
+840,E.ON SE,incomeBeforeTax,1999-12-31,3730687660,2024
+841,E.ON SE,incomeBeforeTaxRatio,1999-12-31,0.07031015882529218,2025
+842,E.ON SE,incomeTaxExpense,1999-12-31,1054411190,2026
+843,E.ON SE,netIncome,1999-12-31,2676276470,2027
+844,E.ON SE,netIncomeRatio,1999-12-31,0.05043826790530417,2028
+845,E.ON SE,eps,1999-12-31,1.985593,2029
+846,E.ON SE,epsdiluted,1999-12-31,1.985593,2030
+847,E.ON SE,weightedAverageShsOut,1999-12-31,1506446224,2031
+848,E.ON SE,weightedAverageShsOutDil,1999-12-31,1506446224,2032
+849,E.ON SE,link,1999-12-31,https://www.bundesanzeiger.de/pub/de/suche;wwwsid=627BFD7A56A5CB624C47FDDEAB2FC509.web07-pub?0,2033
+850,E.ON SE,finalLink,1999-12-31,https://www.bundesanzeiger.de/pub/de/suche;wwwsid=627BFD7A56A5CB624C47FDDEAB2FC509.web07-pub?0,2034
+851,E.ON SE,calendarYear,1998-12-31,1998,2035
+852,E.ON SE,period,1998-12-31,FY,2036
+853,E.ON SE,symbol,1998-12-31,EOAN.DE,2037
+854,E.ON SE,reportedCurrency,1998-12-31,EUR,2038
+855,E.ON SE,cik,1998-12-31,,2039
+856,E.ON SE,fillingDate,1998-12-31,1998-12-31,2040
+857,E.ON SE,acceptedDate,1998-12-31,1998-12-30 19:00:00,2041
+858,E.ON SE,revenue,1998-12-31,42803532000,2042
+859,E.ON SE,costOfRevenue,1998-12-31,31553535960,2043
+860,E.ON SE,grossProfit,1998-12-31,11249996040,2044
+861,E.ON SE,grossProfitRatio,1998-12-31,0.26282868525896413,2045
+862,E.ON SE,researchAndDevelopmentExpenses,1998-12-31,193553820,2046
+863,E.ON SE,generalAndAdministrativeExpenses,1998-12-31,4856751360,2047
+864,E.ON SE,sellingAndMarketingExpenses,1998-12-31,0,2048
+865,E.ON SE,sellingGeneralAndAdministrativeExpenses,1998-12-31,4856751360,2049
+866,E.ON SE,otherExpenses,1998-12-31,6573155940,2050
+867,E.ON SE,operatingExpenses,1998-12-31,11623461120,2051
+868,E.ON SE,costAndExpenses,1998-12-31,43176997080,2052
+869,E.ON SE,interestIncome,1998-12-31,0,2053
+870,E.ON SE,interestExpense,1998-12-31,0,2054
+871,E.ON SE,depreciationAndAmortization,1998-12-31,2829978540,2055
+872,E.ON SE,ebitda,1998-12-31,5267733480,2056
+873,E.ON SE,ebitdaratio,1998-12-31,0.12306772908366534,2057
+874,E.ON SE,operatingIncome,1998-12-31,-373465080,2058
+875,E.ON SE,operatingIncomeRatio,1998-12-31,-0.008725099601593626,2059
+876,E.ON SE,totalOtherIncomeExpensesNet,1998-12-31,2811220020,2060
+877,E.ON SE,incomeBeforeTax,1998-12-31,2437754940,2061
+878,E.ON SE,incomeBeforeTaxRatio,1998-12-31,0.05695219123505976,2062
+879,E.ON SE,incomeTaxExpense,1998-12-31,1240620300,2063
+880,E.ON SE,netIncome,1998-12-31,1197134640,2064
+881,E.ON SE,netIncomeRatio,1998-12-31,0.02796812749003984,2065
+882,E.ON SE,eps,1998-12-31,0.79502,2066
+883,E.ON SE,epsdiluted,1998-12-31,0.79502,2067
+884,E.ON SE,weightedAverageShsOut,1998-12-31,1505791370,2068
+885,E.ON SE,weightedAverageShsOutDil,1998-12-31,1505791370,2069
+886,E.ON SE,link,1998-12-31,https://www.bundesanzeiger.de/pub/de/suche;wwwsid=627BFD7A56A5CB624C47FDDEAB2FC509.web07-pub?0,2070
+887,E.ON SE,finalLink,1998-12-31,https://www.bundesanzeiger.de/pub/de/suche;wwwsid=627BFD7A56A5CB624C47FDDEAB2FC509.web07-pub?0,2071
+888,E.ON SE,calendarYear,1997-12-31,1997,2072
+889,E.ON SE,period,1997-12-31,FY,2073
+890,E.ON SE,symbol,1997-12-31,EOAN.DE,2074
+891,E.ON SE,reportedCurrency,1997-12-31,EUR,2075
+892,E.ON SE,cik,1997-12-31,,2076
+893,E.ON SE,fillingDate,1997-12-31,1997-12-31,2077
+894,E.ON SE,acceptedDate,1997-12-31,1997-12-30 19:00:00,2078
+895,E.ON SE,revenue,1997-12-31,42010594353,2079
+896,E.ON SE,costOfRevenue,1997-12-31,31081696191,2080
+897,E.ON SE,grossProfit,1997-12-31,10928898162,2081
+898,E.ON SE,grossProfitRatio,1997-12-31,0.2601462400214664,2082
+899,E.ON SE,researchAndDevelopmentExpenses,1997-12-31,170636193,2083
+900,E.ON SE,generalAndAdministrativeExpenses,1997-12-31,4286450259,2084
+901,E.ON SE,sellingAndMarketingExpenses,1997-12-31,0,2085
+902,E.ON SE,sellingGeneralAndAdministrativeExpenses,1997-12-31,4286450259,2086
+903,E.ON SE,otherExpenses,1997-12-31,5793812388,2087
+904,E.ON SE,operatingExpenses,1997-12-31,10250898840,2088
+905,E.ON SE,costAndExpenses,1997-12-31,41332595031,2089
+906,E.ON SE,interestIncome,1997-12-31,0,2090
+907,E.ON SE,interestExpense,1997-12-31,0,2091
+908,E.ON SE,depreciationAndAmortization,1997-12-31,2415452130,2092
+909,E.ON SE,ebitda,1997-12-31,4834904256,2093
+910,E.ON SE,ebitdaratio,1997-12-31,0.1150877375210174,2094
+911,E.ON SE,operatingIncome,1997-12-31,677999322,2095
+912,E.ON SE,operatingIncomeRatio,1997-12-31,0.016138770051740144,2096
+913,E.ON SE,totalOtherIncomeExpensesNet,1997-12-31,1741452804,2097
+914,E.ON SE,incomeBeforeTax,1997-12-31,2419452126,2098
+915,E.ON SE,incomeBeforeTaxRatio,1997-12-31,0.05759147575181177,2099
+916,E.ON SE,incomeTaxExpense,1997-12-31,992362644,2100
+917,E.ON SE,netIncome,1997-12-31,1427089482,2101
+918,E.ON SE,netIncomeRatio,1997-12-31,0.03396975224888935,2102
+919,E.ON SE,eps,1997-12-31,0.944508,2103
+920,E.ON SE,epsdiluted,1997-12-31,0.944508,2104
+921,E.ON SE,weightedAverageShsOut,1997-12-31,1510934360,2105
+922,E.ON SE,weightedAverageShsOutDil,1997-12-31,1510934360,2106
+923,E.ON SE,link,1997-12-31,https://www.bundesanzeiger.de/pub/de/suche;wwwsid=627BFD7A56A5CB624C47FDDEAB2FC509.web07-pub?0,2107
+924,E.ON SE,finalLink,1997-12-31,https://www.bundesanzeiger.de/pub/de/suche;wwwsid=627BFD7A56A5CB624C47FDDEAB2FC509.web07-pub?0,2108
+0,Siemens Healthineers AG,calendarYear,2022-09-30,2022,2109
+1,Siemens Healthineers AG,period,2022-09-30,FY,2110
+2,Siemens Healthineers AG,symbol,2022-09-30,SHL.DE,2111
+3,Siemens Healthineers AG,reportedCurrency,2022-09-30,EUR,2112
+4,Siemens Healthineers AG,cik,2022-09-30,,2113
+5,Siemens Healthineers AG,fillingDate,2022-09-30,2022-09-30,2114
+6,Siemens Healthineers AG,acceptedDate,2022-09-30,2022-09-29 20:00:00,2115
+7,Siemens Healthineers AG,revenue,2022-09-30,21714000000,2116
+8,Siemens Healthineers AG,costOfRevenue,2022-09-30,13577000000,2117
+9,Siemens Healthineers AG,grossProfit,2022-09-30,8137000000,2118
+10,Siemens Healthineers AG,grossProfitRatio,2022-09-30,0.37473519388413007,2119
+11,Siemens Healthineers AG,researchAndDevelopmentExpenses,2022-09-30,1785000000,2120
+12,Siemens Healthineers AG,generalAndAdministrativeExpenses,2022-09-30,3408000000,2121
+13,Siemens Healthineers AG,sellingAndMarketingExpenses,2022-09-30,0,2122
+14,Siemens Healthineers AG,sellingGeneralAndAdministrativeExpenses,2022-09-30,3408000000,2123
+15,Siemens Healthineers AG,otherExpenses,2022-09-30,20000000,2124
+16,Siemens Healthineers AG,operatingExpenses,2022-09-30,5213000000,2125
+17,Siemens Healthineers AG,costAndExpenses,2022-09-30,18790000000,2126
+18,Siemens Healthineers AG,interestIncome,2022-09-30,48000000,2127
+19,Siemens Healthineers AG,interestExpense,2022-09-30,118000000,2128
+20,Siemens Healthineers AG,depreciationAndAmortization,2022-09-30,1343000000,2129
+21,Siemens Healthineers AG,ebitda,2022-09-30,4245000000,2130
+22,Siemens Healthineers AG,ebitdaratio,2022-09-30,0.1954959933683338,2131
+23,Siemens Healthineers AG,operatingIncome,2022-09-30,2924000000,2132
+24,Siemens Healthineers AG,operatingIncomeRatio,2022-09-30,0.1346596665745602,2133
+25,Siemens Healthineers AG,totalOtherIncomeExpensesNet,2022-09-30,-124000000,2134
+26,Siemens Healthineers AG,incomeBeforeTax,2022-09-30,2800000000,2135
+27,Siemens Healthineers AG,incomeBeforeTaxRatio,2022-09-30,0.1289490651192779,2136
+28,Siemens Healthineers AG,incomeTaxExpense,2022-09-30,746000000,2137
+29,Siemens Healthineers AG,netIncome,2022-09-30,2038000000,2138
+30,Siemens Healthineers AG,netIncomeRatio,2022-09-30,0.09385649811181726,2139
+31,Siemens Healthineers AG,eps,2022-09-30,2.034218388016677,2140
+32,Siemens Healthineers AG,epsdiluted,2022-09-30,2.034218388016677,2141
+33,Siemens Healthineers AG,weightedAverageShsOut,2022-09-30,1001859000,2142
+34,Siemens Healthineers AG,weightedAverageShsOutDil,2022-09-30,1001859000,2143
+35,Siemens Healthineers AG,link,2022-09-30,https://www.bundesanzeiger.de/pub/de/suche;wwwsid=627BFD7A56A5CB624C47FDDEAB2FC509.web07-pub?0,2144
+36,Siemens Healthineers AG,finalLink,2022-09-30,https://www.bundesanzeiger.de/pub/de/suche;wwwsid=627BFD7A56A5CB624C47FDDEAB2FC509.web07-pub?0,2145
+37,Siemens Healthineers AG,calendarYear,2021-09-30,2021,2146
+38,Siemens Healthineers AG,period,2021-09-30,FY,2147
+39,Siemens Healthineers AG,symbol,2021-09-30,SHL.DE,2148
+40,Siemens Healthineers AG,reportedCurrency,2021-09-30,EUR,2149
+41,Siemens Healthineers AG,cik,2021-09-30,,2150
+42,Siemens Healthineers AG,fillingDate,2021-09-30,2021-09-30,2151
+43,Siemens Healthineers AG,acceptedDate,2021-09-30,2021-09-29 20:00:00,2152
+44,Siemens Healthineers AG,revenue,2021-09-30,17997000000,2153
+45,Siemens Healthineers AG,costOfRevenue,2021-09-30,11045000000,2154
+46,Siemens Healthineers AG,grossProfit,2021-09-30,6952000000,2155
+47,Siemens Healthineers AG,grossProfitRatio,2021-09-30,0.38628660332277603,2156
+48,Siemens Healthineers AG,researchAndDevelopmentExpenses,2021-09-30,1546000000,2157
+49,Siemens Healthineers AG,generalAndAdministrativeExpenses,2021-09-30,2817000000,2158
+50,Siemens Healthineers AG,sellingAndMarketingExpenses,2021-09-30,0,2159
+51,Siemens Healthineers AG,sellingGeneralAndAdministrativeExpenses,2021-09-30,2817000000,2160
+52,Siemens Healthineers AG,otherExpenses,2021-09-30,32000000,2161
+53,Siemens Healthineers AG,operatingExpenses,2021-09-30,4395000000,2162
+54,Siemens Healthineers AG,costAndExpenses,2021-09-30,15440000000,2163
+55,Siemens Healthineers AG,interestIncome,2021-09-30,33000000,2164
+56,Siemens Healthineers AG,interestExpense,2021-09-30,83000000,2165
+57,Siemens Healthineers AG,depreciationAndAmortization,2021-09-30,1039000000,2166
+58,Siemens Healthineers AG,ebitda,2021-09-30,3507000000,2167
+59,Siemens Healthineers AG,ebitdaratio,2021-09-30,0.19486581096849476,2168
+60,Siemens Healthineers AG,operatingIncome,2021-09-30,2557000000,2169
+61,Siemens Healthineers AG,operatingIncomeRatio,2021-09-30,0.14207923542812692,2170
+62,Siemens Healthineers AG,totalOtherIncomeExpensesNet,2021-09-30,-153000000,2171
+63,Siemens Healthineers AG,incomeBeforeTax,2021-09-30,2404000000,2172
+64,Siemens Healthineers AG,incomeBeforeTaxRatio,2021-09-30,0.13357781852530978,2173
+65,Siemens Healthineers AG,incomeTaxExpense,2021-09-30,658000000,2174
+66,Siemens Healthineers AG,netIncome,2021-09-30,1727000000,2175
+67,Siemens Healthineers AG,netIncomeRatio,2021-09-30,0.09596043785075291,2176
+68,Siemens Healthineers AG,eps,2021-09-30,1.7237954642319928,2177
+69,Siemens Healthineers AG,epsdiluted,2021-09-30,1.7237954642319928,2178
+70,Siemens Healthineers AG,weightedAverageShsOut,2021-09-30,1001859000,2179
+71,Siemens Healthineers AG,weightedAverageShsOutDil,2021-09-30,1001859000,2180
+72,Siemens Healthineers AG,link,2021-09-30,https://www.bundesanzeiger.de/pub/de/suche;wwwsid=627BFD7A56A5CB624C47FDDEAB2FC509.web07-pub?0,2181
+73,Siemens Healthineers AG,finalLink,2021-09-30,https://www.bundesanzeiger.de/pub/de/suche;wwwsid=627BFD7A56A5CB624C47FDDEAB2FC509.web07-pub?0,2182
+74,Siemens Healthineers AG,calendarYear,2020-09-30,2020,2183
+75,Siemens Healthineers AG,period,2020-09-30,FY,2184
+76,Siemens Healthineers AG,symbol,2020-09-30,SHL.DE,2185
+77,Siemens Healthineers AG,reportedCurrency,2020-09-30,EUR,2186
+78,Siemens Healthineers AG,cik,2020-09-30,,2187
+79,Siemens Healthineers AG,fillingDate,2020-09-30,2020-09-30,2188
+80,Siemens Healthineers AG,acceptedDate,2020-09-30,2020-09-29 20:00:00,2189
+81,Siemens Healthineers AG,revenue,2020-09-30,14460000000,2190
+82,Siemens Healthineers AG,costOfRevenue,2020-09-30,8880000000,2191
+83,Siemens Healthineers AG,grossProfit,2020-09-30,5580000000,2192
+84,Siemens Healthineers AG,grossProfitRatio,2020-09-30,0.38589211618257263,2193
+85,Siemens Healthineers AG,researchAndDevelopmentExpenses,2020-09-30,1342000000,2194
+86,Siemens Healthineers AG,generalAndAdministrativeExpenses,2020-09-30,2279000000,2195
+87,Siemens Healthineers AG,sellingAndMarketingExpenses,2020-09-30,0,2196
+88,Siemens Healthineers AG,sellingGeneralAndAdministrativeExpenses,2020-09-30,2279000000,2197
+89,Siemens Healthineers AG,otherExpenses,2020-09-30,15000000,2198
+90,Siemens Healthineers AG,operatingExpenses,2020-09-30,3636000000,2199
+91,Siemens Healthineers AG,costAndExpenses,2020-09-30,12516000000,2200
+92,Siemens Healthineers AG,interestIncome,2020-09-30,53000000,2201
+93,Siemens Healthineers AG,interestExpense,2020-09-30,76000000,2202
+94,Siemens Healthineers AG,depreciationAndAmortization,2020-09-30,815000000,2203
+95,Siemens Healthineers AG,ebitda,2020-09-30,2834000000,2204
+96,Siemens Healthineers AG,ebitdaratio,2020-09-30,0.19598893499308437,2205
+97,Siemens Healthineers AG,operatingIncome,2020-09-30,1944000000,2206
+98,Siemens Healthineers AG,operatingIncomeRatio,2020-09-30,0.13443983402489626,2207
+99,Siemens Healthineers AG,totalOtherIncomeExpensesNet,2020-09-30,10000000,2208
+100,Siemens Healthineers AG,incomeBeforeTax,2020-09-30,1954000000,2209
+101,Siemens Healthineers AG,incomeBeforeTaxRatio,2020-09-30,0.1351313969571231,2210
+102,Siemens Healthineers AG,incomeTaxExpense,2020-09-30,532000000,2211
+103,Siemens Healthineers AG,netIncome,2020-09-30,1411000000,2212
+104,Siemens Healthineers AG,netIncomeRatio,2020-09-30,0.09757952973720609,2213
+105,Siemens Healthineers AG,eps,2020-09-30,1.41,2214
+106,Siemens Healthineers AG,epsdiluted,2020-09-30,1.4,2215
+107,Siemens Healthineers AG,weightedAverageShsOut,2020-09-30,1001859000,2216
+108,Siemens Healthineers AG,weightedAverageShsOutDil,2020-09-30,1004070000,2217
+109,Siemens Healthineers AG,link,2020-09-30,https://www.bundesanzeiger.de/pub/de/suche;wwwsid=627BFD7A56A5CB624C47FDDEAB2FC509.web07-pub?0,2218
+110,Siemens Healthineers AG,finalLink,2020-09-30,https://www.bundesanzeiger.de/pub/de/suche;wwwsid=627BFD7A56A5CB624C47FDDEAB2FC509.web07-pub?0,2219
+111,Siemens Healthineers AG,calendarYear,2019-09-30,2019,2220
+112,Siemens Healthineers AG,period,2019-09-30,FY,2221
+113,Siemens Healthineers AG,symbol,2019-09-30,SHL.DE,2222
+114,Siemens Healthineers AG,reportedCurrency,2019-09-30,EUR,2223
+115,Siemens Healthineers AG,cik,2019-09-30,,2224
+116,Siemens Healthineers AG,fillingDate,2019-09-30,2019-09-30,2225
+117,Siemens Healthineers AG,acceptedDate,2019-09-30,2019-09-29 20:00:00,2226
+118,Siemens Healthineers AG,revenue,2019-09-30,14518000000,2227
+119,Siemens Healthineers AG,costOfRevenue,2019-09-30,8722000000,2228
+120,Siemens Healthineers AG,grossProfit,2019-09-30,5796000000,2229
+121,Siemens Healthineers AG,grossProfitRatio,2019-09-30,0.39922854387656703,2230
+122,Siemens Healthineers AG,researchAndDevelopmentExpenses,2019-09-30,1328000000,2231
+123,Siemens Healthineers AG,generalAndAdministrativeExpenses,2019-09-30,2214000000,2232
+124,Siemens Healthineers AG,sellingAndMarketingExpenses,2019-09-30,0,2233
+125,Siemens Healthineers AG,sellingGeneralAndAdministrativeExpenses,2019-09-30,2214000000,2234
+126,Siemens Healthineers AG,otherExpenses,2019-09-30,-42000000,2235
+127,Siemens Healthineers AG,operatingExpenses,2019-09-30,3500000000,2236
+128,Siemens Healthineers AG,costAndExpenses,2019-09-30,12222000000,2237
+129,Siemens Healthineers AG,interestIncome,2019-09-30,38000000,2238
+130,Siemens Healthineers AG,interestExpense,2019-09-30,123000000,2239
+131,Siemens Healthineers AG,depreciationAndAmortization,2019-09-30,620000000,2240
+132,Siemens Healthineers AG,ebitda,2019-09-30,2917000000,2241
+133,Siemens Healthineers AG,ebitdaratio,2019-09-30,0.20092299214767875,2242
+134,Siemens Healthineers AG,operatingIncome,2019-09-30,2296000000,2243
+135,Siemens Healthineers AG,operatingIncomeRatio,2019-09-30,0.15814850530376084,2244
+136,Siemens Healthineers AG,totalOtherIncomeExpensesNet,2019-09-30,-103000000,2245
+137,Siemens Healthineers AG,incomeBeforeTax,2019-09-30,2193000000,2246
+138,Siemens Healthineers AG,incomeBeforeTaxRatio,2019-09-30,0.15105386416861827,2247
+139,Siemens Healthineers AG,incomeTaxExpense,2019-09-30,607000000,2248
+140,Siemens Healthineers AG,netIncome,2019-09-30,1567000000,2249
+141,Siemens Healthineers AG,netIncomeRatio,2019-09-30,0.10793497726959636,2250
+142,Siemens Healthineers AG,eps,2019-09-30,1.57,2251
+143,Siemens Healthineers AG,epsdiluted,2019-09-30,1.57,2252
+144,Siemens Healthineers AG,weightedAverageShsOut,2019-09-30,999245000,2253
+145,Siemens Healthineers AG,weightedAverageShsOutDil,2019-09-30,1000138000,2254
+146,Siemens Healthineers AG,link,2019-09-30,https://www.bundesanzeiger.de/pub/de/suche;wwwsid=627BFD7A56A5CB624C47FDDEAB2FC509.web07-pub?0,2255
+147,Siemens Healthineers AG,finalLink,2019-09-30,https://www.bundesanzeiger.de/pub/de/suche;wwwsid=627BFD7A56A5CB624C47FDDEAB2FC509.web07-pub?0,2256
+148,Siemens Healthineers AG,calendarYear,2018-09-30,2018,2257
+149,Siemens Healthineers AG,period,2018-09-30,FY,2258
+150,Siemens Healthineers AG,symbol,2018-09-30,SHL.DE,2259
+151,Siemens Healthineers AG,reportedCurrency,2018-09-30,EUR,2260
+152,Siemens Healthineers AG,cik,2018-09-30,,2261
+153,Siemens Healthineers AG,fillingDate,2018-09-30,2018-09-30,2262
+154,Siemens Healthineers AG,acceptedDate,2018-09-30,2018-09-29 20:00:00,2263
+155,Siemens Healthineers AG,revenue,2018-09-30,13429000000,2264
+156,Siemens Healthineers AG,costOfRevenue,2018-09-30,7961000000,2265
+157,Siemens Healthineers AG,grossProfit,2018-09-30,5468000000,2266
+158,Siemens Healthineers AG,grossProfitRatio,2018-09-30,0.4071784943033733,2267
+159,Siemens Healthineers AG,researchAndDevelopmentExpenses,2018-09-30,1281000000,2268
+160,Siemens Healthineers AG,generalAndAdministrativeExpenses,2018-09-30,2153000000,2269
+161,Siemens Healthineers AG,sellingAndMarketingExpenses,2018-09-30,0,2270
+162,Siemens Healthineers AG,sellingGeneralAndAdministrativeExpenses,2018-09-30,2153000000,2271
+163,Siemens Healthineers AG,otherExpenses,2018-09-30,73000000,2272
+164,Siemens Healthineers AG,operatingExpenses,2018-09-30,3507000000,2273
+165,Siemens Healthineers AG,costAndExpenses,2018-09-30,11468000000,2274
+166,Siemens Healthineers AG,interestIncome,2018-09-30,41000000,2275
+167,Siemens Healthineers AG,interestExpense,2018-09-30,205000000,2276
+168,Siemens Healthineers AG,depreciationAndAmortization,2018-09-30,530000000,2277
+169,Siemens Healthineers AG,ebitda,2018-09-30,2515000000,2278
+170,Siemens Healthineers AG,ebitdaratio,2018-09-30,0.1872812569811602,2279
+171,Siemens Healthineers AG,operatingIncome,2018-09-30,1961000000,2280
+172,Siemens Healthineers AG,operatingIncomeRatio,2018-09-30,0.14602725444932607,2281
+173,Siemens Healthineers AG,totalOtherIncomeExpensesNet,2018-09-30,-162000000,2282
+174,Siemens Healthineers AG,incomeBeforeTax,2018-09-30,1799000000,2283
+175,Siemens Healthineers AG,incomeBeforeTaxRatio,2018-09-30,0.13396380966564897,2284
+176,Siemens Healthineers AG,incomeTaxExpense,2018-09-30,515000000,2285
+177,Siemens Healthineers AG,netIncome,2018-09-30,1265000000,2286
+178,Siemens Healthineers AG,netIncomeRatio,2018-09-30,0.09419912130463921,2287
+179,Siemens Healthineers AG,eps,2018-09-30,1.265313,2288
+180,Siemens Healthineers AG,epsdiluted,2018-09-30,1.265313,2289
+181,Siemens Healthineers AG,weightedAverageShsOut,2018-09-30,999752237,2290
+182,Siemens Healthineers AG,weightedAverageShsOutDil,2018-09-30,999752237,2291
+183,Siemens Healthineers AG,link,2018-09-30,https://www.bundesanzeiger.de/pub/de/suche;wwwsid=627BFD7A56A5CB624C47FDDEAB2FC509.web07-pub?0,2292
+184,Siemens Healthineers AG,finalLink,2018-09-30,https://www.bundesanzeiger.de/pub/de/suche;wwwsid=627BFD7A56A5CB624C47FDDEAB2FC509.web07-pub?0,2293
+185,Siemens Healthineers AG,calendarYear,2017-09-30,2017,2294
+186,Siemens Healthineers AG,period,2017-09-30,FY,2295
+187,Siemens Healthineers AG,symbol,2017-09-30,SHL.DE,2296
+188,Siemens Healthineers AG,reportedCurrency,2017-09-30,EUR,2297
+189,Siemens Healthineers AG,cik,2017-09-30,,2298
+190,Siemens Healthineers AG,fillingDate,2017-09-30,2017-09-30,2299
+191,Siemens Healthineers AG,acceptedDate,2017-09-30,2017-09-29 20:00:00,2300
+192,Siemens Healthineers AG,revenue,2017-09-30,13796000000,2301
+193,Siemens Healthineers AG,costOfRevenue,2017-09-30,8034000000,2302
+194,Siemens Healthineers AG,grossProfit,2017-09-30,5762000000,2303
+195,Siemens Healthineers AG,grossProfitRatio,2017-09-30,0.41765729196868656,2304
+196,Siemens Healthineers AG,researchAndDevelopmentExpenses,2017-09-30,1253000000,2305
+197,Siemens Healthineers AG,generalAndAdministrativeExpenses,2017-09-30,2222000000,2306
+198,Siemens Healthineers AG,sellingAndMarketingExpenses,2017-09-30,0,2307
+199,Siemens Healthineers AG,sellingGeneralAndAdministrativeExpenses,2017-09-30,2222000000,2308
+200,Siemens Healthineers AG,otherExpenses,2017-09-30,-3000000,2309
+201,Siemens Healthineers AG,operatingExpenses,2017-09-30,3472000000,2310
+202,Siemens Healthineers AG,costAndExpenses,2017-09-30,11506000000,2311
+203,Siemens Healthineers AG,interestIncome,2017-09-30,12000000,2312
+204,Siemens Healthineers AG,interestExpense,2017-09-30,267000000,2313
+205,Siemens Healthineers AG,depreciationAndAmortization,2017-09-30,572000000,2314
+206,Siemens Healthineers AG,ebitda,2017-09-30,2866000000,2315
+207,Siemens Healthineers AG,ebitdaratio,2017-09-30,0.2077413743113946,2316
+208,Siemens Healthineers AG,operatingIncome,2017-09-30,2290000000,2317
+209,Siemens Healthineers AG,operatingIncomeRatio,2017-09-30,0.16599014207016527,2318
+210,Siemens Healthineers AG,totalOtherIncomeExpensesNet,2017-09-30,-246000000,2319
+211,Siemens Healthineers AG,incomeBeforeTax,2017-09-30,2044000000,2320
+212,Siemens Healthineers AG,incomeBeforeTaxRatio,2017-09-30,0.1481588866338069,2321
+213,Siemens Healthineers AG,incomeTaxExpense,2017-09-30,600000000,2322
+214,Siemens Healthineers AG,netIncome,2017-09-30,1427000000,2323
+215,Siemens Healthineers AG,netIncomeRatio,2017-09-30,0.10343577848651783,2324
+216,Siemens Healthineers AG,eps,2017-09-30,1.427,2325
+217,Siemens Healthineers AG,epsdiluted,2017-09-30,1.427,2326
+218,Siemens Healthineers AG,weightedAverageShsOut,2017-09-30,1000000000,2327
+219,Siemens Healthineers AG,weightedAverageShsOutDil,2017-09-30,1000000000,2328
+220,Siemens Healthineers AG,link,2017-09-30,https://www.bundesanzeiger.de/pub/de/suche;wwwsid=627BFD7A56A5CB624C47FDDEAB2FC509.web07-pub?0,2329
+221,Siemens Healthineers AG,finalLink,2017-09-30,https://www.bundesanzeiger.de/pub/de/suche;wwwsid=627BFD7A56A5CB624C47FDDEAB2FC509.web07-pub?0,2330
+222,Siemens Healthineers AG,calendarYear,2016-09-30,2016,2331
+223,Siemens Healthineers AG,period,2016-09-30,FY,2332
+224,Siemens Healthineers AG,symbol,2016-09-30,SHL.DE,2333
+225,Siemens Healthineers AG,reportedCurrency,2016-09-30,EUR,2334
+226,Siemens Healthineers AG,cik,2016-09-30,,2335
+227,Siemens Healthineers AG,fillingDate,2016-09-30,2016-09-30,2336
+228,Siemens Healthineers AG,acceptedDate,2016-09-30,2016-09-29 20:00:00,2337
+229,Siemens Healthineers AG,revenue,2016-09-30,13547000000,2338
+230,Siemens Healthineers AG,costOfRevenue,2016-09-30,8080000000,2339
+231,Siemens Healthineers AG,grossProfit,2016-09-30,5467000000,2340
+232,Siemens Healthineers AG,grossProfitRatio,2016-09-30,0.4035579833173396,2341
+233,Siemens Healthineers AG,researchAndDevelopmentExpenses,2016-09-30,1145000000,2342
+234,Siemens Healthineers AG,generalAndAdministrativeExpenses,2016-09-30,2206000000,2343
+235,Siemens Healthineers AG,sellingAndMarketingExpenses,2016-09-30,0,2344
+236,Siemens Healthineers AG,sellingGeneralAndAdministrativeExpenses,2016-09-30,2206000000,2345
+237,Siemens Healthineers AG,otherExpenses,2016-09-30,-1000000,2346
+238,Siemens Healthineers AG,operatingExpenses,2016-09-30,3350000000,2347
+239,Siemens Healthineers AG,costAndExpenses,2016-09-30,11430000000,2348
+240,Siemens Healthineers AG,interestIncome,2016-09-30,14000000,2349
+241,Siemens Healthineers AG,interestExpense,2016-09-30,216000000,2350
+242,Siemens Healthineers AG,depreciationAndAmortization,2016-09-30,591000000,2351
+243,Siemens Healthineers AG,ebitda,2016-09-30,2708000000,2352
+244,Siemens Healthineers AG,ebitdaratio,2016-09-30,0.19989665608621834,2353
+245,Siemens Healthineers AG,operatingIncome,2016-09-30,2117000000,2354
+246,Siemens Healthineers AG,operatingIncomeRatio,2016-09-30,0.15627076105410792,2355
+247,Siemens Healthineers AG,totalOtherIncomeExpensesNet,2016-09-30,-199000000,2356
+248,Siemens Healthineers AG,incomeBeforeTax,2016-09-30,1918000000,2357
+249,Siemens Healthineers AG,incomeBeforeTaxRatio,2016-09-30,0.14158116188085923,2358
+250,Siemens Healthineers AG,incomeTaxExpense,2016-09-30,590000000,2359
+251,Siemens Healthineers AG,netIncome,2016-09-30,1311000000,2360
+252,Siemens Healthineers AG,netIncomeRatio,2016-09-30,0.0967741935483871,2361
+253,Siemens Healthineers AG,eps,2016-09-30,1.311,2362
+254,Siemens Healthineers AG,epsdiluted,2016-09-30,1.311,2363
+255,Siemens Healthineers AG,weightedAverageShsOut,2016-09-30,1000000000,2364
+256,Siemens Healthineers AG,weightedAverageShsOutDil,2016-09-30,1000000000,2365
+257,Siemens Healthineers AG,link,2016-09-30,https://www.bundesanzeiger.de/pub/de/suche;wwwsid=627BFD7A56A5CB624C47FDDEAB2FC509.web07-pub?0,2366
+258,Siemens Healthineers AG,finalLink,2016-09-30,https://www.bundesanzeiger.de/pub/de/suche;wwwsid=627BFD7A56A5CB624C47FDDEAB2FC509.web07-pub?0,2367
+259,Siemens Healthineers AG,calendarYear,2015-09-30,2015,2368
+260,Siemens Healthineers AG,period,2015-09-30,FY,2369
+261,Siemens Healthineers AG,symbol,2015-09-30,SHL.DE,2370
+262,Siemens Healthineers AG,reportedCurrency,2015-09-30,EUR,2371
+263,Siemens Healthineers AG,cik,2015-09-30,,2372
+264,Siemens Healthineers AG,fillingDate,2015-09-30,2015-09-30,2373
+265,Siemens Healthineers AG,acceptedDate,2015-09-30,2015-09-29 20:00:00,2374
+266,Siemens Healthineers AG,revenue,2015-09-30,12936000000,2375
+267,Siemens Healthineers AG,costOfRevenue,2015-09-30,7867000000,2376
+268,Siemens Healthineers AG,grossProfit,2015-09-30,5069000000,2377
+269,Siemens Healthineers AG,grossProfitRatio,2015-09-30,0.391852195423624,2378
+270,Siemens Healthineers AG,researchAndDevelopmentExpenses,2015-09-30,1055000000,2379
+271,Siemens Healthineers AG,generalAndAdministrativeExpenses,2015-09-30,2109000000,2380
+272,Siemens Healthineers AG,sellingAndMarketingExpenses,2015-09-30,0,2381
+273,Siemens Healthineers AG,sellingGeneralAndAdministrativeExpenses,2015-09-30,2109000000,2382
+274,Siemens Healthineers AG,otherExpenses,2015-09-30,-58000000,2383
+275,Siemens Healthineers AG,operatingExpenses,2015-09-30,3106000000,2384
+276,Siemens Healthineers AG,costAndExpenses,2015-09-30,10973000000,2385
+277,Siemens Healthineers AG,interestIncome,2015-09-30,19000000,2386
+278,Siemens Healthineers AG,interestExpense,2015-09-30,117000000,2387
+279,Siemens Healthineers AG,depreciationAndAmortization,2015-09-30,563000000,2388
+280,Siemens Healthineers AG,ebitda,2015-09-30,2541000000,2389
+281,Siemens Healthineers AG,ebitdaratio,2015-09-30,0.19642857142857142,2390
+282,Siemens Healthineers AG,operatingIncome,2015-09-30,1963000000,2391
+283,Siemens Healthineers AG,operatingIncomeRatio,2015-09-30,0.15174706246134817,2392
+284,Siemens Healthineers AG,totalOtherIncomeExpensesNet,2015-09-30,-87000000,2393
+285,Siemens Healthineers AG,incomeBeforeTax,2015-09-30,1876000000,2394
+286,Siemens Healthineers AG,incomeBeforeTaxRatio,2015-09-30,0.14502164502164502,2395
+287,Siemens Healthineers AG,incomeTaxExpense,2015-09-30,584000000,2396
+288,Siemens Healthineers AG,netIncome,2015-09-30,1277000000,2397
+289,Siemens Healthineers AG,netIncomeRatio,2015-09-30,0.09871675943104515,2398
+290,Siemens Healthineers AG,eps,2015-09-30,1.277,2399
+291,Siemens Healthineers AG,epsdiluted,2015-09-30,1.277,2400
+292,Siemens Healthineers AG,weightedAverageShsOut,2015-09-30,1000000000,2401
+293,Siemens Healthineers AG,weightedAverageShsOutDil,2015-09-30,1000000000,2402
+294,Siemens Healthineers AG,link,2015-09-30,https://www.bundesanzeiger.de/pub/de/suche;wwwsid=627BFD7A56A5CB624C47FDDEAB2FC509.web07-pub?0,2403
+295,Siemens Healthineers AG,finalLink,2015-09-30,https://www.bundesanzeiger.de/pub/de/suche;wwwsid=627BFD7A56A5CB624C47FDDEAB2FC509.web07-pub?0,2404

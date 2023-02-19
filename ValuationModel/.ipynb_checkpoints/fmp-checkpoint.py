@@ -1,6 +1,6 @@
 # To make web requests at the ECB SDMX 2.1 RESTful web service
 import requests
-import yfinance as yf
+#import yfinance as yf
 
 # For use of the ECB API
 #from sdw_api import SDW_API
@@ -54,7 +54,7 @@ def retrieve_data_from_api(ticker_list):
             table_rev=table_T.iloc[idx].drop_duplicates()
             # through rearranging the index column will start with number 5; we have to reset the index to start at '0' again.
             final_table=table_rev.reset_index(drop=True)
-            final_table['shortname']=yf.Ticker(ticker).info['shortName']
+            final_table['shortname']=get_profile_data(ticker, json_entry='companyName', entry_point='profile')
             ft_transformed=pd.melt(final_table, id_vars=["shortname", "item"], var_name="date", value_name="value")
             logger.info(f"Successfully retrieved {statement} data for company {ticker}.")
             if statement == "balance-sheet-statement":
@@ -121,4 +121,46 @@ def get_profile_data(ticker, json_entry='beta', entry_point='profile'):
     response_list=response.json()
     entry=extract(response_list, [json_entry])
     entry=entry[0][json_entry]
+    return entry
+
+def get_all_company_data(ticker, entry_point='profile'):
+    my_api_key=MY_API_KEY
+    entrypoint_profile="https://financialmodelingprep.com/api/v3/profile/"
+    entrypoint_shares="https://financialmodelingprep.com/api/v4/shares_float?symbol="
+    headers = {'Accept': 'application/json'}
+    
+    # get company beta value from FMP
+    # For the extract function I used the code of this colleague instead of working it out on my own (sorry! too lazy!)
+    # https://python.plainenglish.io/extracting-specific-keys-values-from-a-messed-up-json-file-python-dfb671482681
+    def extract(data, keys):
+        out = []
+        queue = [data]
+        while len(queue) > 0:
+            current = queue.pop(0)
+            if type(current) == dict:
+                for key in keys:
+                    if key in current:
+                        out.append({key:current[key]})
+            
+                for val in current.values():
+                    if type(val) in [list, dict]:
+                        queue.append(val)
+            elif type(current) == list:
+                queue.extend(current)
+        return out
+    # Now make request to FMP API
+    if entry_point == 'profile':
+        requestUrl= entrypoint_profile + ticker + "?" +  "apikey=" + my_api_key
+        response = requests.get(requestUrl)#, headers=headers)
+        assert response.status_code == 200, f"Expected response code 200, got {response.status_code} for {requestUrl}. Check again your url!"
+    elif entry_point == 'shares':
+        requestUrl= entrypoint_shares + ticker +  "&apikey=" + my_api_key
+        response = requests.get(requestUrl)#, headers=headers)
+        assert response.status_code == 200, f"Expected response code 200, got {response.status_code} for {requestUrl}. Check again your url!"
+    else:
+        print("You´ve chosen an entrypoint that this function does not deliver anything from. Either choose 'profile' for profile data or 'shares' for data on the company`s shares.")
+    # use the .json() method offered by 'requests' package: https://datagy.io/python-requests-json/
+    response_list=response.json()
+    entry=extract(response_list, [json_entry])
+    #entry=entry[0][json_entry]
     return entry

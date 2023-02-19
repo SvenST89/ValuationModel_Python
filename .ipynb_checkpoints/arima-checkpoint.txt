@@ -1,0 +1,195 @@
+from statsmodels.tsa.arima.model import ARIMA
+from statsmodels.graphics.tsaplots import plot_acf, plot_pacf, plot_predict
+from statsmodels.tsa.stattools import adfuller
+
+
+import warnings
+warnings.filterwarnings('ignore')
+
+plt.rcParams.update({'figure.figsize':(9,7)})
+
+# Original series
+fig, axes = plt.subplots(4, 2)
+axes[0,0].plot(df_monthly.value); axes[0,0].set_title('Original Series', size=10); axes[0,0].tick_params(axis='x', colors='white')
+plot_acf(df_monthly.value, ax=axes[0,1])
+
+# 1st Differencing
+axes[1,0].plot(df_monthly.value.diff()); axes[1,0].set_title('$1^{st} Order Difference$', size=10); axes[1,0].tick_params(axis='x', colors='white')
+plot_acf(df_monthly.value.diff().dropna(), ax=axes[1,1])
+
+# 2nd Differencing
+axes[2,0].plot(df_monthly.value.diff().diff()); axes[2,0].set_title('$2^{nd} Order Difference$', size=10); axes[2,0].tick_params(axis='x', colors='white')
+plot_acf(df_monthly.value.diff().diff().dropna(), ax=axes[2,1])
+
+# 4th Differencing
+axes[3,0].plot(df_monthly.value.diff().diff().diff().diff()); axes[3,0].set_title('$4^{th} Order Difference$', size=10)
+plot_acf(df_monthly.value.diff().diff().diff().diff().dropna(), ax=axes[3,1])
+
+plt.show()
+
+From the autocorrelation graph, we can decide if more differencing is needed. If collectively the autocorrelations, or the data point of each lag (in the horizontal axis), are positive for several consecutive lags, more differencing might be needed. Conversely, if more data points are negative, the series is over-differenced.
+
+I´d suggest to go with **`difference, d = 5`**.
+
+A more statistically robust test in order to determine the best level of differencing order for the data is the **Augmented Dickey Fuller test**. With this test the **Null is that there is a stochastic trend, i.e. that the series is nonstationary and has a unit root**. If we find that the **p-value** is less than the significance level of 5%, i.e. less than 0.05, we say that the probability to obtain again such an estimated value as we have obtained under the assumption that the Null is true is quite low - that is we will reject the Null. The p-value is a measure of extremity of the tested result; the lower the p-value the more likely it is to obtain a more extreme value in favor of the **Alternative Hypothesis**, i.e. in favor of **stationarity**. The p-value has always to be seen under the assumption that the Null is true.
+
+
+adfresult=adfuller(df_monthly.value.dropna())
+print('p-value ADF Test Non-Differenced:\n-------------------------------\n', adfresult[1])
+
+adfresult_diff=adfuller(df_monthly.value.diff().dropna())
+print('\np-value ADF Test 1st Diff:\n-------------------------------\n', adfresult_diff[1])
+
+adfresult_2diff=adfuller(df_monthly.value.diff().diff().dropna())
+print('\np-value ADF Test 2nd Diff:\n-------------------------------\n', adfresult_2diff[1])
+
+adfresult_3diff=adfuller(df_monthly.value.diff().diff().diff().dropna())
+print('\np-value ADF Test 3rd Diff:\n-------------------------------\n', adfresult_3diff[1])
+
+adfresult_4diff=adfuller(df_monthly.value.diff().diff().diff().diff().dropna())
+print('\np-value ADF Test 4th Diff:\n-------------------------------\n', adfresult_4diff[1])
+
+adfresult_5diff=adfuller(df_monthly.value.diff().diff().diff().diff().dropna())
+print('\np-value ADF Test 5th Diff:\n-------------------------------\n', adfresult_5diff[1])
+
+
+The next step in the ARIMA model is computing **“p”**, or the **order for the autoregressive model**. We can inspect the **partial autocorrelation plot**, which measures the **correlation between the time-series data and a certain lag**. Based on the presence or absence of correlation, we can determine whether the lag or order is needed or not.
+
+As we saw that the 4th Difference might be of relevance we will plot the first, second and fourth differences partial autocorrelation plots.
+
+
+plt.rcParams.update({'figure.figsize':(9,7)})
+
+# Original series
+fig, axes = plt.subplots(4, 2)
+axes[0,0].plot(df_monthly.value); axes[0,0].set_title('Original Series', size=10); axes[0,0].tick_params(axis='x', colors='white')
+plot_pacf(df_monthly.value, ax=axes[0,1])
+
+# 1st Differencing
+axes[1,0].plot(df_monthly.value.diff()); axes[1,0].set_title('$1^{st} Order Difference$', size=10); axes[1,0].tick_params(axis='x', colors='white')
+plot_pacf(df_monthly.value.diff().dropna(), ax=axes[1,1])
+
+# 2nd Differencing
+axes[2,0].plot(df_monthly.value.diff().diff()); axes[2,0].set_title('$2^{nd} Order Difference$', size=10); axes[2,0].tick_params(axis='x', colors='white')
+plot_pacf(df_monthly.value.diff().diff().dropna(), ax=axes[2,1])
+
+# 5th Differencing
+axes[3,0].plot(df_monthly.value.diff().diff().diff().diff()); axes[3,0].set_title('$5^{th} Order Difference$', size=10)
+plot_pacf(df_monthly.value.diff().diff().diff().diff().diff().dropna(), ax=axes[3,1])
+
+plt.show()
+
+
+==> So as of now, we can go with `d=5` and `p=4` in our ARIMA(p, d, q) model.
+
+Finally, “q” can be estimated similarly by looking at the ACF plot instead of the PACF plot. **Looking at the number of lags crossing the threshold, we can determine how much of the past would be significant enough to consider for the future**. The **ones with high correlation contribute more and would be enough to predict future values**. From the plots above, the **moving average (MA) parameter** can be set to 5, too.
+
+Our final model would be: **`ARIMA(p=4, d=5, q=5)`**
+
+
+<u>Hyperparameter Tuning: Find best ARIMA Parameters for p \& q</u>
+
+# Accuracy metrics
+def forecast_accuracy(forecast, actual):
+    mape = np.mean(np.abs(forecast - actual)/np.abs(actual))  # MAPE
+    #me = np.mean(forecast - actual)             # ME
+    #mae = np.mean(np.abs(forecast - actual))    # MAE
+    mpe = np.mean((forecast - actual)/actual)   # MPE
+    rmse = np.mean((forecast - actual)**2)**.5  # RMSE
+    corr = np.corrcoef(forecast, actual)[0,1]   # corr
+    mins = np.amin(np.hstack([forecast[:,None], 
+                              actual[:,None]]), axis=1)
+    maxs = np.amax(np.hstack([forecast[:,None], 
+                              actual[:,None]]), axis=1)
+    minmax = 1 - np.mean(mins/maxs)             # minmax
+    #acf1 = acf(fc-test)[1]                      # ACF1
+    res_dict={'mape':mape,  'mpe': mpe, 'rmse':rmse, 
+            'corr':corr, 'minmax':minmax}
+    return res_dict
+
+
+def hyperparam_tuning(df):
+    # initialize a performance dataframe to store values of hyperparameter tuning
+    perf_df=pd.DataFrame({'mape':0, 'AR_p':0, 'MA_q':0}, index=range(0,1))
+    for i in range(1,8):
+        for j in range(1,8):
+            # Cross-validate manually with train/test split
+            global train
+            global test
+            train = df.value[:34]
+            test = df.value[34:]
+    
+            # Build Model  
+            model = ARIMA(train, order=(int(i),5,int(j)))
+            model.initialize_approximate_diffuse()
+            fitted = model.fit()
+            #print(fitted.summary())
+            
+            # Create confidence interval
+            global conf_int
+            conf_int = fitted.conf_int() # default 95%
+    
+            # Forecast
+            global fc
+            fc = fitted.forecast(15)
+            
+            #i += 1
+            #j += 1
+            
+            # Performance Measure
+            res_dict=forecast_accuracy(fc, test.values)
+            mape=res_dict['mape']
+            
+            # performance dictionary
+            perf_dict={}
+            perf_dict.update({'mape':mape})
+            perf_dict.update({'AR_p':int(i)})
+            perf_dict.update({'MA_q':int(j)})
+            
+            # Update performance dataframe
+            new_row = perf_dict
+            perf_df = perf_df.append(new_row, ignore_index=True)
+            
+    # ignore first row with zero values due to initialization
+    perf_df = perf_df.iloc[1:]
+    # get min mape values and related parameters
+    min_mape_row=perf_df.loc[(perf_df['mape']==perf_df['mape'].min())] #perf_df[perf_df.mape == df.mape.min()]
+    p=min_mape_row.iloc[:, 1].values[0]
+    q=min_mape_row.iloc[:, 2].values[0]
+    return min_mape_row, p, q
+min_mape_row, p, q = hyperparam_tuning(df_monthly)
+
+
+<u>Build ARIMA Model</u>
+
+
+# Final after hyperparameter tuning
+model_final=ARIMA(df_monthly.value, order=(int(p),5,int(q)))
+model_fit=model_final.fit()
+print(model_fit.summary())
+
+# Create confidence interval
+conf = model_fit.conf_int() # default 95%
+
+# Forecast
+fc_final = model_fit.forecast(1)  # 15 to end up with 49 values = 34+15
+fc_final
+
+df_ts['arima']=df_ts['acct_balance_org_avg']
+df_ts.iloc[-1, 4]=fc_final
+df_ts.tail()
+
+
+plt.rcParams["figure.figsize"] = (9,7)
+plt.style.use('bmh')
+fig, ax = plt.subplots()
+ax.plot(df_ts['balance_month_sequence'], df_ts['acct_balance_org_avg'], '--', color='green', label='Probabilistic Forecast')
+ax.plot(df_ts['balance_month_sequence'], df_ts['expert_values'], 'r', label='Expert Data')
+ax.plot(df_ts['balance_month_sequence'], df_ts['mc_sim'], '--', color='grey', label='Monte Carlo Mean')
+ax.plot(df_ts['balance_month_sequence'], df_ts['arima'], '--', color='orange', label='ARIMA Forecast')
+ax.plot(df_ts.iloc[0:48, 0], df_ts.iloc[0:48, 1], 'b', label='Actual Values')
+plt.title('Current Account Time Series Forecast')
+plt.xlabel('Months')
+plt.ylabel('Balance in EURbn')
+plt.legend(loc='upper left', prop={'size': 9})
+plt.show()

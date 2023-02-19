@@ -3,3 +3,4 @@ config/pw.py
 config/api.py
 log/
 open_todos.txt
+arima.txt

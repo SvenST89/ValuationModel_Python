@@ -304,4 +304,14 @@ def clearDataframes_and_get_fy(company, df, df_name, year):
         except KeyError:
             print(f"For company {company} the date {fy_list[i]} seems to be the wrong fiscal year end. I continue trying FY date {fy_list[i+1]}...!\n")
             continue
+            
+def prepare_timeseries(statement, item=''):
+    #=== Depreciation & Amortization (D&A)
+    item_df=statement.loc[statement['item']==item].drop_duplicates(['date', 'value'])
+    #--- D&A time series ---------------------
+    idf=pd.DataFrame(item_df['value'])#.values
+    idf['value']=idf['value'].astype('float')
+    comp=idf.set_index(item_df['date'])
+    comp.to_csv(f"data/{item}.csv")
+    return comp
 
