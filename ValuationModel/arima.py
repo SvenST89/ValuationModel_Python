@@ -9,7 +9,7 @@ from statsmodels.graphics.tsaplots import plot_acf, plot_pacf, plot_predict
 from statsmodels.tsa.stattools import adfuller
 import warnings
 warnings.filterwarnings('ignore')
-from statsmodels.tsa.arima_model import ARIMA, ARMA
+#from statsmodels.tsa.arima.model import ARIMA #, ARMA
 import pmdarima as pm
 import scipy.stats as st
 
@@ -32,7 +32,7 @@ def build_sarima(df, test_method='adf', frequency=3):
         msk = np.random.rand(len(df)) < 0.8
         train_data = df[msk]
         test_data = df[~msk]
-        sma_model = ARMA(train_data.value, order=(0, 1))
+        sma_model = ARIMA(train_data.value, order=(0, 0, 1))
         model = sma_model.fit() # fit already returns ARMAResults on which we directly can call '.predict': https://www.statsmodels.org/v0.11.0/generated/statsmodels.tsa.arima_model.ARMA.fit.html
         model_summary=model.summary()
     else:

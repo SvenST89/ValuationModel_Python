@@ -104,6 +104,61 @@ def get_ir_data(keys_list, start):
     interest_df=pd.concat(pd_list, axis=1)
     return interest_df
 
+def get_other_data(keys_list, start, country_list=['DE', 'FR', 'I8']):
+    # Entrypoint for the ECB SDMX 2.1 RESTful web service
+    entrypoint="https://sdw-wsrest.ecb.europa.eu/service/data/"
+
+    # Pandas dataframe list
+    pd_list=[]
+
+    for i, j in zip(keys_list, country_list):
+        #===============================================================
+        # match country/region identifier
+        z = re.search(j, i).group()#(f"({j}\w+)\W({j}\w+)", i)
+        # store time series (ts) key components in a list
+        keyComponent_list = re.findall(r"(\w+)\.",i)
+        # access the database identifier, which is the very first component at index 0
+        db_id = keyComponent_list[0]
+        # remainder of key components
+        keyRemainder = '.'.join(re.findall(r"\.(\w+)",i))
+        # merge the request url
+        requestUrl= entrypoint + db_id+ "/" + keyRemainder + "?format=genericdata"
+        #--------------------------------------------------------------
+    
+        # Set parameters for http request get method
+        today = date.today()        # get the date of today
+        today_formatted = today.strftime("%Y-%m-%d") # format the date as a string 2020-10-31
+        parameters = {
+        'startPeriod': start,  # Start date of the time series, e.g. '2019-12-01'
+        'endPeriod': today_formatted     # End of the time series
+        }
+        #--------------------------------------------------------------
+    
+        # Make the HTTP get request for each url
+        response = requests.get(requestUrl, params=parameters, headers={'Accept': 'text/csv'})
+        assert response.status_code == 200, f"Expected response code 200, got {response.status_code} for {requestUrl}. Check again your url!"
+        #--------------------------------------------------------------
+
+        # Read the response as a file into a Pandas Dataframe
+        ir_df = pd.read_csv(io.StringIO(response.text))
+        # Create a new DataFrame called 'ir_ts'; isolating Time Period and Observation Value only.
+        ir_ts = ir_df.filter(['TIME_PERIOD', 'OBS_VALUE'], axis=1)
+        #--------------------------------------------------------------
+        ir_ts = ir_ts.rename(columns={'OBS_VALUE': z}, inplace=True)
+        
+        # 'TIME_PERIOD' was of type 'object' (as can be seen in yc_df.info). Convert it to datetime first
+        ir_ts['TIME_PERIOD'] = pd.to_datetime(ir_ts['TIME_PERIOD'])
+        # Set 'TIME_PERIOD' to be the index
+        ir_ts = ir_ts.set_index('TIME_PERIOD')
+        # Append individual dataframe to pd_list
+        pd_list.append(ir_ts)
+        #===============================================================
+    
+    # Now concatenate each individual yield curve dataframe from the list of dataframes,
+    # collected in the loop, into one single dataframe
+    interest_df=pd.concat(pd_list, axis=1)
+    return interest_df
+
 #--- FUNCTION TO RETRIEVE DATA FOR A COMPANY FROM OUR DATABASE -------------------------------------------#
 
 def get_database_findata_year(company, year, month, day, engine):

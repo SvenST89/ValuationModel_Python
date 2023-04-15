@@ -16,7 +16,23 @@ import psycopg2
 import psycopg2.extras as extras
 from config.api import MY_API_KEY
 import config.pw
-from ValuationModel.fmp import get_profile_data
+from ValuationModel.fmp import get_profile_data, get_latest_available_fy
+#=============SET UP LOGGING ======================#
+import logging
+import sys
+# specifically for pyplot: https://stackoverflow.com/questions/56618739/matplotlib-throws-warning-message-because-of-findfont-python
+logging.getLogger('matplotlib').disabled = True
+
+logger=logging.getLogger()
+formatter = logging.Formatter('%(asctime)s - %(name)s - %(lineno)s - %(levelname)s - %(message)s')
+logger.setLevel(logging.DEBUG)
+
+# set logging handler in file
+fileHandler=logging.FileHandler(filename="log/assist.log", mode='w')
+fileHandler.setFormatter(formatter)
+fileHandler.setLevel(logging.DEBUG)
+logger.addHandler(fileHandler)
+#===================================================#
 
 #========================================================================================================================================#
 
@@ -104,6 +120,61 @@ def get_ir_data(keys_list, start):
     interest_df=pd.concat(pd_list, axis=1)
     return interest_df
 
+def get_other_data(keys_list, start, country_list=['DE', 'FR', 'I8']):
+    # Entrypoint for the ECB SDMX 2.1 RESTful web service
+    entrypoint="https://sdw-wsrest.ecb.europa.eu/service/data/"
+
+    # Pandas dataframe list
+    pd_list=[]
+
+    for i, j in zip(keys_list, country_list):
+        #===============================================================
+        # match country/region identifier
+        z = re.search(j, i).group()#(f"({j}\w+)\W({j}\w+)", i)
+        # store time series (ts) key components in a list
+        keyComponent_list = re.findall(r"(\w+)\.",i)
+        # access the database identifier, which is the very first component at index 0
+        db_id = keyComponent_list[0]
+        # remainder of key components
+        keyRemainder = '.'.join(re.findall(r"\.(\w+)",i))
+        # merge the request url
+        requestUrl= entrypoint + db_id+ "/" + keyRemainder + "?format=genericdata"
+        #--------------------------------------------------------------
+    
+        # Set parameters for http request get method
+        today = date.today()        # get the date of today
+        today_formatted = today.strftime("%Y-%m-%d") # format the date as a string 2020-10-31
+        parameters = {
+        'startPeriod': start,  # Start date of the time series, e.g. '2019-12-01'
+        'endPeriod': today_formatted     # End of the time series
+        }
+        #--------------------------------------------------------------
+    
+        # Make the HTTP get request for each url
+        response = requests.get(requestUrl, params=parameters, headers={'Accept': 'text/csv'})
+        assert response.status_code == 200, f"Expected response code 200, got {response.status_code} for {requestUrl}. Check again your url!"
+        #--------------------------------------------------------------
+
+        # Read the response as a file into a Pandas Dataframe
+        ir_df = pd.read_csv(io.StringIO(response.text))
+        # Create a new DataFrame called 'ir_ts'; isolating Time Period and Observation Value only.
+        ir_ts = ir_df.filter(['TIME_PERIOD', 'OBS_VALUE'], axis=1)
+        #--------------------------------------------------------------
+        ir_ts = ir_ts.rename(columns={'OBS_VALUE': z}, inplace=True)
+        
+        # 'TIME_PERIOD' was of type 'object' (as can be seen in yc_df.info). Convert it to datetime first
+        ir_ts['TIME_PERIOD'] = pd.to_datetime(ir_ts['TIME_PERIOD'])
+        # Set 'TIME_PERIOD' to be the index
+        ir_ts = ir_ts.set_index('TIME_PERIOD')
+        # Append individual dataframe to pd_list
+        pd_list.append(ir_ts)
+        #===============================================================
+    
+    # Now concatenate each individual yield curve dataframe from the list of dataframes,
+    # collected in the loop, into one single dataframe
+    interest_df=pd.concat(pd_list, axis=1)
+    return interest_df
+
 #--- FUNCTION TO RETRIEVE DATA FOR A COMPANY FROM OUR DATABASE -------------------------------------------#
 
 def get_database_findata_year(company, year, month, day, engine):
@@ -124,9 +195,9 @@ def get_database_findata_year(company, year, month, day, engine):
     dt = datetime.datetime(year, month, day)
     date_formatted = dt.strftime("%Y-%m-%d") #%H:%M:%S
     try:
-        bs_y=pd.read_sql(f"SELECT * FROM balancesheet WHERE shortname = '{str(company)}' AND date='{date_formatted}'", engine)
-        incs_y=pd.read_sql(f"SELECT * FROM incomestatement WHERE shortname = '{str(company)}' AND date='{date_formatted}'", engine)
-        cs_y=pd.read_sql(f"SELECT * FROM cashflowstatement WHERE shortname = '{str(company)}' AND date='{date_formatted}'", engine)
+        bs_y=pd.read_sql(f"SELECT * FROM balancesheet WHERE shortname = '{str(company)}' AND date LIKE '{year}'", engine) # before: date='{date_formatted}'", engine)
+        incs_y=pd.read_sql(f"SELECT * FROM incomestatement WHERE shortname = '{str(company)}' AND date LIKE '{year}'", engine)
+        cs_y=pd.read_sql(f"SELECT * FROM cashflowstatement WHERE shortname = '{str(company)}' AND date LIKE '{year}'", engine)
         pd.set_option('display.expand_frame_repr', False)
         
         if len(bs_y.index) == 0:
@@ -173,6 +244,17 @@ def get_database_findata_year(company, year, month, day, engine):
                         cs_y=pd.read_sql(f"SELECT * FROM cashflowstatement WHERE shortname = '{str(company)}' AND date='{date_formatted}'", engine)
                         pd.set_option('display.expand_frame_repr', False)
                         print(f"You have successfully retrieved the financial statement data for company '{company}' for the Fiscal Year '{date_formatted}'!")
+                        if len(bs_y.index)==0:
+                            print(f"Again, there is no data available for the specified date '{date_formatted}' for '{company}'. I will try 'May FY end'...")
+                            month=10
+                            day=1
+                            dt = datetime.datetime(year, month, day)
+                            date_formatted = dt.strftime("%Y-%m-%d") #%H:%M:%S
+                            bs_y=pd.read_sql(f"SELECT * FROM balancesheet WHERE shortname = '{str(company)}' AND date='{date_formatted}'", engine)
+                            incs_y=pd.read_sql(f"SELECT * FROM incomestatement WHERE shortname = '{str(company)}' AND date='{date_formatted}'", engine)
+                            cs_y=pd.read_sql(f"SELECT * FROM cashflowstatement WHERE shortname = '{str(company)}' AND date='{date_formatted}'", engine)
+                            pd.set_option('display.expand_frame_repr', False)
+                            print(f"You have successfully retrieved the financial statement data for company '{company}' for the Fiscal Year '{date_formatted}'!")
         else:
             print(f"You have successfully retrieved the financial statement data for company '{company}' for the Fiscal Year '{date_formatted}'!")
         return bs_y, incs_y, cs_y
@@ -270,40 +352,57 @@ def clearDataframes_and_get_fy(company, df, df_name, year):
     if df_name not in valid:
         raise ValueError("""ValueError: The passed argument 'df_name' must be either 'bs' for 'Balance Sheet', 
                          'incs' for 'Income Statement' or 'cs' for 'Cashflow Statement'. Please specify the argument accordingly!""")
-    year=year
-    current_year=datetime.date.today().year
-    if int(year) >= current_year:
-        raise ValueError("""You want to extract annual data of a year which is bigger or equal than the current year! Bigger does not make sense;
-        equal depends on the time of the year in which we are right now --> Has the company already published?!""")
+    #current_year=datetime.date.today().year
+    # if int(year) >= current_year:
+    #     raise ValueError("""You want to extract annual data of a year which is bigger or equal than the current year! Bigger does not make sense;
+    #     equal depends on the time of the year in which we are right now --> Has the company already published?!""")
         
-    fy_dec=datetime.datetime(year, 12, 31).strftime("%Y-%m-%d")
-    fy_oct=datetime.datetime(year, 10, 31).strftime("%Y-%m-%d")
-    fy_sept=datetime.datetime(year, 9, 30).strftime("%Y-%m-%d")
-    fy_jun=datetime.datetime(year, 6, 30).strftime("%Y-%m-%d")
-    fy_may=datetime.datetime(year, 5, 31).strftime("%Y-%m-%d")
-    fy_mar=datetime.datetime(year, 3, 31).strftime("%Y-%m-%d")
-    fy_list=[fy_dec, fy_oct, fy_sept, fy_jun, fy_may, fy_mar]
+    # fy_dec=datetime.datetime(year, 12, 31).strftime("%Y-%m-%d")
+    # fy_oct=datetime.datetime(year, 10, 31).strftime("%Y-%m-%d")
+    # fy_oct2=datetime.datetime(year, 10, 1).strftime("%Y-%m-%d")
+    # fy_sept=datetime.datetime(year, 9, 30).strftime("%Y-%m-%d")
+    # fy_jun=datetime.datetime(year, 6, 30).strftime("%Y-%m-%d")
+    # fy_may=datetime.datetime(year, 5, 31).strftime("%Y-%m-%d")
+    # fy_mar=datetime.datetime(year, 3, 31).strftime("%Y-%m-%d")
+    # fy_list=[fy_dec, fy_oct, fy_oct2, fy_sept, fy_jun, fy_may, fy_mar]
     #----------------------------------------------------------#
+    # get financial data independent of the exact date of release. The 'year' is sufficient.
+    year=year
+    df_year=df[df['date'].str.contains(f'{year}')]
+    if df_year.shape[0]==0:
+        df_year=df[df['date'].str.contains(f'{year-1}')]
+    df_year=df_year.sort_values(by=['date'], ascending=False)
+    df_year_clean = df_year[df_year.item.isin(values) == False] # masking: exclude all rows that contain the values in list 'values' above.
+    df_year_clean['value'] = df_year_clean['value'].astype(float)
+    df_year_clean_unique=df_year_clean.drop_duplicates(['date', 'item', 'value'], keep='last')
+    if df_name == 'bs':
+        print(f"==> I revised the Balance Sheet and extracted financial data for Fiscal Year (FY) {year}.\n")
+    elif df_name == 'incs':
+        print(f"==> I revised the Income Statement and extracted financial data for Fiscal Year (FY) {year}.\n")
+    else:
+        print(f"==> I revised the Cashflow Statement and extracted financial data for Fiscal Year (FY) {year}.\n")
+    return df_year_clean_unique
     
-    for i in range(len(fy_list)-1):
-        df=df.sort_values(by=['date'], ascending=False)
-        df = df[df.item.isin(values) == False] # masking: exclude all rows that contain the values in list 'values' above.
-        df['value'] = df['value'].astype(float)
-        grouped = df.groupby(df['date'])
-        try:
-            df_year=grouped.get_group(fy_list[i])
-            df_year_clean = df_year[df_year.item.isin(values) == False]
-            df_year_clean_unique=df_year_clean.drop_duplicates(['date', 'item', 'value'], keep='last')
-            if df_name == 'bs':
-                print(f"==> I revised the Balance Sheet and extracted financial data for Fiscal Year (FY) {fy_list[i]}.\n")
-            elif df_name == 'incs':
-                print(f"==> I revised the Income Statement and extracted financial data for Fiscal Year (FY) {fy_list[i]}.\n")
-            else:
-                print(f"==> I revised the Cashflow Statement and extracted financial data for Fiscal Year (FY) {fy_list[i]}.\n")
-            return df_year_clean_unique
-        except KeyError:
-            print(f"For company {company} the date {fy_list[i]} seems to be the wrong fiscal year end. I continue trying FY date {fy_list[i+1]}...!\n")
-            continue
+
+    # for i in range(len(fy_list)-1):
+    #     df=df.sort_values(by=['date'], ascending=False)
+    #     df = df[df.item.isin(values) == False] # masking: exclude all rows that contain the values in list 'values' above.
+    #     df['value'] = df['value'].astype(float)
+    #     grouped = df.groupby(df['date'])
+    #     try:
+    #         df_year=grouped.get_group(fy_list[i])
+    #         df_year_clean = df_year[df_year.item.isin(values) == False]
+    #         df_year_clean_unique=df_year_clean.drop_duplicates(['date', 'item', 'value'], keep='last')
+    #         if df_name == 'bs':
+    #             print(f"==> I revised the Balance Sheet and extracted financial data for Fiscal Year (FY) {fy_list[i]}.\n")
+    #         elif df_name == 'incs':
+    #             print(f"==> I revised the Income Statement and extracted financial data for Fiscal Year (FY) {fy_list[i]}.\n")
+    #         else:
+    #             print(f"==> I revised the Cashflow Statement and extracted financial data for Fiscal Year (FY) {fy_list[i]}.\n")
+    #         return df_year_clean_unique
+    #     except KeyError:
+    #         print(f"For company {company} the date {fy_list[i]} seems to be the wrong fiscal year end. I continue trying FY date {fy_list[i+1]}...!\n")
+    #         continue
             
 def prepare_timeseries(statement, item=''):
     #=== Depreciation & Amortization (D&A)
@@ -314,4 +413,22 @@ def prepare_timeseries(statement, item=''):
     comp=idf.set_index(item_df['date'])
     comp.to_csv(f"data/{item}.csv")
     return comp
+
+def extract_json(data, keys):
+        out = []
+        queue = [data]
+        while len(queue) > 0:
+            current = queue.pop(0)
+            if type(current) == dict:
+                for key in keys:
+                    if key in current:
+                        out.append({key:current[key]})
+            
+                for val in current.values():
+                    if type(val) in [list, dict]:
+                        queue.append(val)
+            elif type(current) == list:
+                queue.extend(current)
+        return out
+
 

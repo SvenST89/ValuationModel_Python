@@ -1,1 +1,0 @@
-{"E.ON SE": "EOAN.DE", "Infineon Technologies AG": "IFX.DE", "GitLab Inc.": "GTLB", "Palantir Technologies Inc.": "PLTR", "PORSCHE AUTOM.HLDG VZO": "PAH3.DE", "Siemens Healthineers AG": "SHL.DE"}
