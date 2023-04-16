@@ -7,16 +7,20 @@ import requests
 # Standard libs for data manipulation
 import pandas as pd
 import numpy as np
+from scipy.stats import pearsonr
+from pandas_datareader import data as pdr
+from yahoofinancials import YahooFinancials
 import io
 import datetime
 from datetime import date
+from datetime import timedelta
 import re
 from sqlalchemy import create_engine
 import psycopg2
 import psycopg2.extras as extras
 from config.api import MY_API_KEY
 import config.pw
-from ValuationModel.fmp import get_profile_data, get_latest_available_fy
+from ValuationModel.fmp import *
 #=============SET UP LOGGING ======================#
 import logging
 import sys
@@ -432,3 +436,50 @@ def extract_json(data, keys):
         return out
 
 
+def market_correlation(ticker, index):
+    start = date.today() - \
+        timedelta(days=int(365))
+    end = date.today()
+    start = start.strftime("%Y-%m-%d")
+
+    today = date.today()        # get the date of today
+    today_formatted = today.strftime("%Y-%m-%d")
+    dax_perf_prices = YahooFinancials(index).get_historical_price_data(start, end_date=today_formatted, time_interval='daily')
+    #dax_perf_prices = pd.DataFrame.from_dict(pd.json_normalize(dax_perf_prices), orient="columns")
+    entry=extract_json(dax_perf_prices, ['prices'])
+    entry=entry[0]['prices']
+    index=pd.DataFrame(entry)
+    #dax=get_price_table('DAX', json_entry='historical')
+    snp=index[['close']]
+    #print(f"snp: \n {snp.describe()}")
+
+    # get stock table
+    stock_price = get_price_table(ticker).sort_values("date", ascending=True)
+    stock_close = stock_price[(stock_price['date']>=start) &  (stock_price['date']<=today_formatted)][['close']].reset_index().drop('index', axis=1)
+    #print(f"stock_close: \n {stock_close.describe()}")
+
+    if snp.shape[0] != stock_close.shape[0]:
+        logger.info("Different dimensions of dataframes for calculating pearson-r. I will align the dataframes...")
+        snp_ali, stock_close_ali = snp.align(stock_close, join="outer", axis=0) # align both dataframes filling up rows with NAN where necessary: https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.align.html
+        # Fill the 'NaN' rows with zeros
+        snp_ali=snp_ali.fillna(0)
+
+        # Calculate the mean-value
+        mean=snp_ali.mean()
+
+        # Replace 'zero' (former 'NaN')-values by the mean of the asset
+        snp_ali=snp_ali.replace({0.0: mean})
+
+        # Fill the 'NaN' rows with zeros
+        stock_close_ali=stock_close_ali.fillna(0)
+
+        # Calculate the mean-value
+        mean2=stock_close_ali.mean()
+
+        # Replace 'zero' (former 'NaN')-values by the mean of the asset
+        stock_close_ali=stock_close_ali.replace({0.0: mean2})
+        return f'{pearsonr(snp_ali.close, stock_close_ali.close)[0] :.2f}'
+    else:
+        logger.info("Dimensions of dataframes for calculating pearson-r are in line with each other...")
+        # Returning the correlation coefficient value between s&p500 and your chosen stock.
+        return f"{pearsonr(snp['close'], stock_close.close)[0]:.2f}"

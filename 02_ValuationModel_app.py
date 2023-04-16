@@ -30,6 +30,7 @@ import requests
 # Standard libs for data manipulation
 import numpy as np
 import pandas as pd
+from pandas_ta import bbands
 import io
 import datetime
 from datetime import date
@@ -54,7 +55,7 @@ warnings.filterwarnings('ignore')
 # INITIAL PARAMETERS & CALCULATIONS
 #====================================================#
 #------------------------------------------------------------------------------------#
-CHART_THEME='plotly_white'
+CHART_THEME='plotly_dark' # plotly_white
 # Loading the dashboard's json files stored before with dcf.py
 #global sector_stocks, stocks_curr, stocks_exch
 sector_stocks = json.load(open('sector_stocks.json', 'r'))
@@ -62,12 +63,14 @@ stocks_curr = json.load(open('stocks_curr.json', 'r'))
 stocks_exch=json.load(open('stocks_exchange.json', 'r'))
 #global ticker_list
 tickerdict=json.load(open('ticker_dict.json', 'r'))
+global ticker_list
 ticker_list=list(tickerdict.values())
 #ticker_list=['GTLB', 'PLTR', 'IFX.DE', 'EOAN.DE', 'SHL.DE', 'PAH3', 'NEL.OL', 'PLUG', 'DIS', 'KO', 'MMM', 'MSFT', 'SQ', 'ABNB', 'AMZN', 'EBAY', 'ORCL', 'PYPL', 'QCOM', 'SNOW', 'TEAM', 'TSLA', 'DBK.DE', 'PM']
 
 company='The Walt Disney Company' # Currently, I have just a limited amount of companies in the database. The companies are: GitLab Inc., INFINEON TECHNOLOGIES AG, E.ON SE, Palantir Technologies Inc.,
 
 ticker=tickerdict[company]
+#global curr
 curr=[key for key, ticker_list in stocks_curr.items() if ticker in ticker_list][0]
 
 d = pd.DataFrame(ticker_list)
@@ -113,6 +116,17 @@ pri = 'Real Time Price: ' + str(real_time_stockprice(ticker, json_entry='price')
 pe = 'P/E Ratio (ttm): ' + str(pe_ttm(ticker, json_entry='peRatioTTM'))
 # Sector P/E Ratio
 #sec_pe='Sector P/E Ratio: ' + str(sec_per(ticker, ticker_list, sector_stocks, stocks_exch, json_entry='pe'))
+# Calculate Correlation between market and stock
+stock_exchange = [key for key, ticker_list in stocks_exch.items() if ticker in ticker_list][0]
+if stock_exchange == 'NASDAQ':
+    _index='^NDX'
+elif stock_exchange == 'NYSE':
+    _index='^NYA'
+elif stock_exchange == 'XETRA':
+    _index = '^GDAXI'
+else:
+    _index = '^GSPC'
+m_corr = market_correlation(ticker, _index)
 
 
 #====================================================#
@@ -135,8 +149,17 @@ candle.add_trace(go.Candlestick(x=standard_disp['date'],
 candle.layout.template=CHART_THEME
 candle.layout.height=500
 candle.update_layout(
+    plot_bgcolor='rgb(42, 40, 41)',
+    paper_bgcolor='rgb(42, 40, 41)',
     xaxis=dict(
-        title="Date",
+        title=dict(
+            text ="<b>Date</b>",
+            font = dict(
+                family= "Century Gothic",
+                size = 16,
+                color='rgb(253, 251, 251)',
+                )
+        ),
         showline=True,
         showgrid=False,
         showticklabels=True,
@@ -144,13 +167,20 @@ candle.update_layout(
         linewidth=2,
         ticks='outside',
         tickfont=dict(
-            family='Arial',
-            size=14,
-            color='rgb(136, 136, 138)',
+            family='Century Gothic',
+            size=12,
+            color='rgb(253, 251, 251)',
         ),
     ),
     yaxis=dict(
-        title="Stock Price",
+        title=dict(
+            text ="<b>Stock Price</b>",
+            font = dict(
+                family= "Century Gothic",
+                size = 16,
+                color='rgb(253, 251, 251)',
+                )
+        ),
         showline=True,
         showgrid=False,
         showticklabels=True,
@@ -159,9 +189,9 @@ candle.update_layout(
         zeroline=False,
         ticks='outside',
         tickfont=dict(
-            family='Arial',
-            size=14,
-            color='rgb(136, 136, 138)',
+            family='Century Gothic',
+            size=12,
+            color='rgb(253, 251, 251)',
         ),
     ),
     margin=dict(
@@ -180,6 +210,16 @@ end=date.today()
 max_date = end
 candle.update_xaxes(range=[min_date, end])
 candle.update_yaxes(tickprefix=curr+' ')
+# annotations_candle = []
+# # # Title
+# annotations_candle.append(dict(xref="paper", yref="paper", x=1, y=1.05,
+#                                xanchor='right', yanchor='bottom',
+#                                 text='Data Source: https://site.financialmodelingprep.com/developer/docs/',
+#                                 font=dict(family='Open Sans',
+#                                             size=10,
+#                                             color='rgb(150,150,150)'),
+#                                 showarrow=False))
+# candle.update_layout(annotations=annotations_candle)
 
 
 #====================================================#
@@ -192,7 +232,9 @@ import dash_bootstrap_components as dbc
 import dash_trich_components as dtc
 from dash.dependencies import Output, Input
 
-app = dash.Dash(__name__, external_stylesheets=[dbc.themes.LUX])
+# Influence Styling of dbc Themes: https://hellodash.pythonanywhere.com/adding-themes/dcc-components
+dbc_css = "https://cdn.jsdelivr.net/gh/AnnMarieW/dash-bootstrap-templates/dbc.min.css"
+app = dash.Dash(__name__, external_stylesheets=[dbc.themes.DARKLY, dbc_css]) 
 
 app.layout = dbc.Container(
     [
@@ -211,8 +253,9 @@ app.layout = dbc.Container(
         #=== ROW 1
         dbc.Row([
             # column 1
-            dbc.Col([html.H2('STOCK ASSISTANT DASHBOARD', style={'margin-top': '12px', 'margin-left': '48px', 'margin-bottom': '16px'}, className='text-center text-primary, mb-3')], width={'size': 10, 'offset': 0, 'order': 0}), # the max size of a screen is width=12!
-            dbc.Col([html.Img(src="assets/ds_logo_white2.png", style={'height': '70%', 'width':'30%', 'margin-top':'12px', 'margin-left':'16px'})], width={'size': 2, 'offset': 0, 'order': 0})
+            dbc.Col(width=3), # fake column to keep header in center
+            dbc.Col([html.H2('STOCK ASSISTANT DASHBOARD', style={'margin-top': '15px', 'margin-left': 'auto', 'margin-bottom': '16px', 'textAlign': "center"}, className='text-center text-primary, mb-3')], width={'size': 6, 'offset': 0, 'order': 0}), # the max size of a screen is width=12!
+            dbc.Col([html.Img(src="assets/ds_logo_clear.png", style={'height': '70%', 'width':'30%', 'margin-left': 'auto', 'margin-top':'15px', 'margin-bottom': '16px', 'float': 'right'})], width={'size': 3, 'offset': 0, 'order': 0})
         ], justify='start'),
         #=== ROW 2
         dbc.Row([
@@ -223,26 +266,45 @@ app.layout = dbc.Container(
                     id='stock-dropdown',
                     options=dd_labels,
                     value=dd_labels[0]['label'],
-                    #style={'height': 550, 'margin-bottom': '14px', 'margin-left':'12px'}),
+                    #style={'font-family': 'Open Sans', "background-color":"rgb(42, 40, 41)", "color": "MediumTurqoise"},
                 ),
                 html.Div(id='company', className='text-center mt-3 p-2'),
                 html.Div(id='sec', className='text-center p-2'),
                 html.Div(id='pri', className='text-center p-2'),
                 html.Div(id='intrinsic_price', className='text-center p-2'),
                 html.Div(id='pe', className='text-center p-2'),
+                html.Div(id='market_corr', className='text-center p-2'),
+            #html.Hr(),
                 #html.Div(id='sec_pe', className='text-center p-2'),
             ], width={'size': 4, 'offset': 0, 'order': 0}),
             # column 2
             dbc.Col([
                 html.H5(id='desc_candle', className='text-center'),
-                dcc.Graph(
-                    id='candle',
-                    figure=candle,
-                    style={'height': 550, 'margin-bottom': '14px', 'margin-left':'12px'}),
-                html.Hr(),
+                dcc.Loading([
+                    dcc.Graph(
+                        id='candle',
+                        figure=candle,
+                        style={'height': 550, 'margin-left':'12px'})],
+                        id='loading-price-chart', type='dot', color='#1F51FF'),
+                dcc.Checklist(
+                    ['Simple Moving Avrg',
+                    'Exponential Moving Avrg',
+                    'Bollinger Bands'],
+                    inline=True,
+                    inputStyle={'margin-left': '15px',
+                                'margin-right': '5px'},
+                    id='complements-checklist',
+                    style={'margin-left':'350px'}),
             ], width={'size': 8, 'offset': 0, 'order': 0}),
         ]),
-        #=== ROW 3
+        #=== ROW 3: To have a clean break in the screen!
+        dbc.Row([
+            # column 1
+            dbc.Col([
+                html.Hr(),
+            ], width={'size': 12, 'offset': 0, 'order': 0}),
+        ]),
+        #=== ROW 4
         dbc.Row([
             # column 1
             dbc.Col([
@@ -251,7 +313,7 @@ app.layout = dbc.Container(
                     id='fig_mc',
                     figure=fig_mc,
                     style={'height': 550, 'margin-bottom': '14px', 'margin-left':'12px'}),
-                html.Hr(),
+                #html.Hr(),
             ], width={'size': 4, 'offset': 0, 'order': 0}),
             # column 2
             # dbc.Col([
@@ -263,7 +325,15 @@ app.layout = dbc.Container(
             #     html.Hr(),
             # ], width={'size': 6, 'offset': 0, 'order': 0}),
         ]),
-    ], fluid=True
+        #=== ROW 5 (Footnote)
+        dbc.Row([
+            # column 1
+            dbc.Col([
+                html.Hr(),
+                html.Div(html.P(['Financial Data obtained from: https://site.financialmodelingprep.com/developer/docs/', html.Br(), 'Economic Data retrieval from: https://sdw-wsrest.ecb.europa.eu/help/', html.Br(),'Created by SVEN STEINBAUER']), id='footnote', style={'margin-top': '12px', 'margin-left': '75px', 'margin-bottom': '16px', 'font-size': '12px'}, className='text-center mt-3 p-2'),
+            ], width={'size': 12, 'offset': 0, 'order': 0}),
+        ]),
+    ], fluid=True, className="dbc"
 )
 
 #====================================================#
@@ -273,16 +343,30 @@ app.layout = dbc.Container(
 @app.callback(
     [
     Output("candle", "figure"), Output("fig_mc", "figure"), Output("company", "children"), Output("sec", "children"), Output("pri", "children"), Output("intrinsic_price", "children"),
-    Output("pe", "children"), Output("desc_candle", "children"), Output("desc_mc", "children")
+    Output("pe", "children"), Output("market_corr", "children"), Output("desc_candle", "children"), Output("desc_mc", "children")
     ],
-    Input("stock-dropdown", "value")
+    Input("stock-dropdown", "value"),
+    Input('complements-checklist', 'value'),
 )
 
-def update_figures(st):
+def update_figures(st, checklist_values):
+    # currency
+    stocks_curr = json.load(open('stocks_curr.json', 'r'))
+    curr=[key for key, ticker_list in stocks_curr.items() if st in ticker_list][0]
     #=== UPDATE CANDLESTICK CHART
     company=get_profile_data(st, json_entry='companyName', entry_point='profile')
     desc_candle=f'Price Chart: {company}'
-    price_table = get_price_table(st)
+    price_table = get_price_table(st).sort_values("date", ascending=True)
+    # Bollinger Bands (normally distributed price fluctuations)
+    df_bbands = bbands(price_table['close'], length=20, std=2)
+    # Measuring Rolling and Exponential Rolling Mean (moving averages!)
+    price_table['Simple Moving Avrg'] = price_table['close'].rolling(window=5).mean()
+    price_table['Exponential Moving Avrg'] = price_table['close'].ewm(span=5, adjust=True).mean()
+    # Each metric will have its own color in the chart.
+    colors = {'Simple Moving Avrg': '#02D7D7',
+              'Exponential Moving Avrg': '#027517', 'Bollinger_Bands_Low': '#D70263',
+              'Bollinger_Bands_AVG': 'brown',
+              'Bollinger_Bands_High': '#CECCCD'}
     candle = go.Figure()
     candle.add_trace(go.Candlestick(x=price_table['date'],
                                 open=price_table['open'],
@@ -290,9 +374,33 @@ def update_figures(st):
                                 high=price_table['high'],
                                 low=price_table['low'],
                                 name='Stock Price'))
+    # If the user has selected any of the indicators in the checklist, we'll represent it in the chart.
+    if checklist_values != None:
+        for metric in checklist_values:
+
+            # Adding the Bollinger Bands' typical three lines.
+            if metric == 'Bollinger Bands':
+                candle.add_trace(go.Scatter(
+                    x=price_table['date'], y=df_bbands.iloc[:, 0],
+                    mode='lines', name='BBand Low', line={'color': colors['Bollinger_Bands_Low'], 'width': 1}))
+
+                candle.add_trace(go.Scatter(
+                    x=price_table['date'], y=df_bbands.iloc[:, 1],
+                    mode='lines', name='BBand Average', line={'color': colors['Bollinger_Bands_AVG'], 'width': 1}))
+
+                candle.add_trace(go.Scatter(
+                    x=price_table['date'], y=df_bbands.iloc[:, 2],
+                    mode='lines', name='BBand Up', line={'color': colors['Bollinger_Bands_High'], 'width': 1}))
+
+            # Plotting any of the other metrics remained, if they are chosen.
+            else:
+                candle.add_trace(go.Scatter(
+                    x=price_table['date'], y=price_table[metric], mode='lines', name=metric, line={'color': colors[metric], 'width': 1}))
     candle.layout.template=CHART_THEME
     candle.layout.height=500
     candle.update_layout(
+        plot_bgcolor='rgb(42, 40, 41)',
+        paper_bgcolor='rgb(42, 40, 41)',
         # title={
         # 'text': f'Price Chart: {company}',
         # 'y':0.95,
@@ -301,7 +409,14 @@ def update_figures(st):
         # 'yanchor': 'top'
         # },
         xaxis=dict(
-            title="Date",
+            title=dict(
+                text ="<b>Date</b>",
+                font = dict(
+                    family= "Century Gothic",
+                    size = 16,
+                    color='rgb(253, 251, 251)',
+                    )
+            ),
             showline=True,
             showgrid=False,
             showticklabels=True,
@@ -309,13 +424,20 @@ def update_figures(st):
             linewidth=2,
             ticks='outside',
             tickfont=dict(
-                family='Arial',
-                size=14,
-                color='rgb(136, 136, 138)',
+                family='Century Gothic',
+                size=12,
+                color='rgb(253, 251, 251)',
             ),
         ),
         yaxis=dict(
-            title="Stock Price",
+            title=dict(
+                text ="<b>Stock Price</b>",
+                font = dict(
+                    family= "Century Gothic",
+                    size = 16,
+                    color='rgb(253, 251, 251)',
+                    )
+            ),
             showline=True,
             showgrid=False,
             showticklabels=True,
@@ -324,9 +446,9 @@ def update_figures(st):
             zeroline=False,
             ticks='outside',
             tickfont=dict(
-                family='Arial',
-                size=14,
-                color='rgb(136, 136, 138)',
+                family='Century Gothic',
+                size=12,
+                color='rgb(253, 251, 251)',
             ),
         ),
         margin=dict(
@@ -336,6 +458,18 @@ def update_figures(st):
             t=50
         ),
     )
+    candle.update_xaxes(range=[min_date, end])
+    candle.update_yaxes(tickprefix=curr+' ')
+    # annotations_candle = []
+    # # # Title
+    # annotations_candle.append(dict(xref="paper", yref="paper", x=1, y=1.05,
+    #                            xanchor='right', yanchor='bottom',
+    #                             text='Data Source: https://site.financialmodelingprep.com/developer/docs/',
+    #                             font=dict(family='Open Sans',
+    #                                         size=10,
+    #                                         color='rgb(150,150,150)'),
+    #                             showarrow=False))
+    # candle.update_layout(annotations=annotations_candle)
 
     #=== HISTOGRAM: FROM VALUATION MODEL
     latest_year=get_latest_available_fy(st, json_entry="date")
@@ -355,8 +489,18 @@ def update_figures(st):
     #ticklist=list(tickerdict.values())
     
     #sec_pe='Sector P/E Ratio: ' + str(round(float(sec_per(st, ticklist, sector_stocks, stocks_exch, json_entry='pe')), 2))
+    stock_exchange = [key for key, ticker_list in stocks_exch.items() if st in ticker_list][0]
+    if stock_exchange == 'NASDAQ':
+        _index='^NDX'
+    elif stock_exchange == 'NYSE':
+        _index='^NYA'
+    elif stock_exchange == 'XETRA':
+        _index = '^GDAXI'
+    else:
+        _index = '^GSPC'
+    market_corr = 'Stock´s correlation with the market: ' + market_correlation(st, _index)
 
-    return candle, fig_mc, company, sec, pri, intrinsic_price, pe, desc_candle, desc_mc
+    return candle, fig_mc, company, sec, pri, intrinsic_price, pe, market_corr, desc_candle, desc_mc
 
 
 if __name__=="__main__":

@@ -77,6 +77,7 @@ def build_dcf_model(company='', year=2022, tax_rate=0.15825):
 
     #global ticker
     ticker=companyTicker_dict[company]
+    ticker_list=list(companyTicker_dict.values())
 
     #=== DATABASE CONNECTION
     # Set necessary url variables for the sqlalchemy create_engine() method.
@@ -187,9 +188,18 @@ def build_dcf_model(company='', year=2022, tax_rate=0.15825):
     #'^GSPC', '^FTSE', '^NDX', '^RUA', '^NYA'] # Dax Performance40, S&P500, FTSE100, Nasdaq100, Dow Jones
     # Retrieve Data on the DAX Performance Index (i.e. the 40 stocks which I have in my database)
     # Get most recent week’s minute data
+    stock_exchange = [key for key, ticker_list in stocks_exch.items() if ticker in ticker_list][0]
+    if stock_exchange == 'NASDAQ':
+        _index='^NDX'
+    elif stock_exchange == 'NYSE':
+        _index='^NYA'
+    elif stock_exchange == 'XETRA':
+        _index = '^GDAXI'
+    else:
+        _index = '^GSPC'
     today = date.today()        # get the date of today
     today_formatted = today.strftime("%Y-%m-%d")
-    dax_perf_prices = YahooFinancials('^GDAXI').get_historical_price_data('2010-01-01', end_date=today_formatted, time_interval='daily')
+    dax_perf_prices = YahooFinancials(_index).get_historical_price_data('2010-01-01', end_date=today_formatted, time_interval='daily')
     #dax_perf_prices = pd.DataFrame.from_dict(pd.json_normalize(dax_perf_prices), orient="columns")
     entry=extract_json(dax_perf_prices, ['prices'])
     entry=entry[0]['prices']
@@ -354,13 +364,15 @@ def build_dcf_model(company='', year=2022, tax_rate=0.15825):
     upper_bound = mean+1.96*standard_error
 
     #=== MAKE HISTOGRAM OF MC SIMULATION
-    CHART_THEME='plotly_white'
+    CHART_THEME='plotly_dark'
     curr=[key for key, tickers_list in stocks_curr.items() if ticker in tickers_list][0]
 
     mc_fig=go.Figure()
-    mc_fig.add_trace(go.Histogram(x=hist_array/1000000, name=f'Intrinsic Valuation: {company}',marker_color='#EB89B5'))
+    mc_fig.add_trace(go.Histogram(x=hist_array/1000000, name=f'Intrinsic Valuation: {company}',marker_color='#A10452'))
     mc_fig.layout.template=CHART_THEME
     mc_fig.update_layout(
+        plot_bgcolor='rgb(42, 40, 41)',
+        paper_bgcolor='rgb(42, 40, 41)',
         # title={
         # 'text': f'Intrinsic EV - Monte Carlo Simulation: {company}',
         # 'y':0.95,
@@ -369,7 +381,14 @@ def build_dcf_model(company='', year=2022, tax_rate=0.15825):
         # 'yanchor': 'top'
         # },
         xaxis=dict(
-            title=f"Intrinsic Enterprise Value in {curr}bn",
+            title=dict(
+                text =f"<b>Intrinsic Enterprise Value in {curr}bn</b>",
+                font = dict(
+                    family= "Century Gothic",
+                    size = 16,
+                    color='rgb(253, 251, 251)',
+                    )
+            ),
             showline=True,
             showgrid=False,
             showticklabels=True,
@@ -377,13 +396,20 @@ def build_dcf_model(company='', year=2022, tax_rate=0.15825):
             linewidth=2,
             ticks='outside',
             tickfont=dict(
-                family='Arial',
-                size=14,
-                color='rgb(136, 136, 138)',
+                family='Century Gothic',
+                size=12,
+                color='rgb(253, 251, 251)',
             ),
         ),
         yaxis=dict(
-            title="Count",
+            title=dict(
+                text ="<b>Count</b>",
+                font = dict(
+                    family= "Century Gothic",
+                    size = 16,
+                    color='rgb(253, 251, 251)',
+                    )
+            ),
             showline=True,
             showgrid=False,
             showticklabels=True,
@@ -392,9 +418,9 @@ def build_dcf_model(company='', year=2022, tax_rate=0.15825):
             zeroline=False,
             ticks='outside',
             tickfont=dict(
-                family='Arial',
-                size=14,
-                color='rgb(136, 136, 138)',
+                family='Century Gothic',
+                size=12,
+                color='rgb(253, 251, 251)',
             ),
         ),
         margin=dict(
