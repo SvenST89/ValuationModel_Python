@@ -498,7 +498,7 @@ def update_figures(st, checklist_values):
         _index = '^GDAXI'
     else:
         _index = '^GSPC'
-    market_corr = 'Stock´s correlation with the market: ' + market_correlation(st, _index)
+    market_corr = f"Stock´s correlation with related index '{_index}' and Stock Exchange '{stock_exchange}': " + market_correlation(st, _index)
 
     return candle, fig_mc, company, sec, pri, intrinsic_price, pe, market_corr, desc_candle, desc_mc
 
