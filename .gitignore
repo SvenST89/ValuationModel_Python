@@ -7,3 +7,8 @@ arima.txt
 archive/20220917_DBValuationModel-DCF_old2.ipynb
 dist/
 data/
+build/
+kpis.ipynb
+20220917_DBValuationModel-DCF.ipynb
+*.json
+*.spec
