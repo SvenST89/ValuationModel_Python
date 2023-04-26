@@ -415,7 +415,7 @@ def prepare_timeseries(statement, item=''):
     idf=pd.DataFrame(item_df['value'])#.values
     idf['value']=idf['value'].astype('float')
     comp=idf.set_index(item_df['date'])
-    comp.to_csv(f"data/{item}.csv")
+    #comp.to_csv(f"data/{item}.csv")
     return comp
 
 def extract_json(data, keys):

@@ -5,3 +5,5 @@ log/
 open_todos.txt
 arima.txt
 archive/20220917_DBValuationModel-DCF_old2.ipynb
+dist/
+data/

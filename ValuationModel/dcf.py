@@ -45,6 +45,7 @@ from ValuationModel.assist_functions import *
 from ValuationModel.fmp import *
 from config.api import MY_API_KEY
 from ValuationModel.arima import *
+from ValuationModel.econ import *
 #---- DATABASE MANAGEMENT TOOLS --------------#
 from sqlalchemy import create_engine
 import psycopg2
@@ -191,12 +192,26 @@ def build_dcf_model(company='', year=2022, tax_rate=0.15825):
     stock_exchange = [key for key, ticker_list in stocks_exch.items() if ticker in ticker_list][0]
     if stock_exchange == 'NASDAQ':
         _index='^NDX'
+        # Long-term growth rate, g
+        mean_gdp_growth_us = getGdpData(country='US', period='A', key='NGDP_R_XDC') # annual real gdp growth rate
+        g = mean_gdp_growth_us
+        logger.info(f"Initial LT growth rate set: {g}.")
     elif stock_exchange == 'NYSE':
         _index='^NYA'
+        mean_gdp_growth_us = getGdpData(country='US', period='A', key='NGDP_R_XDC') # annual real gdp growth rate
+        g = mean_gdp_growth_us
+        logger.info(f"Initial LT growth rate set: {g}.")
     elif stock_exchange == 'XETRA':
         _index = '^GDAXI'
+        mean_gdp_growth_de = getGdpData(country='DE', period='A', key='NGDP_R_XDC') # annual real gdp growth rate
+        g = mean_gdp_growth_de
+        logger.info(f"Initial LT growth rate set: {g}.")
     else:
         _index = '^GSPC'
+        mean_gdp_growth_us = getGdpData(country='US', period='A', key='NGDP_R_XDC') # annual real gdp growth rate
+        g = mean_gdp_growth_us
+        logger.info(f"Initial LT growth rate set: {g}.")
+
     today = date.today()        # get the date of today
     today_formatted = today.strftime("%Y-%m-%d")
     dax_perf_prices = YahooFinancials(_index).get_historical_price_data('2010-01-01', end_date=today_formatted, time_interval='daily')
@@ -230,6 +245,15 @@ def build_dcf_model(company='', year=2022, tax_rate=0.15825):
     # The equity required rate of return is calculated and Beta is retrieved inside this function!
     wacc=get_wacc(company, year, rfr, mrp, at_debt_cost, engine)
     logger.info(f'WACC for {company} is: {wacc}')
+    
+    if g < 0:
+        g = wacc * 0.95
+        logger.info(f"Adjusted LT growth rate, as g < 0: {g}.")
+    elif g >= wacc:
+        g = (g - (g - wacc))*0.95 # random!
+        logger.info(f"Adjusted LT growth rate, as g >= wacc: {g}.")
+    else:
+        logger.info(f"LT growth rate remains stable, no adjustment: {g}.")
 
     #=== CALCULATE NECESSARY FINANCIAL KPIS
     #=== REVENUES: Get the revenues over the last years
@@ -296,8 +320,6 @@ def build_dcf_model(company='', year=2022, tax_rate=0.15825):
     #===================================================#
     # BUILDING THE DCF MODEL
     #===================================================#
-    # Long-term growth rate, g
-    g=(wacc-0.025)
     # Now, make forecast list for UNLEVERED FREE CASHFLOW through which the random variables as defined above, 
     # i.e. the variables and their items which calculate unlevered free cashflow, will flow
     def forecast_ufcf(last_rev, rev_cagr, margin_mean, tax, dna_fc_list, capex_fc_list, cwc_fc_list, wacc, g, multiple=8):
@@ -434,4 +456,26 @@ def build_dcf_model(company='', year=2022, tax_rate=0.15825):
         # font_color='grey',
         # autosize=True
     )
+    mc_fig.add_annotation(
+        xref = "x domain",
+        yref = "y domain",
+        # The text will be 25% along the x axis, starting from the left
+        x=0.5,
+        y=1.05,
+        text=f"PARAMETERS<br>Terminal Growth Rate: {g:.2%} | WACC: {wacc:.2%} | Assumed Tax Rate: {tax:.2%}", # use <sup></sup> for suptitle
+        showarrow=False
+    )
+    # mc_fig.add_annotation(
+    #     xref='x domain', 
+    #     yref='y domain', 
+    #     x=0.3, 
+    #     y=-0.75,
+    #     xanchor='center', 
+    #     yanchor='top',
+    #     text='Terminal Growth Rate = long-term GDP Average of related region (IMF); Tax Rate = German Tax Rate',
+    #     # font=dict(family='Arial',
+    #     #           size=9,
+    #     #           color='rgb(247,246,246)'),
+    #     showarrow=False
+    # )
     return mc_fig, intrinsic_value, intrinsic_share_price
