@@ -95,4 +95,3 @@ Finally, we run a Monte Carlo Simulation across various input variables such as 
 Finally, I build a web application with `Dash/Plotly` adding the final **stochastic Monte-Carlo Corporate Valuation Chart**, an overview of the chosen company from a dropdown and a candlestick chart which allows for adding a **simple moving average**, **exponential moving average** XOR **Bollinger Bands**. Moreover, a carousel is hovering on the top of the page for the collected Stocks.
 
 OPEN TODO: Add a datatable with various financial KPIs on the bottom right.
-
