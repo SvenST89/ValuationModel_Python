@@ -96,6 +96,8 @@ Finally, I build a web application with `Dash/Plotly` adding the final **stochas
 
 OPEN TODO: Add a datatable with various financial KPIs on the bottom right.
 
+https://user-images.githubusercontent.com/91028254/234731818-b97c2257-76c3-4bb6-8ad4-f5d931e0d571.mp4
+
 ## PyInstaller to wrap it into an .exe file
 
 tbd...
