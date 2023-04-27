@@ -12,7 +12,7 @@ Thus, the `insert_new_data()` function will check whether (id, date)-value pairs
 
 We will first add the necessary packages and setup an engine object as 'medium' for database communication with Postgres. Then, we will define the **standard tables**. The **temporary tables** will be setup identically to the standard tables. Hence, we will have four standard tables + four temporary tables in the following structure:
 
-   - Table "company", with `shortName`, `symbol`, `sector`, `industry` and `currency` as attributes (identical to the yfinance API keys)
+   - Table "company", with `shortName`, `symbol`, `sector`, `industry`, `currency` and `exchange shortname` as attributes (identical to the yfinance API keys)
    - Table "balanceSheet", with  **primary key `(id, date)`** and **foreign key `company_id`**
    - Table "incomeStatement", with **primary key `(id, date)`** and **foreign key `company_id`**
    - Table "cashflowStatement", with **primary key `(id, date)`** and **foreign key `company_id`**
@@ -58,21 +58,19 @@ In essence, the function `get_ir_data()` is general enough in order to retrieve 
 
 <u><h4><font color="#ab4e52">Cost of Equity Estimate</font></h4></u>
 
-As for the cost of equity I will follow the <span style="color:orange"><b>CAPM Approach</b></span>, i.e. use the current ECB interest rate for main refinancing operations (1.25%, 2022/09/17) as **risk-free rate** and calculate the **annualized market risk premium** from the historical price data of the respective stock index, in our case the 'DAX'. The **beta coefficient** of the individual company is retrieved from the `FMP API` while we use `yahoo finance API` for **historical price data of the respective index**.
+As for the cost of equity I will follow the <span style="color:orange"><b>CAPM Approach</b></span>, i.e. use the current ECB interest rate for main refinancing operations (1.25%, 2022/09/17) as **risk-free rate** and calculate the **annualized market risk premium** from the historical price data of the respective stock index. The **beta coefficient** of the individual company is retrieved from the `FMP API` while we use `YahooFinancials API` for **historical price data of the respective index**.
 
 ### Build the Forecast Model
 
-For each individual position in our forecast model we need to calculate CAGRs which we then use in order to extrapolate each position into the future and to calculate the **unlevered Free-Cashflow-to-the-Firm** for each future year. For reasons of simplicity we do not average between a terminal Enterprise Value based on an EV/EBITDA multiple and a Terminal Value that is based on a perpetual growth rate - we simply use the method based on a perpetual growth rate. Maybe I will change this in the future.
+For revenues and EBIT we use CAGRs and the mean growth rate, respectively, in our model. For the other time series such as D&A, Capex, etc. we use an ARIMA Model from the `statsmodels API` to calculate the **unlevered Free-Cashflow-to-the-Firm** for each future year. For reasons of simplicity we do not average between a terminal Enterprise Value based on an EV/EBITDA multiple and a Terminal Value that is based on a perpetual growth rate - we simply use the method based on a perpetual growth rate. Maybe I will change this in the future.
 
-For each individual position in our forecast model we need to calculate CAGRs which we then use in order to extrapolate each position into the future and to calculate the **unlevered Free-Cashflow-to-the-Firm** for each future year. For reasons of simplicity we do not average between a terminal Enterprise Value based on an EV/EBITDA multiple and a Terminal Value that is based on a perpetual growth rate - we simply use the method based on a perpetual growth rate. Maybe I will change this in the future.
-
-- For the `perpetual (long-term growth rate)` to calculate the **terminal value** I use a 'tunable' variable, called `g`, which simply is a adjusted WACC rate, i.e. the WACC is adjusted manually by a hypothetical number that allows to reach a 'reasonable' terminal value. If you would take the simple cagr of the revenue development over the last years, you would receive - in most cases - astronomical valuations (it escalates exponentially quite quickly!)
+- As for the `perpetual (long-term growth rate)` to calculate the **terminal value** I use a 'tunable' variable, called `g`, which is based on the **long-term real GDP Growth** for the respective market as obtained from the **IMF API https://datahelp.imf.org/knowledgebase/articles/667681-using-json-restful-web-service**
 
 - For 'EBIT' we use `operatingIncomeRatio` from the Income Statement as delivered by FMP and the related average over the last available years and apply it on the extrapolated revenues.
 
 - For 'Cash Taxes' in order to calculate `NOPAT (Net Operating Profit After Tax)` we use the defined tax rate of _15%_ of the German Tax system
 
-- For 'D&A' we use `depreciationAndAmortization` as given in the Income Statement data of FMP, for 'Capex' we use `capitalExpenditure` and for 'Changes in Net Working Capital' we use `changeInWorkingCapital` from the CF Statement as delivered by FMP as a rough estimate. Then we calculate **5-year moving averages** for these items and use the for the calculation of the forcasts.
+- For 'D&A' we use `depreciationAndAmortization` as given in the Income Statement data of FMP, for 'Capex' we use `capitalExpenditure` and for 'Changes in Net Working Capital' we use `changeInWorkingCapital` from the CF Statement as delivered by FMP as a rough estimate.
 
 Additionally, we extract the **net debt value** as given by `FMP` for the current fiscal year in order to calculate the **intrinsic Enterprise Value**.
 
@@ -86,4 +84,15 @@ The terminal value is calculate $uFCF_T*(1+g)/(WACC-g)$, where $g$ is the long-t
 
 ### Run Monte Carlo Simulation
 
+Finally, we run a Monte Carlo Simulation across various input variables such as `revenue cagr`, `Operating Income Margin`, `long-term growth rate` and the `WACC`.
+
 ![montecarlocv](assets/mc_sample.png)
+
+---
+
+## Web Application for Stock Assessment
+
+Finally, I build a web application with `Dash/Plotly` adding the final **stochastic Monte-Carlo Corporate Valuation Chart**, an overview of the chosen company from a dropdown and a candlestick chart which allows for adding a **simple moving average**, **exponential moving average** XOR **Bollinger Bands**. Moreover, a carousel is hovering on the top of the page for the collected Stocks.
+
+OPEN TODO: Add a datatable with various financial KPIs on the bottom right.
+
