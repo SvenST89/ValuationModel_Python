@@ -62,7 +62,7 @@ As for the cost of equity I will follow the <span style="color:orange"><b>CAPM A
 
 ### Build the Forecast Model
 
-For revenues and EBIT we use CAGRs and the mean growth rate, respectively, in our model. For the other time series such as D&A, Capex, etc. we use an ARIMA Model from the `statsmodels API` to calculate the **unlevered Free-Cashflow-to-the-Firm** for each future year. For reasons of simplicity we do not average between a terminal Enterprise Value based on an EV/EBITDA multiple and a Terminal Value that is based on a perpetual growth rate - we simply use the method based on a perpetual growth rate. Maybe I will change this in the future.
+For revenues and EBIT we use CAGRs and the mean growth rate, respectively, in our model. For the other time series such as D&A, Capex, etc. we use an ARIMA Model from the `statsmodels API` to calculate the **unlevered Free-Cashflow-to-the-Firm** for each future year.  We do average between a terminal Enterprise Value based on an EV/EBITDA multiple and a Terminal Value that is based on a perpetual growth rate.
 
 - As for the `perpetual (long-term growth rate)` to calculate the **terminal value** I use a 'tunable' variable, called `g`, which is based on the **long-term real GDP Growth** for the respective market as obtained from the **IMF API https://datahelp.imf.org/knowledgebase/articles/667681-using-json-restful-web-service**
 
@@ -80,7 +80,11 @@ We calculate the unlevered FCF as follows. Please find the picture below:
 
 ![dcf](assets/dcf.png)
 
-The terminal value is calculate $uFCF_T*(1+g)/(WACC-g)$, where $g$ is the long-term growth rate (perpetual growth rate) and $uFCF_T$ is the last period uFCF.
+As for the perpetual growth rate method, the terminal value is calculated as follows:
+
+> $uFCF_T*(1+g)/(WACC-g)$
+
+where $g$ is the long-term growth rate (perpetual growth rate) and $uFCF_T$ is the last period uFCF.
 
 ### Run Monte Carlo Simulation
 

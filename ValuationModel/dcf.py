@@ -310,11 +310,11 @@ def build_dcf_model(company='', year=2022, tax_rate=0.15825):
     cwc_fc_series=sarima_forecast(cwc_sarima, df_cwc, num_periods=5, company=company)
     cwc_fc_list=cwc_fc_series.tolist()
 
-    #=== NET DEBT
-    mask_nd=bs_y['item'].values=='netDebt'
-    net_debt=round(float(bs_y.loc[mask_nd, 'value'])/1000,0)
+    #=== DEBT
+    mask_nd=bs_y['item'].values=='longTermDebt'
+    debt=round(float(bs_y.loc[mask_nd, 'value'])/1000,0)
     #=== CASH
-    mask_cash=bs_y['item'].values=='cashAndShortTermInvestments'
+    mask_cash=bs_y['item'].values=='cashAndCashEquivalents'
     cash=round(float(bs_y.loc[mask_cash, 'value'])/1000, 0)
 
     #===================================================#
@@ -322,7 +322,9 @@ def build_dcf_model(company='', year=2022, tax_rate=0.15825):
     #===================================================#
     # Now, make forecast list for UNLEVERED FREE CASHFLOW through which the random variables as defined above, 
     # i.e. the variables and their items which calculate unlevered free cashflow, will flow
-    def forecast_ufcf(last_rev, rev_cagr, margin_mean, tax, dna_fc_list, capex_fc_list, cwc_fc_list, wacc, g, multiple=8):
+    ev_multiple = ratio(ticker, json_entry='enterpriseValueMultiple')
+    evm_last = [ev_multiple['enterpriseValueMultiple'] for ev_multiple in ev_multiple][0]
+    def forecast_ufcf(last_rev, rev_cagr, margin_mean, tax, dna_fc_list, capex_fc_list, cwc_fc_list, wacc, g, multiple=evm_last):
         forecast_lst=[]
         for i in range(len(dna_fc_list)):
             if i < len(dna_fc_list)-1:
@@ -336,7 +338,7 @@ def build_dcf_model(company='', year=2022, tax_rate=0.15825):
                 forecast_lst.append(tv)
         return forecast_lst
     #=== FREE CASHFLOW FORECAST
-    forecast=forecast_ufcf(end_val, rev_cagr, oir_mean, tax, dna_fc_list, capex_fc_list, cwc_fc_list, wacc, g)
+    forecast=forecast_ufcf(end_val, rev_cagr, oir_mean, tax, dna_fc_list, capex_fc_list, cwc_fc_list, wacc, g, multiple=evm_last)
 
     #=== INTRINSIC VALUE
     # Now calculate the Present Value of the Free Cash Flows and the terminal value
@@ -351,7 +353,7 @@ def build_dcf_model(company='', year=2022, tax_rate=0.15825):
             else:
                 discount_lst.append(i*(1/(1+wacc)**5))
         return sum(discount_lst)
-    intrinsic_value=round(float(get_pv(forecast, wacc)+cash-net_debt),0)
+    intrinsic_value=round(float(get_pv(forecast, wacc)+cash-debt),0)
 
     #=== ASSESSMENT OF OUTCOME
     outstanding_shares=get_profile_data(ticker, json_entry='outstandingShares', entry_point='shares')/1000
@@ -376,7 +378,7 @@ def build_dcf_model(company='', year=2022, tax_rate=0.15825):
         long_term_rate = np.random.normal(g, 0.001)
         discount_rate = np.random.normal(wacc, 0.001)
         forecast = forecast_ufcf(end_val, cagr, margin, tax, dna_fc_list, capex_fc_list, cwc_fc_list, discount_rate, long_term_rate)
-        hist_lst.append(round(float(get_pv(forecast, discount_rate)+cash-net_debt),0))
+        hist_lst.append(round(float(get_pv(forecast, discount_rate)+cash-debt),0))
     hist_array = np.array(hist_lst)
 
     mean = hist_array.mean() # mean of the sampled point estimates
@@ -461,8 +463,8 @@ def build_dcf_model(company='', year=2022, tax_rate=0.15825):
         yref = "y domain",
         # The text will be 25% along the x axis, starting from the left
         x=0.5,
-        y=1.05,
-        text=f"PARAMETERS<br>Terminal Growth Rate: {g:.2%} | WACC: {wacc:.2%} | Assumed Tax Rate: {tax:.2%}", # use <sup></sup> for suptitle
+        y=1.10,
+        text=f"PARAMETERS<br>Terminal Growth Rate: {g:.2%} | WACC: {wacc:.2%}<br>Assumed Tax Rate: {tax:.2%} | EV/EBITDA Multiple: {evm_last:.2f}", # use <sup></sup> for suptitle
         showarrow=False
     )
     # mc_fig.add_annotation(

@@ -212,9 +212,9 @@ def real_time_stockprice(ticker, json_entry='price'):
     entry=entry[0][json_entry]
     return entry
 
-def pe_ttm(ticker, json_entry='peRatioTTM'):
+def ratio(ticker, json_entry='priceEarningsRatio'):
     my_api_key=MY_API_KEY
-    entrypoint_profile="https://financialmodelingprep.com/api/v3/ratios-ttm/"
+    entrypoint_profile="https://financialmodelingprep.com/api/v3/ratios/"
     headers = {'Accept': 'application/json'}
     
     # Now make request to FMP API
@@ -224,7 +224,7 @@ def pe_ttm(ticker, json_entry='peRatioTTM'):
     # use the .json() method offered by 'requests' package: https://datagy.io/python-requests-json/
     response_list=response.json()
     entry=extract(response_list, [json_entry])
-    entry=entry[0][json_entry]
+    #entry=entry[0][json_entry]
     return entry
 
 def sec_per(ticker, ticker_list, sector_stocks_dict, exchange_dict, json_entry='pe'):
