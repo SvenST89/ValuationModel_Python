@@ -100,6 +100,8 @@ Finally, I build a web application with `Dash/Plotly` adding the final **stochas
 
 OPEN TODO: Add a datatable with various financial KPIs on the bottom right.
 
+<video src='assets\dash_rec.mp4'>
+
 ## PyInstaller to wrap it into an .exe file
 
 tbd...
