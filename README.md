@@ -100,6 +100,8 @@ Finally, I build a web application with `Dash/Plotly` adding the final **stochas
 
 OPEN TODO: Add a datatable with various financial KPIs on the bottom right.
 
+https://github.com/SvenST89/ValuationModel_Python/assets/91028254/aeb26b76-9fd5-461b-8599-f3c31ad7ed7d
+
 ## PyInstaller to wrap it into an .exe file
 
 tbd...
