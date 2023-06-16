@@ -235,11 +235,18 @@ candle.update_yaxes(tickprefix=curr+' ')
 #                                 showarrow=False))
 # candle.update_layout(annotations=annotations_candle)
 
+#===== KPI Table
+from ValuationModel.kpi import make_kpi_tables, style_kpi_table
+kpi_incs_df, kpi_bs_df, kpi_cs_df, kpi_add_df, kpi_spec_df = make_kpi_tables(ticker=ticker)
+kpi_options=["Income Statement", "Balance Sheet", "Cashflow Statement", "Income Statement Ratios", "Specific Ratios"]
+
+# make standard table to show in lower right quadrant
+kpi_tbl = style_kpi_table(kpi_spec_df, format='percent', CHART_THEME=CHART_THEME)
 
 #====================================================#
 # START STYLING OF APP
 #====================================================#
-
+from dash import dash_table
 
 # Influence Styling of dbc Themes: https://hellodash.pythonanywhere.com/adding-themes/dcc-components
 dbc_css = "https://cdn.jsdelivr.net/gh/AnnMarieW/dash-bootstrap-templates/dbc.min.css"
@@ -267,7 +274,7 @@ app.layout = dbc.Container(
             # column 1
             dbc.Col(width=3), # fake column to keep header in center
             dbc.Col([html.H2('STOCK ASSISTANT DASHBOARD', style={'margin-top': '15px', 'margin-left': 'auto', 'margin-bottom': '16px', 'textAlign': "center"}, className='text-center text-primary, mb-3')], width={'size': 6, 'offset': 0, 'order': 0}), # the max size of a screen is width=12!
-            dbc.Col([html.Img(src="assets/ds_logo_clear.png", style={'height': '70%', 'width':'30%', 'margin-left': 'auto', 'margin-top':'15px', 'margin-bottom': '16px', 'float': 'right'})], width={'size': 3, 'offset': 0, 'order': 0})
+            dbc.Col([html.Img(src="assets/ds_logo_text_clear.png", style={'height': '70%', 'width':'30%', 'margin-left': 'auto', 'margin-top':'15px', 'margin-bottom': '16px', 'float': 'right'})], width={'size': 2, 'offset': 0, 'order': 0})
         ], justify='start'),
         #=== ROW 2
         dbc.Row([
@@ -318,24 +325,61 @@ app.layout = dbc.Container(
         ]),
         #=== ROW 4
         dbc.Row([
-            # column 1
+            # column 1: Monte Carlo Figure
             dbc.Col([
                 html.H5(id='desc_mc', className='text-center'),
-                dcc.Graph(
-                    id='fig_mc',
-                    figure=fig_mc,
-                    style={'height': 550, 'margin-bottom': '14px', 'margin-left':'12px'}),
+                dcc.Loading([
+                    dcc.Graph(
+                        id='fig_mc',
+                        figure=fig_mc,
+                        style={'height': 550, 'margin-bottom': '14px', 'margin-left':'12px'})],
+                        id='loading-mc-chart', type='dot', color = '#1F51FF'),
                 #html.Hr(),
             ], width={'size': 4, 'offset': 0, 'order': 0}),
-            # column 2
-            # dbc.Col([
-            #     html.H5('Key Financial KPIs', className='text-center'),
-            #     dcc.Graph(
-            #         id='fin_kpis',
-            #         figure=kpi_tbl,
-            #         style={'height': 550, 'margin-bottom': '14px', 'margin-left':'12px'}),
-            #     html.Hr(),
-            # ], width={'size': 6, 'offset': 0, 'order': 0}),
+            # column 2: KPI Table
+            dbc.Col([
+                 html.H5(id='desc_kpi', className='text-center'),
+            #      dcc.Graph(
+            #          id='fin_kpis',
+            #          figure=kpi_tbl,
+            #          style={'height': 550, 'margin-bottom': '14px', 'margin-left':'12px'}),
+            #      html.Hr(),
+            #  ], width={'size': 6, 'offset': 0, 'order': 0}),
+                ## Row inside column to show dropdown for KPI Tables
+                dbc.Row([
+                    # column 1
+                    dbc.Col([
+                        html.H5('Select the Type of KPI Table you want to look at:', style={'textAlign': 'left', 'font-size': '15px'}),
+                        dcc.Dropdown(
+                            id='kpi_dropdown',
+                            options=kpi_options,
+                            value=kpi_options[-1],
+                            #style={'font-family': 'Open Sans', "background-color":"rgb(42, 40, 41)", "color": "MediumTurqoise"},
+                        ),
+                    ], width={'size': 6, 'offset': 0, 'order': 0}),
+                ]),
+                # now the table
+                dcc.Loading([
+                    dash_table.DataTable(
+                        id='kpi_table', 
+                        #fixed_rows={'headers': True}, 
+                        style_header={'backgroundColor': 'rgb(30, 30, 30)', 'color': 'white', 'font_size': '15px', 'font-weight': 'bold',
+                                        'textAlign': 'center', 'border': 'none'},
+                        style_data={'height': '12px', 'backgroundColor': 'rgb(50, 50, 50)', 'border': 'none', 'color': 'white'},
+                        style_table={'overflowY': 'auto'},
+                        style_cell={'font_size': '15px',  'textAlign': 'center'}, # before no 'width' styling; excluded 'overflowY': 'auto' because I added 'fixed_rows'
+                        style_data_conditional=[
+                            {
+                                'if': {
+                                    'column_id': 'Item',
+                                },
+                                #'backgroundColor': 'dodgerblue',
+                                'column_type': 'text'
+                            }
+                        ]
+                    ),
+                ], id='loading-table', type='circle', color='#1F51FF'),
+            ], width={'size': 8, 'offset': 0, 'order': 0}),
         ]),
         #=== ROW 5 (Footnote)
         dbc.Row([
@@ -355,7 +399,7 @@ app.layout = dbc.Container(
 @app.callback(
     [
     Output("candle", "figure"), Output("fig_mc", "figure"), Output("company", "children"), Output("sec", "children"), Output("pri", "children"), Output("intrinsic_price", "children"),
-    Output("pe", "children"), Output("market_corr", "children"), Output("desc_candle", "children"), Output("desc_mc", "children")
+    Output("pe", "children"), Output("market_corr", "children"), Output("desc_candle", "children"), Output("desc_mc", "children"), Output("desc_kpi", "children"),
     ],
     Input("stock-dropdown", "value"),
     Input('complements-checklist', 'value'),
@@ -515,7 +559,41 @@ def update_figures(st, checklist_values):
         _index = '^GSPC'
     market_corr = f"Stock´s correlation with related market index: " + market_correlation(st, _index)
 
-    return candle, fig_mc, company, sec, pri, intrinsic_price, pe, market_corr, desc_candle, desc_mc
+    #=== Update KPI Table
+    #kpi_incs_df, kpi_bs_df, kpi_cs_df, kpi_add_df, kpi_spec_df = make_kpi_tables(ticker=st)
+    desc_kpi=f'KPI Overview for {company}'
+
+    return candle, fig_mc, company, sec, pri, intrinsic_price, pe, market_corr, desc_candle, desc_mc, desc_kpi
+
+@ app.callback(
+    [
+    Output('kpi_table', 'data'),
+    Output('kpi_table', 'columns'),
+    ],
+    Input("stock-dropdown", "value"),
+    Input('kpi_dropdown', 'value'),
+    )
+def update_kpi_table(st, kpi_tbl):
+    from dash.dash_table.Format import Format, Scheme, Trim
+    #=== Update KPI Table
+    kpi_incs_df, kpi_bs_df, kpi_cs_df, kpi_add_df, kpi_spec_df = make_kpi_tables(ticker=st)
+    #kpi_options=["Income Statement", "Balance Sheet", "Cashflow Statement", "Income Statement Ratios", "Specific Ratios"]
+    if str(kpi_tbl) == "Income Statement":
+        df = kpi_incs_df.copy().reset_index()
+        formatting=Format(precision=2, scheme=Scheme.decimal_integer)
+    elif str(kpi_tbl) == "Balance Sheet":
+        df = kpi_bs_df.copy().reset_index()
+        formatting=Format(precision=2, scheme=Scheme.decimal_integer)
+    elif str(kpi_tbl) == "Cashflow Statement":
+        df = kpi_cs_df.copy().reset_index()
+        formatting=Format(precision=2, scheme=Scheme.decimal_integer)
+    elif str(kpi_tbl) == "Income Statement Ratios":
+        df = kpi_add_df.copy().reset_index()
+        formatting=Format(precision=2, scheme=Scheme.percentage)
+    elif str(kpi_tbl) == "Specific Ratios":
+        df = kpi_spec_df.copy().reset_index()
+        formatting=Format(precision=2, scheme=Scheme.percentage)
+    return df.to_dict('records'), [{'name': i, 'id': i, 'type': 'numeric', 'format':formatting} for i in df.columns]
 
 def open_browser():
     if not os.environ.get("WERKZEUG_RUN_MAIN"):
