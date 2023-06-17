@@ -311,11 +311,11 @@ def build_dcf_model(company='', year=2022, tax_rate=0.15825):
     cwc_fc_list=cwc_fc_series.tolist()
 
     #=== DEBT
-    mask_nd=bs_y['item'].values=='longTermDebt'
-    debt=round(float(bs_y.loc[mask_nd, 'value'])/1000,0)
+    mask_nd=bs_y['item'].values=='netDebt'
+    debt=round(bs_y.loc[mask_nd, 'value']/1000,0)
     #=== CASH
     mask_cash=bs_y['item'].values=='cashAndCashEquivalents'
-    cash=round(float(bs_y.loc[mask_cash, 'value'])/1000, 0)
+    cash=round(bs_y.loc[mask_cash, 'value']/1000, 0)
 
     #===================================================#
     # BUILDING THE DCF MODEL
@@ -353,12 +353,15 @@ def build_dcf_model(company='', year=2022, tax_rate=0.15825):
             else:
                 discount_lst.append(i*(1/(1+wacc)**5))
         return sum(discount_lst)
-    intrinsic_value=round(float(get_pv(forecast, wacc)+cash-debt),0)
+    intrinsic_value=round(get_pv(forecast, wacc)+cash.values[0]-debt.values[0],0)
+    #print("intrinsic ev: ", intrinsic_value)
 
     #=== ASSESSMENT OF OUTCOME
     outstanding_shares=get_profile_data(ticker, json_entry='outstandingShares', entry_point='shares')/1000
     current_share_price=real_time_stockprice(ticker, json_entry='price')
     intrinsic_share_price=round(intrinsic_value/outstanding_shares,2)
+    #print("current share price: ", current_share_price)
+    #print("intrinsic share price: ", intrinsic_share_price)
 
     if current_share_price > intrinsic_share_price:
         logger.info(f'The company {company} seems to be overrated on the market. The market price exceeds the estimated intrinsic equity price per share:\n--------------------------\nMarket Price: {current_share_price}\nIntrinsic Share Price: {intrinsic_share_price}\n--------------------------')
@@ -378,7 +381,7 @@ def build_dcf_model(company='', year=2022, tax_rate=0.15825):
         long_term_rate = np.random.normal(g, 0.001)
         discount_rate = np.random.normal(wacc, 0.001)
         forecast = forecast_ufcf(end_val, cagr, margin, tax, dna_fc_list, capex_fc_list, cwc_fc_list, discount_rate, long_term_rate)
-        hist_lst.append(round(float(get_pv(forecast, discount_rate)+cash-debt),0))
+        hist_lst.append(round(get_pv(forecast, discount_rate)+cash.values[0]-debt.values[0],0))
     hist_array = np.array(hist_lst)
 
     mean = hist_array.mean() # mean of the sampled point estimates
